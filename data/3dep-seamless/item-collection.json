@@ -1,0 +1,257 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "n41w106-13",
+      "properties": {
+        "gsd": 10,
+        "datetime": "2015-07-17T00:00:00Z",
+        "proj:epsg": 5498,
+        "proj:shape": [
+          10812,
+          10812
+        ],
+        "end_datetime": "2013-12-31T00:00:00Z",
+        "proj:transform": [
+          0.000092592593,
+          0.0,
+          -106.000555555594,
+          0.0,
+          -0.000092592593,
+          41.0005555552955,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "start_datetime": "1948-01-01T00:00:00Z",
+        "threedep:region": "n40w110"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.99944445,
+              39.99944444
+            ],
+            [
+              -104.99944445,
+              41.00055556
+            ],
+            [
+              -106.00055556,
+              41.00055556
+            ],
+            [
+              -106.00055556,
+              39.99944444
+            ],
+            [
+              -104.99944445,
+              39.99944444
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/3dep/Elevation/13/TIFF/n41w106/USGS_13_n41w106.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "USGS 1/3 arc-second n41w106 1 x 1 degree",
+          "description": "This tile of the 3D Elevation Program (3DEP) seamless products is 1/3 arc-second resolution.  3DEP data serve as the elevation layer of The National Map, and provide basic elevation information for Earth science studies and mapping applications in the United States. Scientists and resource managers use 3DEP data for global change research, hydrologic modeling, resource monitoring, mapping and visualization, and many other applications. 3DEP data compose an elevation dataset that consists of seamless layers and a high resolution layer.  Each of these layers consists of the best available raster elevation data of the conterminous United States, Alaska, Hawaii, territorial islands, Mexico and Canada.  3DEP data are updated continually as new data become available. Seamless 3DEP data are derived from diverse source data that are processed to a common coordinate system and unit of vertical measure. These data are distributed in geographic coordinates in units of decimal degrees, and in conformance with the North American Datum of 1983 (NAD 83). All elevation values are in meters and, over the conterminous United States, are referenced to the North American Vertical Datum of 1988 (NAVD 88). The vertical reference will vary in other areas. Seamless 3DEP data are available nationally (except for Alaska) at resolutions of 1 arc-second (approximately 30 meters) and 1/3 arc-second (approximately 10 meters). In most of Alaska, only lower resolution source data are available. As a result, most seamless 3DEP data for Alaska are at 2 arc-second (approximately 60 meters) grid spacing. Part of Alaska is available at the 1 and 1/3 arc-second resolutions from interferometric synthetic aperture radar (ifsar) collections starting in 2010.  Plans are in place for collection of statewide ifsar in Alaska. All 3DEP products are public domain.",
+          "roles": [
+            "data"
+          ]
+        },
+        "gpkg": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/3dep/Elevation/13/TIFF/n41w106/n41w106.gpkg",
+          "type": "application/geopackage+sqlite3",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "metadata": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/3dep/Elevation/13/TIFF/n41w106/USGS_13_n41w106.xml",
+          "type": "application/xml",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "thumbnail": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/3dep/Elevation/13/TIFF/n41w106/USGS_13_n41w106.jpg",
+          "type": "image/jpeg",
+          "roles": [
+            "thumbnail"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=3dep-seamless&item=n41w106-13&assets=data&colormap_name=terrain&rescale=-1000%2C4000",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=3dep-seamless&item=n41w106-13&assets=data&colormap_name=terrain&rescale=-1000%2C4000",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -106.000555555594,
+        39.9994444449061,
+        -104.999444445204,
+        41.0005555552955
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+      ],
+      "collection": "3dep-seamless",
+      "links": [
+        {
+          "rel": "via",
+          "href": "https://ai4edataeuwest.blob.core.windows.net/3dep/Elevation/13/TIFF/n41w106/USGS_13_n41w106.xml"
+        },
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=3dep-seamless&item=n41w106-13",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "n41w106-1",
+      "properties": {
+        "gsd": 30,
+        "datetime": "2015-07-17T00:00:00Z",
+        "proj:epsg": 5498,
+        "proj:shape": [
+          3612,
+          3612
+        ],
+        "end_datetime": "2013-12-31T00:00:00Z",
+        "proj:transform": [
+          0.00027777778,
+          0.0,
+          -106.001666667082,
+          0.0,
+          -0.00027777778,
+          41.0016666667842,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "start_datetime": "1948-01-01T00:00:00Z",
+        "threedep:region": "n40w110"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.99833333,
+              39.99833333
+            ],
+            [
+              -104.99833333,
+              41.00166667
+            ],
+            [
+              -106.00166667,
+              41.00166667
+            ],
+            [
+              -106.00166667,
+              39.99833333
+            ],
+            [
+              -104.99833333,
+              39.99833333
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/3dep/Elevation/1/TIFF/n41w106/USGS_1_n41w106.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "USGS 1 arc-second n41w106 1 x 1 degree",
+          "description": "This tile of the 3D Elevation Program (3DEP) seamless products is 1 arc-second resolution.  3DEP data serve as the elevation layer of The National Map, and provide basic elevation information for Earth science studies and mapping applications in the United States. Scientists and resource managers use 3DEP data for global change research, hydrologic modeling, resource monitoring, mapping and visualization, and many other applications. 3DEP data compose an elevation dataset that consists of seamless layers and a high resolution layer.  Each of these layers consists of the best available raster elevation data of the conterminous United States, Alaska, Hawaii, territorial islands, Mexico and Canada.  3DEP data are updated continually as new data become available. Seamless 3DEP data are derived from diverse source data that are processed to a common coordinate system and unit of vertical measure. These data are distributed in geographic coordinates in units of decimal degrees, and in conformance with the North American Datum of 1983 (NAD 83). All elevation values are in meters and, over the conterminous United States, are referenced to the North American Vertical Datum of 1988 (NAVD 88). The vertical reference will vary in other areas. Seamless 3DEP data are available nationally (except for Alaska) at resolutions of 1 arc-second (approximately 30 meters) and 1/3 arc-second (approximately 10 meters). In most of Alaska, only lower resolution source data are available. As a result, most seamless 3DEP data for Alaska are at 2 arc-second (approximately 60 meters) grid spacing. Part of Alaska is available at the 1 and 1/3 arc-second resolutions from interferometric synthetic aperture radar (ifsar) collections starting in 2010.  Plans are in place for collection of statewide ifsar in Alaska. All 3DEP products are public domain.",
+          "roles": [
+            "data"
+          ]
+        },
+        "gpkg": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/3dep/Elevation/1/TIFF/n41w106/n41w106.gpkg",
+          "type": "application/geopackage+sqlite3",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "metadata": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/3dep/Elevation/1/TIFF/n41w106/USGS_1_n41w106.xml",
+          "type": "application/xml",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "thumbnail": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/3dep/Elevation/1/TIFF/n41w106/USGS_1_n41w106.jpg",
+          "type": "image/jpeg",
+          "roles": [
+            "thumbnail"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=3dep-seamless&item=n41w106-1&assets=data&colormap_name=terrain&rescale=-1000%2C4000",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=3dep-seamless&item=n41w106-1&assets=data&colormap_name=terrain&rescale=-1000%2C4000",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -106.001666667082,
+        39.9983333334175,
+        -104.998333333716,
+        41.0016666667842
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+      ],
+      "collection": "3dep-seamless",
+      "links": [
+        {
+          "rel": "via",
+          "href": "https://ai4edataeuwest.blob.core.windows.net/3dep/Elevation/1/TIFF/n41w106/USGS_1_n41w106.xml"
+        },
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=3dep-seamless&item=n41w106-1",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    }
+  ]
+}

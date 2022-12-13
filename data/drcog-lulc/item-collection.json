@@ -1,0 +1,157 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "DRCOG_2020_LULC_E3110000_N1850000",
+      "properties": {
+        "created": "2022-07-15T15:23:52.723281Z",
+        "mission": "2020 DRCOG LULC study covering 6,000 square miles",
+        "datetime": null,
+        "proj:epsg": 6428,
+        "proj:shape": [
+          10000,
+          10000
+        ],
+        "description": "2020 Denver Regional Council of Governments (DRCOG) Land Use Land Cover (LULC) at 1ft resolution",
+        "end_datetime": "2020-12-31T23:59:59Z",
+        "proj:transform": [
+          1.0,
+          0.0,
+          3109999.74968392,
+          0.0,
+          -1.0,
+          1860000.750004
+        ],
+        "start_datetime": "2020-01-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -105.070681,
+              40.166275
+            ],
+            [
+              -105.070512,
+              40.193722
+            ],
+            [
+              -105.106302,
+              40.193846
+            ],
+            [
+              -105.106457,
+              40.166399
+            ],
+            [
+              -105.070681,
+              40.166275
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://landcoverdata.blob.core.windows.net/drcog-lulc/2020/DRCOG_2020_LULC_E3110000_N1850000.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "DRCOG LULC",
+          "description": "Denver Regional Council of Governments (DRCOG) Land Use Land Cover (LULC) Classifications",
+          "raster:bands": [
+            {
+              "spatial_resolution": 0.3,
+              "unit": "usft",
+              "sampling": "area",
+              "data_type": "uint8",
+              "description": "Classification values"
+            }
+          ],
+          "classification:classes": [
+            {
+              "value": 1,
+              "color_hint": "FF0000",
+              "description": "Structures"
+            },
+            {
+              "value": 2,
+              "color_hint": "B2B2B2",
+              "description": "Impervious Surfaces"
+            },
+            {
+              "value": 3,
+              "color_hint": "00A9E6",
+              "description": "Water"
+            },
+            {
+              "value": 4,
+              "color_hint": "C7D79E",
+              "description": "Prairie/Grassland/Natural Ground Cover"
+            },
+            {
+              "value": 5,
+              "color_hint": "267300",
+              "description": "Tree Canopy"
+            },
+            {
+              "value": 6,
+              "color_hint": "70A800",
+              "description": "Turf/Irrigated Land"
+            },
+            {
+              "value": 7,
+              "color_hint": "FFEBAF",
+              "description": "Barren Land"
+            },
+            {
+              "value": 8,
+              "color_hint": "FFAE42",
+              "description": "Cropland"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=drcog-lulc&item=DRCOG_2020_LULC_E3110000_N1850000&assets=data&colormap_name=drcog-lulc",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=drcog-lulc&item=DRCOG_2020_LULC_E3110000_N1850000&assets=data&colormap_name=drcog-lulc",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -105.106457,
+        40.166275,
+        -105.070512,
+        40.193846
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/classification/v1.1.0/schema.json"
+      ],
+      "collection": "drcog-lulc",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=drcog-lulc&item=DRCOG_2020_LULC_E3110000_N1850000",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1397 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "conus_2016_ccap_landcover_20200311",
+      "properties": {
+        "datetime": null,
+        "proj:epsg": 5070,
+        "proj:shape": [
+          97471,
+          154951
+        ],
+        "end_datetime": "2016-12-31T00:00:00Z",
+        "proj:transform": [
+          29.99999999983544,
+          0.0,
+          -2362065.0,
+          0.0,
+          -29.999999999823203,
+          3177734.999303
+        ],
+        "start_datetime": "2016-01-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.946445,
+              22.881337
+            ],
+            [
+              -64.966857,
+              48.207712
+            ],
+            [
+              -127.984554,
+              47.984468
+            ],
+            [
+              -118.755598,
+              22.718719
+            ],
+            [
+              -73.946445,
+              22.881337
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/noaa-c-cap/conus_2016_ccap_landcover_20200311.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 30
+            }
+          ],
+          "classification:classes": [
+            {
+              "value": 0,
+              "description": "Background"
+            },
+            {
+              "value": 1,
+              "description": "Unclassified (Cloud, Shadow, etc)"
+            },
+            {
+              "value": 2,
+              "color-hint": "FFFFFF",
+              "description": "High Intensity Developed"
+            },
+            {
+              "value": 3,
+              "color-hint": "C1C1C1",
+              "description": "Medium Intensity Developed"
+            },
+            {
+              "value": 4,
+              "color-hint": "979797",
+              "description": "Low Intensity Developed"
+            },
+            {
+              "value": 5,
+              "color-hint": "CCCA42",
+              "description": "Developed Open Space"
+            },
+            {
+              "value": 6,
+              "color-hint": "4E2409",
+              "description": "Cultivated Crops"
+            },
+            {
+              "value": 7,
+              "color-hint": "BCA05B",
+              "description": "Pasture/Hay"
+            },
+            {
+              "value": 8,
+              "color-hint": "EABB8E",
+              "description": "Grassland/Herbaceous"
+            },
+            {
+              "value": 9,
+              "color-hint": "6FEC48",
+              "description": "Deciduous Forest"
+            },
+            {
+              "value": 10,
+              "color-hint": "15380A",
+              "description": "Evergreen Forest"
+            },
+            {
+              "value": 11,
+              "color-hint": "489D48",
+              "description": "Mixed Forest"
+            },
+            {
+              "value": 12,
+              "color-hint": "6D6C1F",
+              "description": "Scrub/Shrub"
+            },
+            {
+              "value": 13,
+              "color-hint": "245A5A",
+              "description": "Palustrine Forested Wetland"
+            },
+            {
+              "value": 14,
+              "color-hint": "E2742D",
+              "description": "Palustrine Scrub/Shrub Wetland"
+            },
+            {
+              "value": 15,
+              "color-hint": "DE3BEA",
+              "description": "Palustrine Emergent Wetland (Persistent)"
+            },
+            {
+              "value": 16,
+              "color-hint": "37083B",
+              "description": "Estuarine Forested Wetland"
+            },
+            {
+              "value": 17,
+              "color-hint": "631569",
+              "description": "Estuarine Scrub/Shrub Wetland"
+            },
+            {
+              "value": 18,
+              "color-hint": "A028A9",
+              "description": "Estuarine Emergent Wetland"
+            },
+            {
+              "value": 19,
+              "color-hint": "6DEEF0",
+              "description": "Unconsolidated Shore"
+            },
+            {
+              "value": 20,
+              "color-hint": "F3F050",
+              "description": "Bare Land"
+            },
+            {
+              "value": 21,
+              "color-hint": "000A72",
+              "description": "Open Water"
+            },
+            {
+              "value": 22,
+              "color-hint": "0021E8",
+              "description": "Palustrine Aquatic Bed"
+            },
+            {
+              "value": 23,
+              "color-hint": "6777D4",
+              "description": "Estuarine Aquatic Bed"
+            },
+            {
+              "value": 24,
+              "color-hint": "F3D147",
+              "description": "Tundra"
+            },
+            {
+              "value": 25,
+              "color-hint": "BBF7EF",
+              "description": "Perennial Ice/Snow"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=noaa-c-cap&item=conus_2016_ccap_landcover_20200311&assets=data&tile_format=png&colormap_name=c-cap",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=noaa-c-cap&item=conus_2016_ccap_landcover_20200311&assets=data&tile_format=png&colormap_name=c-cap",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -127.984554,
+        22.718719,
+        -64.966857,
+        48.207712
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+      ],
+      "collection": "noaa-c-cap",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=noaa-c-cap&item=conus_2016_ccap_landcover_20200311",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "conus_2010_ccap_landcover_20200311",
+      "properties": {
+        "datetime": null,
+        "proj:epsg": 5070,
+        "proj:shape": [
+          97471,
+          154488
+        ],
+        "end_datetime": "2010-12-31T00:00:00Z",
+        "proj:transform": [
+          29.99999999983544,
+          0.0,
+          -2362065.0,
+          0.0,
+          -29.999999999823203,
+          3177734.999303
+        ],
+        "start_datetime": "2010-01-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.075701,
+              22.910659
+            ],
+            [
+              -65.14237,
+              48.248042
+            ],
+            [
+              -127.984554,
+              47.984468
+            ],
+            [
+              -118.755598,
+              22.718719
+            ],
+            [
+              -74.075701,
+              22.910659
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/noaa-c-cap/conus_2010_ccap_landcover_20200311.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 30
+            }
+          ],
+          "classification:classes": [
+            {
+              "value": 0,
+              "description": "Background"
+            },
+            {
+              "value": 1,
+              "description": "Unclassified (Cloud, Shadow, etc)"
+            },
+            {
+              "value": 2,
+              "color-hint": "FFFFFF",
+              "description": "High Intensity Developed"
+            },
+            {
+              "value": 3,
+              "color-hint": "C1C1C1",
+              "description": "Medium Intensity Developed"
+            },
+            {
+              "value": 4,
+              "color-hint": "979797",
+              "description": "Low Intensity Developed"
+            },
+            {
+              "value": 5,
+              "color-hint": "CCCA42",
+              "description": "Developed Open Space"
+            },
+            {
+              "value": 6,
+              "color-hint": "4E2409",
+              "description": "Cultivated Crops"
+            },
+            {
+              "value": 7,
+              "color-hint": "BCA05B",
+              "description": "Pasture/Hay"
+            },
+            {
+              "value": 8,
+              "color-hint": "EABB8E",
+              "description": "Grassland/Herbaceous"
+            },
+            {
+              "value": 9,
+              "color-hint": "6FEC48",
+              "description": "Deciduous Forest"
+            },
+            {
+              "value": 10,
+              "color-hint": "15380A",
+              "description": "Evergreen Forest"
+            },
+            {
+              "value": 11,
+              "color-hint": "489D48",
+              "description": "Mixed Forest"
+            },
+            {
+              "value": 12,
+              "color-hint": "6D6C1F",
+              "description": "Scrub/Shrub"
+            },
+            {
+              "value": 13,
+              "color-hint": "245A5A",
+              "description": "Palustrine Forested Wetland"
+            },
+            {
+              "value": 14,
+              "color-hint": "E2742D",
+              "description": "Palustrine Scrub/Shrub Wetland"
+            },
+            {
+              "value": 15,
+              "color-hint": "DE3BEA",
+              "description": "Palustrine Emergent Wetland (Persistent)"
+            },
+            {
+              "value": 16,
+              "color-hint": "37083B",
+              "description": "Estuarine Forested Wetland"
+            },
+            {
+              "value": 17,
+              "color-hint": "631569",
+              "description": "Estuarine Scrub/Shrub Wetland"
+            },
+            {
+              "value": 18,
+              "color-hint": "A028A9",
+              "description": "Estuarine Emergent Wetland"
+            },
+            {
+              "value": 19,
+              "color-hint": "6DEEF0",
+              "description": "Unconsolidated Shore"
+            },
+            {
+              "value": 20,
+              "color-hint": "F3F050",
+              "description": "Bare Land"
+            },
+            {
+              "value": 21,
+              "color-hint": "000A72",
+              "description": "Open Water"
+            },
+            {
+              "value": 22,
+              "color-hint": "0021E8",
+              "description": "Palustrine Aquatic Bed"
+            },
+            {
+              "value": 23,
+              "color-hint": "6777D4",
+              "description": "Estuarine Aquatic Bed"
+            },
+            {
+              "value": 24,
+              "color-hint": "F3D147",
+              "description": "Tundra"
+            },
+            {
+              "value": 25,
+              "color-hint": "BBF7EF",
+              "description": "Perennial Ice/Snow"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=noaa-c-cap&item=conus_2010_ccap_landcover_20200311&assets=data&tile_format=png&colormap_name=c-cap",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=noaa-c-cap&item=conus_2010_ccap_landcover_20200311&assets=data&tile_format=png&colormap_name=c-cap",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -127.984554,
+        22.718719,
+        -65.14237,
+        48.248042
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+      ],
+      "collection": "noaa-c-cap",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=noaa-c-cap&item=conus_2010_ccap_landcover_20200311",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "conus_2006_ccap_landcover_20200311",
+      "properties": {
+        "datetime": null,
+        "proj:epsg": 5070,
+        "proj:shape": [
+          97471,
+          154951
+        ],
+        "end_datetime": "2006-12-31T00:00:00Z",
+        "proj:transform": [
+          29.99999999983544,
+          0.0,
+          -2362065.0,
+          0.0,
+          -29.999999999823203,
+          3177734.999303
+        ],
+        "start_datetime": "2006-01-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.946445,
+              22.881337
+            ],
+            [
+              -64.966857,
+              48.207712
+            ],
+            [
+              -127.984554,
+              47.984468
+            ],
+            [
+              -118.755598,
+              22.718719
+            ],
+            [
+              -73.946445,
+              22.881337
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/noaa-c-cap/conus_2006_ccap_landcover_20200311.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 30
+            }
+          ],
+          "classification:classes": [
+            {
+              "value": 0,
+              "description": "Background"
+            },
+            {
+              "value": 1,
+              "description": "Unclassified (Cloud, Shadow, etc)"
+            },
+            {
+              "value": 2,
+              "color-hint": "FFFFFF",
+              "description": "High Intensity Developed"
+            },
+            {
+              "value": 3,
+              "color-hint": "C1C1C1",
+              "description": "Medium Intensity Developed"
+            },
+            {
+              "value": 4,
+              "color-hint": "979797",
+              "description": "Low Intensity Developed"
+            },
+            {
+              "value": 5,
+              "color-hint": "CCCA42",
+              "description": "Developed Open Space"
+            },
+            {
+              "value": 6,
+              "color-hint": "4E2409",
+              "description": "Cultivated Crops"
+            },
+            {
+              "value": 7,
+              "color-hint": "BCA05B",
+              "description": "Pasture/Hay"
+            },
+            {
+              "value": 8,
+              "color-hint": "EABB8E",
+              "description": "Grassland/Herbaceous"
+            },
+            {
+              "value": 9,
+              "color-hint": "6FEC48",
+              "description": "Deciduous Forest"
+            },
+            {
+              "value": 10,
+              "color-hint": "15380A",
+              "description": "Evergreen Forest"
+            },
+            {
+              "value": 11,
+              "color-hint": "489D48",
+              "description": "Mixed Forest"
+            },
+            {
+              "value": 12,
+              "color-hint": "6D6C1F",
+              "description": "Scrub/Shrub"
+            },
+            {
+              "value": 13,
+              "color-hint": "245A5A",
+              "description": "Palustrine Forested Wetland"
+            },
+            {
+              "value": 14,
+              "color-hint": "E2742D",
+              "description": "Palustrine Scrub/Shrub Wetland"
+            },
+            {
+              "value": 15,
+              "color-hint": "DE3BEA",
+              "description": "Palustrine Emergent Wetland (Persistent)"
+            },
+            {
+              "value": 16,
+              "color-hint": "37083B",
+              "description": "Estuarine Forested Wetland"
+            },
+            {
+              "value": 17,
+              "color-hint": "631569",
+              "description": "Estuarine Scrub/Shrub Wetland"
+            },
+            {
+              "value": 18,
+              "color-hint": "A028A9",
+              "description": "Estuarine Emergent Wetland"
+            },
+            {
+              "value": 19,
+              "color-hint": "6DEEF0",
+              "description": "Unconsolidated Shore"
+            },
+            {
+              "value": 20,
+              "color-hint": "F3F050",
+              "description": "Bare Land"
+            },
+            {
+              "value": 21,
+              "color-hint": "000A72",
+              "description": "Open Water"
+            },
+            {
+              "value": 22,
+              "color-hint": "0021E8",
+              "description": "Palustrine Aquatic Bed"
+            },
+            {
+              "value": 23,
+              "color-hint": "6777D4",
+              "description": "Estuarine Aquatic Bed"
+            },
+            {
+              "value": 24,
+              "color-hint": "F3D147",
+              "description": "Tundra"
+            },
+            {
+              "value": 25,
+              "color-hint": "BBF7EF",
+              "description": "Perennial Ice/Snow"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=noaa-c-cap&item=conus_2006_ccap_landcover_20200311&assets=data&tile_format=png&colormap_name=c-cap",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=noaa-c-cap&item=conus_2006_ccap_landcover_20200311&assets=data&tile_format=png&colormap_name=c-cap",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -127.984554,
+        22.718719,
+        -64.966857,
+        48.207712
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+      ],
+      "collection": "noaa-c-cap",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=noaa-c-cap&item=conus_2006_ccap_landcover_20200311",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "conus_2001_ccap_landcover_20200311",
+      "properties": {
+        "datetime": null,
+        "proj:epsg": 5070,
+        "proj:shape": [
+          97471,
+          154488
+        ],
+        "end_datetime": "2001-12-31T00:00:00Z",
+        "proj:transform": [
+          29.99999999983544,
+          0.0,
+          -2362065.0,
+          0.0,
+          -29.999999999823203,
+          3177734.999303
+        ],
+        "start_datetime": "2001-01-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.075701,
+              22.910659
+            ],
+            [
+              -65.14237,
+              48.248042
+            ],
+            [
+              -127.984554,
+              47.984468
+            ],
+            [
+              -118.755598,
+              22.718719
+            ],
+            [
+              -74.075701,
+              22.910659
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/noaa-c-cap/conus_2001_ccap_landcover_20200311.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 30
+            }
+          ],
+          "classification:classes": [
+            {
+              "value": 0,
+              "description": "Background"
+            },
+            {
+              "value": 1,
+              "description": "Unclassified (Cloud, Shadow, etc)"
+            },
+            {
+              "value": 2,
+              "color-hint": "FFFFFF",
+              "description": "High Intensity Developed"
+            },
+            {
+              "value": 3,
+              "color-hint": "C1C1C1",
+              "description": "Medium Intensity Developed"
+            },
+            {
+              "value": 4,
+              "color-hint": "979797",
+              "description": "Low Intensity Developed"
+            },
+            {
+              "value": 5,
+              "color-hint": "CCCA42",
+              "description": "Developed Open Space"
+            },
+            {
+              "value": 6,
+              "color-hint": "4E2409",
+              "description": "Cultivated Crops"
+            },
+            {
+              "value": 7,
+              "color-hint": "BCA05B",
+              "description": "Pasture/Hay"
+            },
+            {
+              "value": 8,
+              "color-hint": "EABB8E",
+              "description": "Grassland/Herbaceous"
+            },
+            {
+              "value": 9,
+              "color-hint": "6FEC48",
+              "description": "Deciduous Forest"
+            },
+            {
+              "value": 10,
+              "color-hint": "15380A",
+              "description": "Evergreen Forest"
+            },
+            {
+              "value": 11,
+              "color-hint": "489D48",
+              "description": "Mixed Forest"
+            },
+            {
+              "value": 12,
+              "color-hint": "6D6C1F",
+              "description": "Scrub/Shrub"
+            },
+            {
+              "value": 13,
+              "color-hint": "245A5A",
+              "description": "Palustrine Forested Wetland"
+            },
+            {
+              "value": 14,
+              "color-hint": "E2742D",
+              "description": "Palustrine Scrub/Shrub Wetland"
+            },
+            {
+              "value": 15,
+              "color-hint": "DE3BEA",
+              "description": "Palustrine Emergent Wetland (Persistent)"
+            },
+            {
+              "value": 16,
+              "color-hint": "37083B",
+              "description": "Estuarine Forested Wetland"
+            },
+            {
+              "value": 17,
+              "color-hint": "631569",
+              "description": "Estuarine Scrub/Shrub Wetland"
+            },
+            {
+              "value": 18,
+              "color-hint": "A028A9",
+              "description": "Estuarine Emergent Wetland"
+            },
+            {
+              "value": 19,
+              "color-hint": "6DEEF0",
+              "description": "Unconsolidated Shore"
+            },
+            {
+              "value": 20,
+              "color-hint": "F3F050",
+              "description": "Bare Land"
+            },
+            {
+              "value": 21,
+              "color-hint": "000A72",
+              "description": "Open Water"
+            },
+            {
+              "value": 22,
+              "color-hint": "0021E8",
+              "description": "Palustrine Aquatic Bed"
+            },
+            {
+              "value": 23,
+              "color-hint": "6777D4",
+              "description": "Estuarine Aquatic Bed"
+            },
+            {
+              "value": 24,
+              "color-hint": "F3D147",
+              "description": "Tundra"
+            },
+            {
+              "value": 25,
+              "color-hint": "BBF7EF",
+              "description": "Perennial Ice/Snow"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=noaa-c-cap&item=conus_2001_ccap_landcover_20200311&assets=data&tile_format=png&colormap_name=c-cap",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=noaa-c-cap&item=conus_2001_ccap_landcover_20200311&assets=data&tile_format=png&colormap_name=c-cap",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -127.984554,
+        22.718719,
+        -65.14237,
+        48.248042
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+      ],
+      "collection": "noaa-c-cap",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=noaa-c-cap&item=conus_2001_ccap_landcover_20200311",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "conus_1996_ccap_landcover_20200311",
+      "properties": {
+        "datetime": null,
+        "proj:epsg": 5070,
+        "proj:shape": [
+          97471,
+          154951
+        ],
+        "end_datetime": "1996-12-31T00:00:00Z",
+        "proj:transform": [
+          29.999999999840433,
+          0.0,
+          -2362065.0,
+          0.0,
+          -29.999999999838124,
+          3177734.999303
+        ],
+        "start_datetime": "1996-01-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.946445,
+              22.881337
+            ],
+            [
+              -64.966857,
+              48.207712
+            ],
+            [
+              -127.984554,
+              47.984468
+            ],
+            [
+              -118.755598,
+              22.718719
+            ],
+            [
+              -73.946445,
+              22.881337
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/noaa-c-cap/conus_1996_ccap_landcover_20200311.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 30
+            }
+          ],
+          "classification:classes": [
+            {
+              "value": 0,
+              "description": "Background"
+            },
+            {
+              "value": 1,
+              "description": "Unclassified (Cloud, Shadow, etc)"
+            },
+            {
+              "value": 2,
+              "color-hint": "FFFFFF",
+              "description": "High Intensity Developed"
+            },
+            {
+              "value": 3,
+              "color-hint": "C1C1C1",
+              "description": "Medium Intensity Developed"
+            },
+            {
+              "value": 4,
+              "color-hint": "979797",
+              "description": "Low Intensity Developed"
+            },
+            {
+              "value": 5,
+              "color-hint": "CCCA42",
+              "description": "Developed Open Space"
+            },
+            {
+              "value": 6,
+              "color-hint": "4E2409",
+              "description": "Cultivated Crops"
+            },
+            {
+              "value": 7,
+              "color-hint": "BCA05B",
+              "description": "Pasture/Hay"
+            },
+            {
+              "value": 8,
+              "color-hint": "EABB8E",
+              "description": "Grassland/Herbaceous"
+            },
+            {
+              "value": 9,
+              "color-hint": "6FEC48",
+              "description": "Deciduous Forest"
+            },
+            {
+              "value": 10,
+              "color-hint": "15380A",
+              "description": "Evergreen Forest"
+            },
+            {
+              "value": 11,
+              "color-hint": "489D48",
+              "description": "Mixed Forest"
+            },
+            {
+              "value": 12,
+              "color-hint": "6D6C1F",
+              "description": "Scrub/Shrub"
+            },
+            {
+              "value": 13,
+              "color-hint": "245A5A",
+              "description": "Palustrine Forested Wetland"
+            },
+            {
+              "value": 14,
+              "color-hint": "E2742D",
+              "description": "Palustrine Scrub/Shrub Wetland"
+            },
+            {
+              "value": 15,
+              "color-hint": "DE3BEA",
+              "description": "Palustrine Emergent Wetland (Persistent)"
+            },
+            {
+              "value": 16,
+              "color-hint": "37083B",
+              "description": "Estuarine Forested Wetland"
+            },
+            {
+              "value": 17,
+              "color-hint": "631569",
+              "description": "Estuarine Scrub/Shrub Wetland"
+            },
+            {
+              "value": 18,
+              "color-hint": "A028A9",
+              "description": "Estuarine Emergent Wetland"
+            },
+            {
+              "value": 19,
+              "color-hint": "6DEEF0",
+              "description": "Unconsolidated Shore"
+            },
+            {
+              "value": 20,
+              "color-hint": "F3F050",
+              "description": "Bare Land"
+            },
+            {
+              "value": 21,
+              "color-hint": "000A72",
+              "description": "Open Water"
+            },
+            {
+              "value": 22,
+              "color-hint": "0021E8",
+              "description": "Palustrine Aquatic Bed"
+            },
+            {
+              "value": 23,
+              "color-hint": "6777D4",
+              "description": "Estuarine Aquatic Bed"
+            },
+            {
+              "value": 24,
+              "color-hint": "F3D147",
+              "description": "Tundra"
+            },
+            {
+              "value": 25,
+              "color-hint": "BBF7EF",
+              "description": "Perennial Ice/Snow"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=noaa-c-cap&item=conus_1996_ccap_landcover_20200311&assets=data&tile_format=png&colormap_name=c-cap",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=noaa-c-cap&item=conus_1996_ccap_landcover_20200311&assets=data&tile_format=png&colormap_name=c-cap",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -127.984554,
+        22.718719,
+        -64.966857,
+        48.207712
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+      ],
+      "collection": "noaa-c-cap",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=noaa-c-cap&item=conus_1996_ccap_landcover_20200311",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "conus_1992_ccap_landcover_20201019",
+      "properties": {
+        "datetime": null,
+        "proj:epsg": 5070,
+        "proj:shape": [
+          53156,
+          131829
+        ],
+        "end_datetime": "1992-12-31T00:00:00Z",
+        "proj:transform": [
+          29.999999999840433,
+          0.0,
+          -2147205.0,
+          0.0,
+          -29.999999999838124,
+          3177735.0
+        ],
+        "start_datetime": "1992-01-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.729524,
+              35.560543
+            ],
+            [
+              -71.137626,
+              49.471148
+            ],
+            [
+              -125.263677,
+              48.602283
+            ],
+            [
+              -119.930877,
+              34.861154
+            ],
+            [
+              -75.729524,
+              35.560543
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/noaa-c-cap/conus_1992_ccap_landcover_20201019.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 30
+            }
+          ],
+          "classification:classes": [
+            {
+              "value": 0,
+              "description": "Background"
+            },
+            {
+              "value": 1,
+              "description": "Unclassified (Cloud, Shadow, etc)"
+            },
+            {
+              "value": 2,
+              "color-hint": "FFFFFF",
+              "description": "High Intensity Developed"
+            },
+            {
+              "value": 3,
+              "color-hint": "C1C1C1",
+              "description": "Medium Intensity Developed"
+            },
+            {
+              "value": 4,
+              "color-hint": "979797",
+              "description": "Low Intensity Developed"
+            },
+            {
+              "value": 5,
+              "color-hint": "CCCA42",
+              "description": "Developed Open Space"
+            },
+            {
+              "value": 6,
+              "color-hint": "4E2409",
+              "description": "Cultivated Crops"
+            },
+            {
+              "value": 7,
+              "color-hint": "BCA05B",
+              "description": "Pasture/Hay"
+            },
+            {
+              "value": 8,
+              "color-hint": "EABB8E",
+              "description": "Grassland/Herbaceous"
+            },
+            {
+              "value": 9,
+              "color-hint": "6FEC48",
+              "description": "Deciduous Forest"
+            },
+            {
+              "value": 10,
+              "color-hint": "15380A",
+              "description": "Evergreen Forest"
+            },
+            {
+              "value": 11,
+              "color-hint": "489D48",
+              "description": "Mixed Forest"
+            },
+            {
+              "value": 12,
+              "color-hint": "6D6C1F",
+              "description": "Scrub/Shrub"
+            },
+            {
+              "value": 13,
+              "color-hint": "245A5A",
+              "description": "Palustrine Forested Wetland"
+            },
+            {
+              "value": 14,
+              "color-hint": "E2742D",
+              "description": "Palustrine Scrub/Shrub Wetland"
+            },
+            {
+              "value": 15,
+              "color-hint": "DE3BEA",
+              "description": "Palustrine Emergent Wetland (Persistent)"
+            },
+            {
+              "value": 16,
+              "color-hint": "37083B",
+              "description": "Estuarine Forested Wetland"
+            },
+            {
+              "value": 17,
+              "color-hint": "631569",
+              "description": "Estuarine Scrub/Shrub Wetland"
+            },
+            {
+              "value": 18,
+              "color-hint": "A028A9",
+              "description": "Estuarine Emergent Wetland"
+            },
+            {
+              "value": 19,
+              "color-hint": "6DEEF0",
+              "description": "Unconsolidated Shore"
+            },
+            {
+              "value": 20,
+              "color-hint": "F3F050",
+              "description": "Bare Land"
+            },
+            {
+              "value": 21,
+              "color-hint": "000A72",
+              "description": "Open Water"
+            },
+            {
+              "value": 22,
+              "color-hint": "0021E8",
+              "description": "Palustrine Aquatic Bed"
+            },
+            {
+              "value": 23,
+              "color-hint": "6777D4",
+              "description": "Estuarine Aquatic Bed"
+            },
+            {
+              "value": 24,
+              "color-hint": "F3D147",
+              "description": "Tundra"
+            },
+            {
+              "value": 25,
+              "color-hint": "BBF7EF",
+              "description": "Perennial Ice/Snow"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=noaa-c-cap&item=conus_1992_ccap_landcover_20201019&assets=data&tile_format=png&colormap_name=c-cap",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=noaa-c-cap&item=conus_1992_ccap_landcover_20201019&assets=data&tile_format=png&colormap_name=c-cap",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -125.263677,
+        34.861154,
+        -71.137626,
+        49.471148
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+      ],
+      "collection": "noaa-c-cap",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=noaa-c-cap&item=conus_1992_ccap_landcover_20201019",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    }
+  ]
+}

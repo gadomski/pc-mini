@@ -1,0 +1,1875 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD17A2HGF.A2021361.h10v04.061.2022021015509",
+      "properties": {
+        "created": "2022-01-21T01:55:09Z",
+        "updated": "2022-01-20T19:58:01.117000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          2400,
+          2400
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2021-12-31T23:59:59Z",
+        "modis:tile-id": "51010004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -7783653.637667,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          463.31271652749973,
+          0.0,
+          -8895604.157333,
+          0.0,
+          -463.31271652750013,
+          5559752.598333
+        ],
+        "start_datetime": "2021-12-27T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.5201961,
+              39.7556817
+            ],
+            [
+              -124.8853621,
+              49.9676939
+            ],
+            [
+              -109.0021432,
+              50.1046853
+            ],
+            [
+              -91.190961,
+              39.8554224
+            ],
+            [
+              -104.5201961,
+              39.7556817
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD17A2HGF/10/04/2021361/MYD17A2HGF.A2021361.h10v04.061.2022021015509.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "Gpp_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/10/04/2021361/MYD17A2HGF.A2021361.h10v04.061.2022021015509_Gpp_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Gross Primary Productivity",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD17A2HGF/10/04/2021361/MYD17A2HGF.A2021361.h10v04.061.2022021015509.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "PsnNet_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/10/04/2021361/MYD17A2HGF.A2021361.h10v04.061.2022021015509_PsnNet_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Net Photosynthesis",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Psn_QC_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/10/04/2021361/MYD17A2HGF.A2021361.h10v04.061.2022021015509_Psn_QC_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control indicators",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021361.h10v04.061.2022021015509&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021361.h10v04.061.2022021015509&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -124.88536206,
+        39.75568172,
+        -91.19096095,
+        50.10468533
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-17A2HGF-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021361.h10v04.061.2022021015509",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD17A2HGF.A2021361.h09v04.061.2022021013942",
+      "properties": {
+        "created": "2022-01-21T01:39:42Z",
+        "updated": "2022-01-20T19:42:11.601000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          2400,
+          2400
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2021-12-31T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          463.3127165279165,
+          0.0,
+          -10007554.677,
+          0.0,
+          -463.31271652750013,
+          5559752.598333
+        ],
+        "start_datetime": "2021-12-27T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -117.746446,
+              39.7342308
+            ],
+            [
+              -140.7952347,
+              49.9394188
+            ],
+            [
+              -124.6153492,
+              50.1159178
+            ],
+            [
+              -104.2354458,
+              39.862389
+            ],
+            [
+              -117.746446,
+              39.7342308
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD17A2HGF/09/04/2021361/MYD17A2HGF.A2021361.h09v04.061.2022021013942.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "Gpp_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/09/04/2021361/MYD17A2HGF.A2021361.h09v04.061.2022021013942_Gpp_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Gross Primary Productivity",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD17A2HGF/09/04/2021361/MYD17A2HGF.A2021361.h09v04.061.2022021013942.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "PsnNet_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/09/04/2021361/MYD17A2HGF.A2021361.h09v04.061.2022021013942_PsnNet_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Net Photosynthesis",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Psn_QC_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/09/04/2021361/MYD17A2HGF.A2021361.h09v04.061.2022021013942_Psn_QC_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control indicators",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021361.h09v04.061.2022021013942&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021361.h09v04.061.2022021013942&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.79523467,
+        39.73423082,
+        -104.23544582,
+        50.11591783
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-17A2HGF-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021361.h09v04.061.2022021013942",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MOD17A2HGF.A2021361.h10v04.061.2022020134704",
+      "properties": {
+        "created": "2022-01-20T13:47:04Z",
+        "updated": "2022-01-20T07:50:23.870000Z",
+        "datetime": null,
+        "platform": "terra",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          2400,
+          2400
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2021-12-31T23:59:59Z",
+        "modis:tile-id": "51010004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -7783653.637667,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          463.31271652749973,
+          0.0,
+          -8895604.157333,
+          0.0,
+          -463.31271652750013,
+          5559752.598333
+        ],
+        "start_datetime": "2021-12-27T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.5201961,
+              39.7556817
+            ],
+            [
+              -124.8853621,
+              49.9676939
+            ],
+            [
+              -109.0021432,
+              50.1046853
+            ],
+            [
+              -91.190961,
+              39.8554224
+            ],
+            [
+              -104.5201961,
+              39.7556817
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD17A2HGF/10/04/2021361/MOD17A2HGF.A2021361.h10v04.061.2022020134704.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "Gpp_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD17A2HGF/10/04/2021361/MOD17A2HGF.A2021361.h10v04.061.2022020134704_Gpp_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Gross Primary Productivity",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD17A2HGF/10/04/2021361/MOD17A2HGF.A2021361.h10v04.061.2022020134704.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "PsnNet_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD17A2HGF/10/04/2021361/MOD17A2HGF.A2021361.h10v04.061.2022020134704_PsnNet_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Net Photosynthesis",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Psn_QC_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD17A2HGF/10/04/2021361/MOD17A2HGF.A2021361.h10v04.061.2022020134704_Psn_QC_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control indicators",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-17A2HGF-061&item=MOD17A2HGF.A2021361.h10v04.061.2022020134704&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-17A2HGF-061&item=MOD17A2HGF.A2021361.h10v04.061.2022020134704&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -124.88536206,
+        39.75568172,
+        -91.19096095,
+        50.10468533
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-17A2HGF-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-17A2HGF-061&item=MOD17A2HGF.A2021361.h10v04.061.2022020134704",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MOD17A2HGF.A2021361.h09v04.061.2022020134631",
+      "properties": {
+        "created": "2022-01-20T13:46:31Z",
+        "updated": "2022-01-20T07:50:13.523000Z",
+        "datetime": null,
+        "platform": "terra",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          2400,
+          2400
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2021-12-31T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          463.3127165279165,
+          0.0,
+          -10007554.677,
+          0.0,
+          -463.31271652750013,
+          5559752.598333
+        ],
+        "start_datetime": "2021-12-27T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -117.746446,
+              39.7342308
+            ],
+            [
+              -140.7952347,
+              49.9394188
+            ],
+            [
+              -124.6153492,
+              50.1159178
+            ],
+            [
+              -104.2354458,
+              39.862389
+            ],
+            [
+              -117.746446,
+              39.7342308
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD17A2HGF/09/04/2021361/MOD17A2HGF.A2021361.h09v04.061.2022020134631.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "Gpp_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD17A2HGF/09/04/2021361/MOD17A2HGF.A2021361.h09v04.061.2022020134631_Gpp_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Gross Primary Productivity",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD17A2HGF/09/04/2021361/MOD17A2HGF.A2021361.h09v04.061.2022020134631.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "PsnNet_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD17A2HGF/09/04/2021361/MOD17A2HGF.A2021361.h09v04.061.2022020134631_PsnNet_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Net Photosynthesis",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Psn_QC_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD17A2HGF/09/04/2021361/MOD17A2HGF.A2021361.h09v04.061.2022020134631_Psn_QC_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control indicators",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-17A2HGF-061&item=MOD17A2HGF.A2021361.h09v04.061.2022020134631&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-17A2HGF-061&item=MOD17A2HGF.A2021361.h09v04.061.2022020134631&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.79523467,
+        39.73423082,
+        -104.23544582,
+        50.11591783
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-17A2HGF-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-17A2HGF-061&item=MOD17A2HGF.A2021361.h09v04.061.2022020134631",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD17A2HGF.A2021353.h10v04.061.2022021002940",
+      "properties": {
+        "created": "2022-01-21T00:29:40Z",
+        "updated": "2022-01-20T18:32:11.685000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          2400,
+          2400
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2021-12-26T23:59:59Z",
+        "modis:tile-id": "51010004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -7783653.637667,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          463.31271652749973,
+          0.0,
+          -8895604.157333,
+          0.0,
+          -463.31271652750013,
+          5559752.598333
+        ],
+        "start_datetime": "2021-12-19T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.5201961,
+              39.7556817
+            ],
+            [
+              -124.8853621,
+              49.9676939
+            ],
+            [
+              -109.0021432,
+              50.1046853
+            ],
+            [
+              -91.190961,
+              39.8554224
+            ],
+            [
+              -104.5201961,
+              39.7556817
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD17A2HGF/10/04/2021353/MYD17A2HGF.A2021353.h10v04.061.2022021002940.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "Gpp_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/10/04/2021353/MYD17A2HGF.A2021353.h10v04.061.2022021002940_Gpp_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Gross Primary Productivity",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD17A2HGF/10/04/2021353/MYD17A2HGF.A2021353.h10v04.061.2022021002940.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "PsnNet_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/10/04/2021353/MYD17A2HGF.A2021353.h10v04.061.2022021002940_PsnNet_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Net Photosynthesis",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Psn_QC_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/10/04/2021353/MYD17A2HGF.A2021353.h10v04.061.2022021002940_Psn_QC_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control indicators",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021353.h10v04.061.2022021002940&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021353.h10v04.061.2022021002940&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -124.88536206,
+        39.75568172,
+        -91.19096095,
+        50.10468533
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-17A2HGF-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021353.h10v04.061.2022021002940",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD17A2HGF.A2021353.h09v04.061.2022021000522",
+      "properties": {
+        "created": "2022-01-21T00:05:22Z",
+        "updated": "2022-01-20T18:08:10.100000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          2400,
+          2400
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2021-12-26T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          463.3127165279165,
+          0.0,
+          -10007554.677,
+          0.0,
+          -463.31271652750013,
+          5559752.598333
+        ],
+        "start_datetime": "2021-12-19T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -117.746446,
+              39.7342308
+            ],
+            [
+              -140.7952347,
+              49.9394188
+            ],
+            [
+              -124.6153492,
+              50.1159178
+            ],
+            [
+              -104.2354458,
+              39.862389
+            ],
+            [
+              -117.746446,
+              39.7342308
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD17A2HGF/09/04/2021353/MYD17A2HGF.A2021353.h09v04.061.2022021000522.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "Gpp_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/09/04/2021353/MYD17A2HGF.A2021353.h09v04.061.2022021000522_Gpp_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Gross Primary Productivity",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD17A2HGF/09/04/2021353/MYD17A2HGF.A2021353.h09v04.061.2022021000522.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "PsnNet_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/09/04/2021353/MYD17A2HGF.A2021353.h09v04.061.2022021000522_PsnNet_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Net Photosynthesis",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Psn_QC_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/09/04/2021353/MYD17A2HGF.A2021353.h09v04.061.2022021000522_Psn_QC_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control indicators",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021353.h09v04.061.2022021000522&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021353.h09v04.061.2022021000522&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.79523467,
+        39.73423082,
+        -104.23544582,
+        50.11591783
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-17A2HGF-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021353.h09v04.061.2022021000522",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MOD17A2HGF.A2021353.h10v04.061.2022019160020",
+      "properties": {
+        "created": "2022-01-19T16:00:20Z",
+        "updated": "2022-01-19T10:04:05.972000Z",
+        "datetime": null,
+        "platform": "terra",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          2400,
+          2400
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2021-12-26T23:59:59Z",
+        "modis:tile-id": "51010004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -7783653.637667,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          463.31271652749973,
+          0.0,
+          -8895604.157333,
+          0.0,
+          -463.31271652750013,
+          5559752.598333
+        ],
+        "start_datetime": "2021-12-19T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.5201961,
+              39.7556817
+            ],
+            [
+              -124.8853621,
+              49.9676939
+            ],
+            [
+              -109.0021432,
+              50.1046853
+            ],
+            [
+              -91.190961,
+              39.8554224
+            ],
+            [
+              -104.5201961,
+              39.7556817
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD17A2HGF/10/04/2021353/MOD17A2HGF.A2021353.h10v04.061.2022019160020.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "Gpp_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD17A2HGF/10/04/2021353/MOD17A2HGF.A2021353.h10v04.061.2022019160020_Gpp_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Gross Primary Productivity",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD17A2HGF/10/04/2021353/MOD17A2HGF.A2021353.h10v04.061.2022019160020.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "PsnNet_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD17A2HGF/10/04/2021353/MOD17A2HGF.A2021353.h10v04.061.2022019160020_PsnNet_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Net Photosynthesis",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Psn_QC_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD17A2HGF/10/04/2021353/MOD17A2HGF.A2021353.h10v04.061.2022019160020_Psn_QC_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control indicators",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-17A2HGF-061&item=MOD17A2HGF.A2021353.h10v04.061.2022019160020&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-17A2HGF-061&item=MOD17A2HGF.A2021353.h10v04.061.2022019160020&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -124.88536206,
+        39.75568172,
+        -91.19096095,
+        50.10468533
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-17A2HGF-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-17A2HGF-061&item=MOD17A2HGF.A2021353.h10v04.061.2022019160020",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MOD17A2HGF.A2021353.h09v04.061.2022019153250",
+      "properties": {
+        "created": "2022-01-19T15:32:50Z",
+        "updated": "2022-01-19T09:35:59.372000Z",
+        "datetime": null,
+        "platform": "terra",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          2400,
+          2400
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2021-12-26T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          463.3127165279165,
+          0.0,
+          -10007554.677,
+          0.0,
+          -463.31271652750013,
+          5559752.598333
+        ],
+        "start_datetime": "2021-12-19T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -117.746446,
+              39.7342308
+            ],
+            [
+              -140.7952347,
+              49.9394188
+            ],
+            [
+              -124.6153492,
+              50.1159178
+            ],
+            [
+              -104.2354458,
+              39.862389
+            ],
+            [
+              -117.746446,
+              39.7342308
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD17A2HGF/09/04/2021353/MOD17A2HGF.A2021353.h09v04.061.2022019153250.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "Gpp_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD17A2HGF/09/04/2021353/MOD17A2HGF.A2021353.h09v04.061.2022019153250_Gpp_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Gross Primary Productivity",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD17A2HGF/09/04/2021353/MOD17A2HGF.A2021353.h09v04.061.2022019153250.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "PsnNet_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD17A2HGF/09/04/2021353/MOD17A2HGF.A2021353.h09v04.061.2022019153250_PsnNet_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Net Photosynthesis",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Psn_QC_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD17A2HGF/09/04/2021353/MOD17A2HGF.A2021353.h09v04.061.2022019153250_Psn_QC_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control indicators",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-17A2HGF-061&item=MOD17A2HGF.A2021353.h09v04.061.2022019153250&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-17A2HGF-061&item=MOD17A2HGF.A2021353.h09v04.061.2022019153250&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.79523467,
+        39.73423082,
+        -104.23544582,
+        50.11591783
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-17A2HGF-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-17A2HGF-061&item=MOD17A2HGF.A2021353.h09v04.061.2022019153250",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD17A2HGF.A2021345.h10v04.061.2022020223930",
+      "properties": {
+        "created": "2022-01-20T22:39:30Z",
+        "updated": "2022-01-20T16:42:10.302000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          2400,
+          2400
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2021-12-18T23:59:59Z",
+        "modis:tile-id": "51010004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -7783653.637667,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          463.31271652749973,
+          0.0,
+          -8895604.157333,
+          0.0,
+          -463.31271652750013,
+          5559752.598333
+        ],
+        "start_datetime": "2021-12-11T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.5201961,
+              39.7556817
+            ],
+            [
+              -124.8853621,
+              49.9676939
+            ],
+            [
+              -109.0021432,
+              50.1046853
+            ],
+            [
+              -91.190961,
+              39.8554224
+            ],
+            [
+              -104.5201961,
+              39.7556817
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD17A2HGF/10/04/2021345/MYD17A2HGF.A2021345.h10v04.061.2022020223930.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "Gpp_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/10/04/2021345/MYD17A2HGF.A2021345.h10v04.061.2022020223930_Gpp_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Gross Primary Productivity",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD17A2HGF/10/04/2021345/MYD17A2HGF.A2021345.h10v04.061.2022020223930.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "PsnNet_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/10/04/2021345/MYD17A2HGF.A2021345.h10v04.061.2022020223930_PsnNet_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Net Photosynthesis",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Psn_QC_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/10/04/2021345/MYD17A2HGF.A2021345.h10v04.061.2022020223930_Psn_QC_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control indicators",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021345.h10v04.061.2022020223930&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021345.h10v04.061.2022020223930&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -124.88536206,
+        39.75568172,
+        -91.19096095,
+        50.10468533
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-17A2HGF-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021345.h10v04.061.2022020223930",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD17A2HGF.A2021345.h09v04.061.2022020220416",
+      "properties": {
+        "created": "2022-01-20T22:04:16Z",
+        "updated": "2022-01-20T16:08:09.290000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          2400,
+          2400
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2021-12-18T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          463.3127165279165,
+          0.0,
+          -10007554.677,
+          0.0,
+          -463.31271652750013,
+          5559752.598333
+        ],
+        "start_datetime": "2021-12-11T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -117.746446,
+              39.7342308
+            ],
+            [
+              -140.7952347,
+              49.9394188
+            ],
+            [
+              -124.6153492,
+              50.1159178
+            ],
+            [
+              -104.2354458,
+              39.862389
+            ],
+            [
+              -117.746446,
+              39.7342308
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD17A2HGF/09/04/2021345/MYD17A2HGF.A2021345.h09v04.061.2022020220416.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "Gpp_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/09/04/2021345/MYD17A2HGF.A2021345.h09v04.061.2022020220416_Gpp_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Gross Primary Productivity",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD17A2HGF/09/04/2021345/MYD17A2HGF.A2021345.h09v04.061.2022020220416.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "PsnNet_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/09/04/2021345/MYD17A2HGF.A2021345.h09v04.061.2022020220416_PsnNet_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Net Photosynthesis",
+          "raster:bands": [
+            {
+              "unit": "kg C/m^2",
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Psn_QC_500m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD17A2HGF/09/04/2021345/MYD17A2HGF.A2021345.h09v04.061.2022020220416_Psn_QC_500m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control indicators",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 500
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021345.h09v04.061.2022020220416&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021345.h09v04.061.2022020220416&assets=Gpp_500m&tile_format=png&colormap_name=modis-17A2H%7CA2HGF",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.79523467,
+        39.73423082,
+        -104.23544582,
+        50.11591783
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-17A2HGF-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-17A2HGF-061&item=MYD17A2HGF.A2021345.h09v04.061.2022020220416",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    }
+  ]
+}

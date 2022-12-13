@@ -1,0 +1,184 @@
+{
+  "type": "Collection",
+  "id": "noaa-nclimgrid-monthly",
+  "stac_version": "1.0.0",
+  "description": "The [NOAA U.S. Climate Gridded Dataset (NClimGrid)](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00332) consists of four climate variables derived from the [Global Historical Climatology Network daily (GHCNd)](https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily) dataset: maximum temperature, minimum temperature, average temperature, and precipitation. The data is provided in 1/24 degree lat/lon (nominal 5x5 kilometer) grids for the Continental United States (CONUS). \n\nNClimGrid data is available in monthly and daily temporal intervals, with the daily data further differentiated as \"prelim\" (preliminary) or \"scaled\". Preliminary daily data is available within approximately three days of collection. Once a calendar month of preliminary daily data has been collected, it is scaled to match the corresponding monthly value. Monthly data is available from 1895 to the present. Daily preliminary and daily scaled data is available from 1951 to the present. \n\nThis Collection contains **Monthly** data. See the journal publication [\"Improved Historical Temperature and Precipitation Time Series for U.S. Climate Divisions\"](https://journals.ametsoc.org/view/journals/apme/53/5/jamc-d-13-0248.1.xml) for more information about monthly gridded data.\n\nUsers of all NClimGrid data product should be aware that [NOAA advertises](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00332) that:\n>\"On an annual basis, approximately one year of 'final' NClimGrid data is submitted to replace the initially supplied 'preliminary' data for the same time period. Users should be sure to ascertain which level of data is required for their research.\"\n\nThe source NetCDF files are delivered to Azure as part of the [NOAA Open Data Dissemination (NODD) Program](https://www.noaa.gov/information-technology/open-data-dissemination).\n\n*Note*: The Planetary Computer currently has STAC metadata for just the monthly collection. We'll have STAC metadata for daily data in our next release. In the meantime, you can access the daily NetCDF data directly from Blob Storage using the storage container at `https://nclimgridwesteurope.blob.core.windows.net/nclimgrid`. See https://planetarycomputer.microsoft.com/docs/concepts/data-catalog/#access-patterns for more.*\n",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
+  "title": "Monthly NOAA U.S. Climate Gridded Dataset (NClimGrid)",
+  "assets": {
+    "thumbnail": {
+      "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/pc_thumbnails/noaa-nclimgrid-monthly-thumb.png",
+      "type": "image/png",
+      "title": "Monthly NOAA NClimGrid Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "geoparquet-items": {
+      "href": "abfs://items/noaa-nclimgrid-monthly.parquet",
+      "type": "application/x-parquet",
+      "title": "GeoParquet STAC items",
+      "description": "Snapshot of the collection's STAC items exported to GeoParquet format.",
+      "msft:partition_info": {
+        "is_partitioned": false
+      },
+      "table:storage_options": {
+        "account_name": "pcstacitems"
+      },
+      "roles": [
+        "stac-items"
+      ]
+    }
+  },
+  "sci:doi": "10.7289/V5SX6B56",
+  "keywords": [
+    "United States",
+    "NOAA",
+    "NClimGrid",
+    "Climate",
+    "Precipitation",
+    "Temperature"
+  ],
+  "providers": [
+    {
+      "name": "NOAA National Centers for Environmental Information",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://www.ncei.noaa.gov/"
+    },
+    {
+      "name": "Microsoft",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://planetarycomputer.microsoft.com"
+    }
+  ],
+  "item_assets": {
+    "prcp": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Monthly Precipitation (mm)",
+      "raster:bands": [
+        {
+          "unit": "mm",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tavg": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Monthly Average Temperature (degree Celsius)",
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tmax": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Monthly Maximmum Temperature (degree Celsius)",
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tmin": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Monthly Minimum Temperature (degree Celsius)",
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    }
+  },
+  "sci:citation": "Vose, Russell S., Applequist, Scott, Squires, Mike, Durre, Imke, Menne, Matthew J., Williams, Claude N. Jr., Fenimore, Chris, Gleason, Karin, and Arndt, Derek (2014): NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid), Version 1. NOAA National Centers for Environmental Information. DOI:10.7289/V5SX6B56.",
+  "msft:group_id": "noaa-nclimgrid",
+  "msft:container": "nclimgrid-cogs",
+  "sci:publications": [
+    {
+      "doi": "10.1175/JAMC-D-13-0248.1",
+      "citation": "Vose, R. S., Applequist, S., Squires, M., Durre, I., Menne, M. J., Williams, C. N., Jr., Fenimore, C., Gleason, K., & Arndt, D. (2014). Improved Historical Temperature and Precipitation Time Series for U.S. Climate Divisions, Journal of Applied Meteorology and Climatology, 53(5), 1232-1251."
+    }
+  ],
+  "msft:storage_account": "nclimgridwesteurope",
+  "msft:short_description": "Gridded surface observations of monthly temperature and precipitation for the continental United States",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -124.708333,
+          24.541666,
+          -66.999995,
+          49.375001
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1895-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "links": [
+    {
+      "rel": "cite-as",
+      "href": "https://doi.org/10.7289/V5SX6B56",
+      "type": "text/html",
+      "title": "NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid)"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00332#Constraints",
+      "type": "text/html",
+      "title": "NClimGrid Data Use and Access Constraints"
+    },
+    {
+      "rel": "about",
+      "href": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00332",
+      "type": "text/html",
+      "title": "Product Landing Page"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://planetarycomputer.microsoft.com/dataset/noaa-nclimgrid-monthly",
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "110W_50Nv1_3_2020",
+      "properties": {
+        "sci:doi": "10.1038/nature20584",
+        "datetime": "2020-07-01T00:00:00Z",
+        "proj:bbox": [
+          -110.0,
+          40.0,
+          -100.0,
+          50.0
+        ],
+        "proj:epsg": 4326,
+        "proj:shape": [
+          40000,
+          40000
+        ],
+        "end_datetime": "2020-12-31T11:59:59Z",
+        "sci:citation": "Jean-Francois Pekel, Andrew Cottam, Noel Gorelick, Alan S. Belward, High-resolution mapping of global surface water and its long-term changes. Nature 540, 418-422 (2016)",
+        "proj:transform": [
+          0.00025,
+          0.0,
+          -110.0,
+          0.0,
+          -0.00025,
+          50.0
+        ],
+        "start_datetime": "1984-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -100,
+              40
+            ],
+            [
+              -100,
+              50
+            ],
+            [
+              -110,
+              50
+            ],
+            [
+              -110,
+              40
+            ],
+            [
+              -100,
+              40
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "change": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/jrcglobalwater/change/change_110W_50Nv1_3_2020cog.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Water Occurrence Change",
+          "description": "Provides information on where surface water occurrence increased, decreased or remained the same between 1984-1999 and 2000-2020. Both the direction of change and its intensity are documented.",
+          "roles": [
+            "data"
+          ]
+        },
+        "extent": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/jrcglobalwater/extent/extent_110W_50Nv1_3_2020cog.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Maximum Water Extent",
+          "description": "Provides information on all the locations ever detected as water over a 37-year period. It is the union of all of the other datasets",
+          "roles": [
+            "data"
+          ]
+        },
+        "occurrence": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/jrcglobalwater/occurrence/occurrence_110W_50Nv1_3_2020cog.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Water Occurrence",
+          "description": "Shows where surface water occurred between 1984 and 2020 and provides information concerning overall water dynamics. This product captures both the intra and inter-annual variability and changes.",
+          "roles": [
+            "data"
+          ]
+        },
+        "recurrence": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/jrcglobalwater/recurrence/recurrence_110W_50Nv1_3_2020cog.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Water Recurrence",
+          "description": "Provides information concerning the inter-annual behavior of water surfaces and captures the frequency with which water returns from year to year.",
+          "roles": [
+            "data"
+          ]
+        },
+        "seasonality": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/jrcglobalwater/seasonality/seasonality_110W_50Nv1_3_2020cog.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Water Seasonality",
+          "description": "Provides information concerning the intra-annual behaviour of water surfaces for a single year (2020) and shows permanent and seasonal  water  and  the number  of  months  waterwas present.",
+          "end_datetime": "2020-12-31T11:59:59Z",
+          "start_datetime": "2020-01-01T00:00:00Z",
+          "roles": [
+            "data"
+          ]
+        },
+        "transitions": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/jrcglobalwater/transitions/transitions_110W_50Nv1_3_2020cog.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Water Transitions",
+          "description": "Provides information on the change in seasonality between the first and last years and captures changes between the three classes of not water, seasonal water, and permanent water.",
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=jrc-gsw&item=110W_50Nv1_3_2020&assets=occurrence&colormap_name=jrc-occurrence&nodata=0",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=jrc-gsw&item=110W_50Nv1_3_2020&assets=occurrence&colormap_name=jrc-occurrence&nodata=0",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -110.0,
+        40.0,
+        -100.0,
+        50.0
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+      ],
+      "collection": "jrc-gsw",
+      "links": [
+        {
+          "rel": "cite-as",
+          "href": "https://doi.org/10.1038/nature20584"
+        },
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=jrc-gsw&item=110W_50Nv1_3_2020",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2185 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD09Q1.A2022329.h10v04.061.2022338060213",
+      "properties": {
+        "created": "2022-12-04T06:02:13Z",
+        "updated": "2022-12-04T05:46:11.844000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          4800,
+          4800
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-12-02T23:59:59Z",
+        "modis:tile-id": "51010004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -7783653.637667,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          231.65635826374987,
+          0.0,
+          -8895604.157333,
+          0.0,
+          -231.65635826375006,
+          5559752.598333
+        ],
+        "start_datetime": "2022-11-25T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.5201961,
+              39.7556817
+            ],
+            [
+              -124.8853621,
+              49.9676939
+            ],
+            [
+              -109.0021432,
+              50.1046853
+            ],
+            [
+              -91.190961,
+              39.8554224
+            ],
+            [
+              -104.5201961,
+              39.7556817
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD09Q1/10/04/2022329/MYD09Q1.A2022329.h10v04.061.2022338060213.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD09Q1/10/04/2022329/MYD09Q1.A2022329.h10v04.061.2022338060213.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "sur_refl_b01": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/10/04/2022329/MYD09Q1.A2022329.h10v04.061.2022338060213_sur_refl_b01.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 1 (620-670 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b01",
+              "common_name": "red",
+              "center_wavelength": 0.645,
+              "full_width_half_max": 0.5
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_b02": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/10/04/2022329/MYD09Q1.A2022329.h10v04.061.2022338060213_sur_refl_b02.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 2 (841-876 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b02",
+              "common_name": "nir08",
+              "center_wavelength": 0.8585,
+              "full_width_half_max": 0.35
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_qc_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/10/04/2022329/MYD09Q1.A2022329.h10v04.061.2022338060213_sur_refl_qc_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m Band Quality Control flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "sur_refl_state_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/10/04/2022329/MYD09Q1.A2022329.h10v04.061.2022338060213_sur_refl_state_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m State flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-09Q1-061&item=MYD09Q1.A2022329.h10v04.061.2022338060213&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-09Q1-061&item=MYD09Q1.A2022329.h10v04.061.2022338060213&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -124.88536206,
+        39.75568172,
+        -91.19096095,
+        50.10468533
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+      ],
+      "collection": "modis-09Q1-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-09Q1-061&item=MYD09Q1.A2022329.h10v04.061.2022338060213",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD09Q1.A2022329.h09v04.061.2022338055802",
+      "properties": {
+        "created": "2022-12-04T05:58:02Z",
+        "updated": "2022-12-04T04:46:49.244000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          4800,
+          4800
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-12-02T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          231.65635826395825,
+          0.0,
+          -10007554.677,
+          0.0,
+          -231.65635826375006,
+          5559752.598333
+        ],
+        "start_datetime": "2022-11-25T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -117.746446,
+              39.7342308
+            ],
+            [
+              -140.7952347,
+              49.9394188
+            ],
+            [
+              -124.6153492,
+              50.1159178
+            ],
+            [
+              -104.2354458,
+              39.862389
+            ],
+            [
+              -117.746446,
+              39.7342308
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD09Q1/09/04/2022329/MYD09Q1.A2022329.h09v04.061.2022338055802.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD09Q1/09/04/2022329/MYD09Q1.A2022329.h09v04.061.2022338055802.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "sur_refl_b01": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/09/04/2022329/MYD09Q1.A2022329.h09v04.061.2022338055802_sur_refl_b01.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 1 (620-670 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b01",
+              "common_name": "red",
+              "center_wavelength": 0.645,
+              "full_width_half_max": 0.5
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_b02": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/09/04/2022329/MYD09Q1.A2022329.h09v04.061.2022338055802_sur_refl_b02.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 2 (841-876 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b02",
+              "common_name": "nir08",
+              "center_wavelength": 0.8585,
+              "full_width_half_max": 0.35
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_qc_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/09/04/2022329/MYD09Q1.A2022329.h09v04.061.2022338055802_sur_refl_qc_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m Band Quality Control flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "sur_refl_state_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/09/04/2022329/MYD09Q1.A2022329.h09v04.061.2022338055802_sur_refl_state_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m State flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-09Q1-061&item=MYD09Q1.A2022329.h09v04.061.2022338055802&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-09Q1-061&item=MYD09Q1.A2022329.h09v04.061.2022338055802&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.79523467,
+        39.73423082,
+        -104.23544582,
+        50.11591783
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+      ],
+      "collection": "modis-09Q1-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-09Q1-061&item=MYD09Q1.A2022329.h09v04.061.2022338055802",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD09Q1.A2022321.h10v04.061.2022330073014",
+      "properties": {
+        "created": "2022-11-26T07:30:14Z",
+        "updated": "2022-11-26T12:05:59.168000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          4800,
+          4800
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-11-24T23:59:59Z",
+        "modis:tile-id": "51010004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -7783653.637667,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          231.65635826374987,
+          0.0,
+          -8895604.157333,
+          0.0,
+          -231.65635826375006,
+          5559752.598333
+        ],
+        "start_datetime": "2022-11-17T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.5201961,
+              39.7556817
+            ],
+            [
+              -124.8853621,
+              49.9676939
+            ],
+            [
+              -109.0021432,
+              50.1046853
+            ],
+            [
+              -91.190961,
+              39.8554224
+            ],
+            [
+              -104.5201961,
+              39.7556817
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD09Q1/10/04/2022321/MYD09Q1.A2022321.h10v04.061.2022330073014.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD09Q1/10/04/2022321/MYD09Q1.A2022321.h10v04.061.2022330073014.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "sur_refl_b01": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/10/04/2022321/MYD09Q1.A2022321.h10v04.061.2022330073014_sur_refl_b01.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 1 (620-670 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b01",
+              "common_name": "red",
+              "center_wavelength": 0.645,
+              "full_width_half_max": 0.5
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_b02": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/10/04/2022321/MYD09Q1.A2022321.h10v04.061.2022330073014_sur_refl_b02.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 2 (841-876 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b02",
+              "common_name": "nir08",
+              "center_wavelength": 0.8585,
+              "full_width_half_max": 0.35
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_qc_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/10/04/2022321/MYD09Q1.A2022321.h10v04.061.2022330073014_sur_refl_qc_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m Band Quality Control flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "sur_refl_state_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/10/04/2022321/MYD09Q1.A2022321.h10v04.061.2022330073014_sur_refl_state_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m State flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-09Q1-061&item=MYD09Q1.A2022321.h10v04.061.2022330073014&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-09Q1-061&item=MYD09Q1.A2022321.h10v04.061.2022330073014&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -124.88536206,
+        39.75568172,
+        -91.19096095,
+        50.10468533
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+      ],
+      "collection": "modis-09Q1-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-09Q1-061&item=MYD09Q1.A2022321.h10v04.061.2022330073014",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD09Q1.A2022321.h09v04.061.2022330073049",
+      "properties": {
+        "created": "2022-11-26T07:30:49Z",
+        "updated": "2022-11-26T12:05:57.729000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          4800,
+          4800
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-11-24T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          231.65635826395825,
+          0.0,
+          -10007554.677,
+          0.0,
+          -231.65635826375006,
+          5559752.598333
+        ],
+        "start_datetime": "2022-11-17T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -117.746446,
+              39.7342308
+            ],
+            [
+              -140.7952347,
+              49.9394188
+            ],
+            [
+              -124.6153492,
+              50.1159178
+            ],
+            [
+              -104.2354458,
+              39.862389
+            ],
+            [
+              -117.746446,
+              39.7342308
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD09Q1/09/04/2022321/MYD09Q1.A2022321.h09v04.061.2022330073049.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD09Q1/09/04/2022321/MYD09Q1.A2022321.h09v04.061.2022330073049.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "sur_refl_b01": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/09/04/2022321/MYD09Q1.A2022321.h09v04.061.2022330073049_sur_refl_b01.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 1 (620-670 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b01",
+              "common_name": "red",
+              "center_wavelength": 0.645,
+              "full_width_half_max": 0.5
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_b02": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/09/04/2022321/MYD09Q1.A2022321.h09v04.061.2022330073049_sur_refl_b02.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 2 (841-876 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b02",
+              "common_name": "nir08",
+              "center_wavelength": 0.8585,
+              "full_width_half_max": 0.35
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_qc_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/09/04/2022321/MYD09Q1.A2022321.h09v04.061.2022330073049_sur_refl_qc_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m Band Quality Control flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "sur_refl_state_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/09/04/2022321/MYD09Q1.A2022321.h09v04.061.2022330073049_sur_refl_state_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m State flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-09Q1-061&item=MYD09Q1.A2022321.h09v04.061.2022330073049&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-09Q1-061&item=MYD09Q1.A2022321.h09v04.061.2022330073049&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.79523467,
+        39.73423082,
+        -104.23544582,
+        50.11591783
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+      ],
+      "collection": "modis-09Q1-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-09Q1-061&item=MYD09Q1.A2022321.h09v04.061.2022330073049",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MOD09Q1.A2022321.h10v04.061.2022330055411",
+      "properties": {
+        "created": "2022-11-26T05:54:11Z",
+        "updated": "2022-11-26T07:34:04.710000Z",
+        "datetime": null,
+        "platform": "terra",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          4800,
+          4800
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-11-24T23:59:59Z",
+        "modis:tile-id": "51010004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -7783653.637667,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          231.65635826374987,
+          0.0,
+          -8895604.157333,
+          0.0,
+          -231.65635826375006,
+          5559752.598333
+        ],
+        "start_datetime": "2022-11-17T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.5201961,
+              39.7556817
+            ],
+            [
+              -124.8853621,
+              49.9676939
+            ],
+            [
+              -109.0021432,
+              50.1046853
+            ],
+            [
+              -91.190961,
+              39.8554224
+            ],
+            [
+              -104.5201961,
+              39.7556817
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD09Q1/10/04/2022321/MOD09Q1.A2022321.h10v04.061.2022330055411.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD09Q1/10/04/2022321/MOD09Q1.A2022321.h10v04.061.2022330055411.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "sur_refl_b01": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD09Q1/10/04/2022321/MOD09Q1.A2022321.h10v04.061.2022330055411_sur_refl_b01.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 1 (620-670 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b01",
+              "common_name": "red",
+              "center_wavelength": 0.645,
+              "full_width_half_max": 0.5
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_b02": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD09Q1/10/04/2022321/MOD09Q1.A2022321.h10v04.061.2022330055411_sur_refl_b02.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 2 (841-876 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b02",
+              "common_name": "nir08",
+              "center_wavelength": 0.8585,
+              "full_width_half_max": 0.35
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_qc_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD09Q1/10/04/2022321/MOD09Q1.A2022321.h10v04.061.2022330055411_sur_refl_qc_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m Band Quality Control flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "sur_refl_state_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD09Q1/10/04/2022321/MOD09Q1.A2022321.h10v04.061.2022330055411_sur_refl_state_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m State flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-09Q1-061&item=MOD09Q1.A2022321.h10v04.061.2022330055411&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-09Q1-061&item=MOD09Q1.A2022321.h10v04.061.2022330055411&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -124.88536206,
+        39.75568172,
+        -91.19096095,
+        50.10468533
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+      ],
+      "collection": "modis-09Q1-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-09Q1-061&item=MOD09Q1.A2022321.h10v04.061.2022330055411",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MOD09Q1.A2022321.h09v04.061.2022330072742",
+      "properties": {
+        "created": "2022-11-26T07:27:42Z",
+        "updated": "2022-11-26T10:41:45.991000Z",
+        "datetime": null,
+        "platform": "terra",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          4800,
+          4800
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-11-24T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          231.65635826395825,
+          0.0,
+          -10007554.677,
+          0.0,
+          -231.65635826375006,
+          5559752.598333
+        ],
+        "start_datetime": "2022-11-17T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -117.746446,
+              39.7342308
+            ],
+            [
+              -140.7952347,
+              49.9394188
+            ],
+            [
+              -124.6153492,
+              50.1159178
+            ],
+            [
+              -104.2354458,
+              39.862389
+            ],
+            [
+              -117.746446,
+              39.7342308
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD09Q1/09/04/2022321/MOD09Q1.A2022321.h09v04.061.2022330072742.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD09Q1/09/04/2022321/MOD09Q1.A2022321.h09v04.061.2022330072742.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "sur_refl_b01": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD09Q1/09/04/2022321/MOD09Q1.A2022321.h09v04.061.2022330072742_sur_refl_b01.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 1 (620-670 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b01",
+              "common_name": "red",
+              "center_wavelength": 0.645,
+              "full_width_half_max": 0.5
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_b02": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD09Q1/09/04/2022321/MOD09Q1.A2022321.h09v04.061.2022330072742_sur_refl_b02.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 2 (841-876 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b02",
+              "common_name": "nir08",
+              "center_wavelength": 0.8585,
+              "full_width_half_max": 0.35
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_qc_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD09Q1/09/04/2022321/MOD09Q1.A2022321.h09v04.061.2022330072742_sur_refl_qc_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m Band Quality Control flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "sur_refl_state_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD09Q1/09/04/2022321/MOD09Q1.A2022321.h09v04.061.2022330072742_sur_refl_state_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m State flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-09Q1-061&item=MOD09Q1.A2022321.h09v04.061.2022330072742&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-09Q1-061&item=MOD09Q1.A2022321.h09v04.061.2022330072742&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.79523467,
+        39.73423082,
+        -104.23544582,
+        50.11591783
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+      ],
+      "collection": "modis-09Q1-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-09Q1-061&item=MOD09Q1.A2022321.h09v04.061.2022330072742",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD09Q1.A2022313.h10v04.061.2022322082147",
+      "properties": {
+        "created": "2022-11-18T08:21:47Z",
+        "updated": "2022-11-20T01:10:23.558000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          4800,
+          4800
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-11-16T23:59:59Z",
+        "modis:tile-id": "51010004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -7783653.637667,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          231.65635826374987,
+          0.0,
+          -8895604.157333,
+          0.0,
+          -231.65635826375006,
+          5559752.598333
+        ],
+        "start_datetime": "2022-11-09T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.5201961,
+              39.7556817
+            ],
+            [
+              -124.8853621,
+              49.9676939
+            ],
+            [
+              -109.0021432,
+              50.1046853
+            ],
+            [
+              -91.190961,
+              39.8554224
+            ],
+            [
+              -104.5201961,
+              39.7556817
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD09Q1/10/04/2022313/MYD09Q1.A2022313.h10v04.061.2022322082147.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD09Q1/10/04/2022313/MYD09Q1.A2022313.h10v04.061.2022322082147.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "sur_refl_b01": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/10/04/2022313/MYD09Q1.A2022313.h10v04.061.2022322082147_sur_refl_b01.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 1 (620-670 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b01",
+              "common_name": "red",
+              "center_wavelength": 0.645,
+              "full_width_half_max": 0.5
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_b02": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/10/04/2022313/MYD09Q1.A2022313.h10v04.061.2022322082147_sur_refl_b02.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 2 (841-876 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b02",
+              "common_name": "nir08",
+              "center_wavelength": 0.8585,
+              "full_width_half_max": 0.35
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_qc_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/10/04/2022313/MYD09Q1.A2022313.h10v04.061.2022322082147_sur_refl_qc_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m Band Quality Control flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "sur_refl_state_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/10/04/2022313/MYD09Q1.A2022313.h10v04.061.2022322082147_sur_refl_state_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m State flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-09Q1-061&item=MYD09Q1.A2022313.h10v04.061.2022322082147&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-09Q1-061&item=MYD09Q1.A2022313.h10v04.061.2022322082147&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -124.88536206,
+        39.75568172,
+        -91.19096095,
+        50.10468533
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+      ],
+      "collection": "modis-09Q1-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-09Q1-061&item=MYD09Q1.A2022313.h10v04.061.2022322082147",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD09Q1.A2022313.h09v04.061.2022322081808",
+      "properties": {
+        "created": "2022-11-18T08:18:08Z",
+        "updated": "2022-11-20T00:21:17.207000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          4800,
+          4800
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-11-16T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          231.65635826395825,
+          0.0,
+          -10007554.677,
+          0.0,
+          -231.65635826375006,
+          5559752.598333
+        ],
+        "start_datetime": "2022-11-09T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -117.746446,
+              39.7342308
+            ],
+            [
+              -140.7952347,
+              49.9394188
+            ],
+            [
+              -124.6153492,
+              50.1159178
+            ],
+            [
+              -104.2354458,
+              39.862389
+            ],
+            [
+              -117.746446,
+              39.7342308
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD09Q1/09/04/2022313/MYD09Q1.A2022313.h09v04.061.2022322081808.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD09Q1/09/04/2022313/MYD09Q1.A2022313.h09v04.061.2022322081808.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "sur_refl_b01": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/09/04/2022313/MYD09Q1.A2022313.h09v04.061.2022322081808_sur_refl_b01.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 1 (620-670 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b01",
+              "common_name": "red",
+              "center_wavelength": 0.645,
+              "full_width_half_max": 0.5
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_b02": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/09/04/2022313/MYD09Q1.A2022313.h09v04.061.2022322081808_sur_refl_b02.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 2 (841-876 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b02",
+              "common_name": "nir08",
+              "center_wavelength": 0.8585,
+              "full_width_half_max": 0.35
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_qc_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/09/04/2022313/MYD09Q1.A2022313.h09v04.061.2022322081808_sur_refl_qc_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m Band Quality Control flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "sur_refl_state_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD09Q1/09/04/2022313/MYD09Q1.A2022313.h09v04.061.2022322081808_sur_refl_state_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m State flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-09Q1-061&item=MYD09Q1.A2022313.h09v04.061.2022322081808&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-09Q1-061&item=MYD09Q1.A2022313.h09v04.061.2022322081808&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.79523467,
+        39.73423082,
+        -104.23544582,
+        50.11591783
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+      ],
+      "collection": "modis-09Q1-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-09Q1-061&item=MYD09Q1.A2022313.h09v04.061.2022322081808",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MOD09Q1.A2022313.h10v04.061.2022322055503",
+      "properties": {
+        "created": "2022-11-18T05:55:03Z",
+        "updated": "2022-11-19T15:25:42.664000Z",
+        "datetime": null,
+        "platform": "terra",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          4800,
+          4800
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-11-16T23:59:59Z",
+        "modis:tile-id": "51010004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -7783653.637667,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -7783653.637667,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          231.65635826374987,
+          0.0,
+          -8895604.157333,
+          0.0,
+          -231.65635826375006,
+          5559752.598333
+        ],
+        "start_datetime": "2022-11-09T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.5201961,
+              39.7556817
+            ],
+            [
+              -124.8853621,
+              49.9676939
+            ],
+            [
+              -109.0021432,
+              50.1046853
+            ],
+            [
+              -91.190961,
+              39.8554224
+            ],
+            [
+              -104.5201961,
+              39.7556817
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD09Q1/10/04/2022313/MOD09Q1.A2022313.h10v04.061.2022322055503.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD09Q1/10/04/2022313/MOD09Q1.A2022313.h10v04.061.2022322055503.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "sur_refl_b01": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD09Q1/10/04/2022313/MOD09Q1.A2022313.h10v04.061.2022322055503_sur_refl_b01.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 1 (620-670 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b01",
+              "common_name": "red",
+              "center_wavelength": 0.645,
+              "full_width_half_max": 0.5
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_b02": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD09Q1/10/04/2022313/MOD09Q1.A2022313.h10v04.061.2022322055503_sur_refl_b02.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 2 (841-876 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b02",
+              "common_name": "nir08",
+              "center_wavelength": 0.8585,
+              "full_width_half_max": 0.35
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_qc_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD09Q1/10/04/2022313/MOD09Q1.A2022313.h10v04.061.2022322055503_sur_refl_qc_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m Band Quality Control flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "sur_refl_state_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD09Q1/10/04/2022313/MOD09Q1.A2022313.h10v04.061.2022322055503_sur_refl_state_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m State flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-09Q1-061&item=MOD09Q1.A2022313.h10v04.061.2022322055503&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-09Q1-061&item=MOD09Q1.A2022313.h10v04.061.2022322055503&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -124.88536206,
+        39.75568172,
+        -91.19096095,
+        50.10468533
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+      ],
+      "collection": "modis-09Q1-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-09Q1-061&item=MOD09Q1.A2022313.h10v04.061.2022322055503",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MOD09Q1.A2022313.h09v04.061.2022322064731",
+      "properties": {
+        "created": "2022-11-18T06:47:31Z",
+        "updated": "2022-11-19T19:24:51.142000Z",
+        "datetime": null,
+        "platform": "terra",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          4800,
+          4800
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-11-16T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.157333,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                5559752.598333
+              ],
+              [
+                -10007554.677,
+                4447802.078667
+              ],
+              [
+                -8895604.157333,
+                4447802.078667
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          231.65635826395825,
+          0.0,
+          -10007554.677,
+          0.0,
+          -231.65635826375006,
+          5559752.598333
+        ],
+        "start_datetime": "2022-11-09T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -117.746446,
+              39.7342308
+            ],
+            [
+              -140.7952347,
+              49.9394188
+            ],
+            [
+              -124.6153492,
+              50.1159178
+            ],
+            [
+              -104.2354458,
+              39.862389
+            ],
+            [
+              -117.746446,
+              39.7342308
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD09Q1/09/04/2022313/MOD09Q1.A2022313.h09v04.061.2022322064731.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD09Q1/09/04/2022313/MOD09Q1.A2022313.h09v04.061.2022322064731.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "sur_refl_b01": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD09Q1/09/04/2022313/MOD09Q1.A2022313.h09v04.061.2022322064731_sur_refl_b01.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 1 (620-670 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b01",
+              "common_name": "red",
+              "center_wavelength": 0.645,
+              "full_width_half_max": 0.5
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_b02": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD09Q1/09/04/2022313/MOD09Q1.A2022313.h09v04.061.2022322064731_sur_refl_b02.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance Band 2 (841-876 nm)",
+          "eo:bands": [
+            {
+              "name": "sur_refl_b02",
+              "common_name": "nir08",
+              "center_wavelength": 0.8585,
+              "full_width_half_max": 0.35
+            }
+          ],
+          "raster:bands": [
+            {
+              "scale": 0.0001,
+              "data_type": "int16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data",
+            "reflectance"
+          ]
+        },
+        "sur_refl_qc_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD09Q1/09/04/2022313/MOD09Q1.A2022313.h09v04.061.2022322064731_sur_refl_qc_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m Band Quality Control flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "sur_refl_state_250m": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD09Q1/09/04/2022313/MOD09Q1.A2022313.h09v04.061.2022322064731_sur_refl_state_250m.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Surface Reflectance 250m State flags",
+          "raster:bands": [
+            {
+              "data_type": "uint16",
+              "spatial_resolution": 250
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-09Q1-061&item=MOD09Q1.A2022313.h09v04.061.2022322064731&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-09Q1-061&item=MOD09Q1.A2022313.h09v04.061.2022322064731&assets=sur_refl_b02&assets=sur_refl_b01&assets=sur_refl_b01&tile_format=png&color_formula=gamma+RGB+3.0%2C+saturation+1.9%2C+sigmoidal+RGB+0+0.55",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.79523467,
+        39.73423082,
+        -104.23544582,
+        50.11591783
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+      ],
+      "collection": "modis-09Q1-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-09Q1-061&item=MOD09Q1.A2022313.h09v04.061.2022322064731",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    }
+  ]
+}

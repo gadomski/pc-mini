@@ -1,0 +1,3251 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD11A2.A2022329.h09v04.061.2022338060100",
+      "properties": {
+        "created": "2022-12-04T06:01:00Z",
+        "updated": "2022-12-04T04:50:08.020000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          1200,
+          1200
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-12-02T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.158132,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                4447802.079066
+              ]
+            ]
+          ]
+        },
+        "eo:cloud_cover": 9,
+        "proj:transform": [
+          926.6254331391661,
+          0.0,
+          -10007554.677899,
+          0.0,
+          -926.625433139167,
+          5559752.598833
+        ],
+        "start_datetime": "2022-11-25T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -140.0216125,
+              49.9958333
+            ],
+            [
+              -124.4644002,
+              49.9958333
+            ],
+            [
+              -104.4507801,
+              40.0041667
+            ],
+            [
+              -117.5064244,
+              40.0041667
+            ],
+            [
+              -140.0216125,
+              49.9958333
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD11A2/09/04/2022329/MYD11A2.A2022329.h09v04.061.2022338060100.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Day": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022329/MYD11A2.A2022329.h09v04.061.2022338060100_QC_Day.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for daytime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_31": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022329/MYD11A2.A2022329.h09v04.061.2022338060100_Emis_31.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 31 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_32": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022329/MYD11A2.A2022329.h09v04.061.2022338060100_Emis_32.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 32 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Night": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022329/MYD11A2.A2022329.h09v04.061.2022338060100_QC_Night.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for nighttime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD11A2/09/04/2022329/MYD11A2.A2022329.h09v04.061.2022338060100.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "LST_Day_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022329/MYD11A2.A2022329.h09v04.061.2022338060100_LST_Day_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day daytime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Day_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022329/MYD11A2.A2022329.h09v04.061.2022338060100_Day_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of daytime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Day_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022329/MYD11A2.A2022329.h09v04.061.2022338060100_Day_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average time of daytime Landsurface Temperature observation",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "LST_Night_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022329/MYD11A2.A2022329.h09v04.061.2022338060100_LST_Night_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day nighttime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Clear_sky_days": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022329/MYD11A2.A2022329.h09v04.061.2022338060100_Clear_sky_days.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the days in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022329/MYD11A2.A2022329.h09v04.061.2022338060100_Night_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "View zenith angle of nighttime Land-surface Temperature ",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022329/MYD11A2.A2022329.h09v04.061.2022338060100_Night_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of nighttime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Clear_sky_nights": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022329/MYD11A2.A2022329.h09v04.061.2022338060100_Clear_sky_nights.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the nights in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-11A2-061&item=MYD11A2.A2022329.h09v04.061.2022338060100&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-11A2-061&item=MYD11A2.A2022329.h09v04.061.2022338060100&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.02161249,
+        40.00416667,
+        -104.45078006,
+        49.99583333
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-11A2-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-11A2-061&item=MYD11A2.A2022329.h09v04.061.2022338060100",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD11A2.A2022321.h09v04.061.2022330073350",
+      "properties": {
+        "created": "2022-11-26T07:33:50Z",
+        "updated": "2022-11-26T12:10:14.289000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          1200,
+          1200
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-11-24T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.158132,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                4447802.079066
+              ]
+            ]
+          ]
+        },
+        "eo:cloud_cover": 2,
+        "proj:transform": [
+          926.6254331391661,
+          0.0,
+          -10007554.677899,
+          0.0,
+          -926.625433139167,
+          5559752.598833
+        ],
+        "start_datetime": "2022-11-17T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -140.0216125,
+              49.9958333
+            ],
+            [
+              -124.4644002,
+              49.9958333
+            ],
+            [
+              -104.4507801,
+              40.0041667
+            ],
+            [
+              -117.5064244,
+              40.0041667
+            ],
+            [
+              -140.0216125,
+              49.9958333
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD11A2/09/04/2022321/MYD11A2.A2022321.h09v04.061.2022330073350.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Day": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022321/MYD11A2.A2022321.h09v04.061.2022330073350_QC_Day.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for daytime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_31": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022321/MYD11A2.A2022321.h09v04.061.2022330073350_Emis_31.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 31 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_32": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022321/MYD11A2.A2022321.h09v04.061.2022330073350_Emis_32.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 32 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Night": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022321/MYD11A2.A2022321.h09v04.061.2022330073350_QC_Night.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for nighttime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD11A2/09/04/2022321/MYD11A2.A2022321.h09v04.061.2022330073350.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "LST_Day_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022321/MYD11A2.A2022321.h09v04.061.2022330073350_LST_Day_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day daytime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Day_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022321/MYD11A2.A2022321.h09v04.061.2022330073350_Day_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of daytime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Day_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022321/MYD11A2.A2022321.h09v04.061.2022330073350_Day_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average time of daytime Landsurface Temperature observation",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "LST_Night_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022321/MYD11A2.A2022321.h09v04.061.2022330073350_LST_Night_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day nighttime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Clear_sky_days": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022321/MYD11A2.A2022321.h09v04.061.2022330073350_Clear_sky_days.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the days in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022321/MYD11A2.A2022321.h09v04.061.2022330073350_Night_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "View zenith angle of nighttime Land-surface Temperature ",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022321/MYD11A2.A2022321.h09v04.061.2022330073350_Night_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of nighttime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Clear_sky_nights": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022321/MYD11A2.A2022321.h09v04.061.2022330073350_Clear_sky_nights.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the nights in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-11A2-061&item=MYD11A2.A2022321.h09v04.061.2022330073350&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-11A2-061&item=MYD11A2.A2022321.h09v04.061.2022330073350&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.02161249,
+        40.00416667,
+        -104.45078006,
+        49.99583333
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-11A2-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-11A2-061&item=MYD11A2.A2022321.h09v04.061.2022330073350",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MOD11A2.A2022321.h09v04.061.2022330073716",
+      "properties": {
+        "created": "2022-11-26T07:37:16Z",
+        "updated": "2022-11-26T11:37:56.848000Z",
+        "datetime": null,
+        "platform": "terra",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          1200,
+          1200
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-11-24T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.158132,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                4447802.079066
+              ]
+            ]
+          ]
+        },
+        "eo:cloud_cover": 1,
+        "proj:transform": [
+          926.6254331391661,
+          0.0,
+          -10007554.677899,
+          0.0,
+          -926.625433139167,
+          5559752.598833
+        ],
+        "start_datetime": "2022-11-17T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -140.0216125,
+              49.9958333
+            ],
+            [
+              -124.4644002,
+              49.9958333
+            ],
+            [
+              -104.4507801,
+              40.0041667
+            ],
+            [
+              -117.5064244,
+              40.0041667
+            ],
+            [
+              -140.0216125,
+              49.9958333
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD11A2/09/04/2022321/MOD11A2.A2022321.h09v04.061.2022330073716.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Day": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022321/MOD11A2.A2022321.h09v04.061.2022330073716_QC_Day.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for daytime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_31": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022321/MOD11A2.A2022321.h09v04.061.2022330073716_Emis_31.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 31 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_32": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022321/MOD11A2.A2022321.h09v04.061.2022330073716_Emis_32.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 32 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Night": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022321/MOD11A2.A2022321.h09v04.061.2022330073716_QC_Night.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for nighttime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD11A2/09/04/2022321/MOD11A2.A2022321.h09v04.061.2022330073716.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "LST_Day_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022321/MOD11A2.A2022321.h09v04.061.2022330073716_LST_Day_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day daytime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Day_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022321/MOD11A2.A2022321.h09v04.061.2022330073716_Day_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of daytime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Day_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022321/MOD11A2.A2022321.h09v04.061.2022330073716_Day_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average time of daytime Landsurface Temperature observation",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "LST_Night_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022321/MOD11A2.A2022321.h09v04.061.2022330073716_LST_Night_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day nighttime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Clear_sky_days": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022321/MOD11A2.A2022321.h09v04.061.2022330073716_Clear_sky_days.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the days in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022321/MOD11A2.A2022321.h09v04.061.2022330073716_Night_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "View zenith angle of nighttime Land-surface Temperature ",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022321/MOD11A2.A2022321.h09v04.061.2022330073716_Night_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of nighttime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Clear_sky_nights": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022321/MOD11A2.A2022321.h09v04.061.2022330073716_Clear_sky_nights.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the nights in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-11A2-061&item=MOD11A2.A2022321.h09v04.061.2022330073716&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-11A2-061&item=MOD11A2.A2022321.h09v04.061.2022330073716&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.02161249,
+        40.00416667,
+        -104.45078006,
+        49.99583333
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-11A2-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-11A2-061&item=MOD11A2.A2022321.h09v04.061.2022330073716",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD11A2.A2022313.h09v04.061.2022322082020",
+      "properties": {
+        "created": "2022-11-18T08:20:20Z",
+        "updated": "2022-11-20T01:10:42.696000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          1200,
+          1200
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-11-16T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.158132,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                4447802.079066
+              ]
+            ]
+          ]
+        },
+        "eo:cloud_cover": 1,
+        "proj:transform": [
+          926.6254331391661,
+          0.0,
+          -10007554.677899,
+          0.0,
+          -926.625433139167,
+          5559752.598833
+        ],
+        "start_datetime": "2022-11-09T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -140.0216125,
+              49.9958333
+            ],
+            [
+              -124.4644002,
+              49.9958333
+            ],
+            [
+              -104.4507801,
+              40.0041667
+            ],
+            [
+              -117.5064244,
+              40.0041667
+            ],
+            [
+              -140.0216125,
+              49.9958333
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD11A2/09/04/2022313/MYD11A2.A2022313.h09v04.061.2022322082020.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Day": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022313/MYD11A2.A2022313.h09v04.061.2022322082020_QC_Day.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for daytime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_31": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022313/MYD11A2.A2022313.h09v04.061.2022322082020_Emis_31.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 31 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_32": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022313/MYD11A2.A2022313.h09v04.061.2022322082020_Emis_32.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 32 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Night": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022313/MYD11A2.A2022313.h09v04.061.2022322082020_QC_Night.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for nighttime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD11A2/09/04/2022313/MYD11A2.A2022313.h09v04.061.2022322082020.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "LST_Day_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022313/MYD11A2.A2022313.h09v04.061.2022322082020_LST_Day_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day daytime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Day_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022313/MYD11A2.A2022313.h09v04.061.2022322082020_Day_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of daytime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Day_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022313/MYD11A2.A2022313.h09v04.061.2022322082020_Day_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average time of daytime Landsurface Temperature observation",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "LST_Night_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022313/MYD11A2.A2022313.h09v04.061.2022322082020_LST_Night_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day nighttime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Clear_sky_days": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022313/MYD11A2.A2022313.h09v04.061.2022322082020_Clear_sky_days.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the days in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022313/MYD11A2.A2022313.h09v04.061.2022322082020_Night_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "View zenith angle of nighttime Land-surface Temperature ",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022313/MYD11A2.A2022313.h09v04.061.2022322082020_Night_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of nighttime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Clear_sky_nights": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022313/MYD11A2.A2022313.h09v04.061.2022322082020_Clear_sky_nights.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the nights in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-11A2-061&item=MYD11A2.A2022313.h09v04.061.2022322082020&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-11A2-061&item=MYD11A2.A2022313.h09v04.061.2022322082020&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.02161249,
+        40.00416667,
+        -104.45078006,
+        49.99583333
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-11A2-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-11A2-061&item=MYD11A2.A2022313.h09v04.061.2022322082020",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MOD11A2.A2022313.h09v04.061.2022322065008",
+      "properties": {
+        "created": "2022-11-18T06:50:08Z",
+        "updated": "2022-11-19T20:31:23.661000Z",
+        "datetime": null,
+        "platform": "terra",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          1200,
+          1200
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-11-16T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.158132,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                4447802.079066
+              ]
+            ]
+          ]
+        },
+        "eo:cloud_cover": 1,
+        "proj:transform": [
+          926.6254331391661,
+          0.0,
+          -10007554.677899,
+          0.0,
+          -926.625433139167,
+          5559752.598833
+        ],
+        "start_datetime": "2022-11-09T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -140.0216125,
+              49.9958333
+            ],
+            [
+              -124.4644002,
+              49.9958333
+            ],
+            [
+              -104.4507801,
+              40.0041667
+            ],
+            [
+              -117.5064244,
+              40.0041667
+            ],
+            [
+              -140.0216125,
+              49.9958333
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD11A2/09/04/2022313/MOD11A2.A2022313.h09v04.061.2022322065008.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Day": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022313/MOD11A2.A2022313.h09v04.061.2022322065008_QC_Day.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for daytime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_31": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022313/MOD11A2.A2022313.h09v04.061.2022322065008_Emis_31.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 31 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_32": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022313/MOD11A2.A2022313.h09v04.061.2022322065008_Emis_32.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 32 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Night": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022313/MOD11A2.A2022313.h09v04.061.2022322065008_QC_Night.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for nighttime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD11A2/09/04/2022313/MOD11A2.A2022313.h09v04.061.2022322065008.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "LST_Day_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022313/MOD11A2.A2022313.h09v04.061.2022322065008_LST_Day_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day daytime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Day_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022313/MOD11A2.A2022313.h09v04.061.2022322065008_Day_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of daytime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Day_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022313/MOD11A2.A2022313.h09v04.061.2022322065008_Day_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average time of daytime Landsurface Temperature observation",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "LST_Night_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022313/MOD11A2.A2022313.h09v04.061.2022322065008_LST_Night_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day nighttime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Clear_sky_days": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022313/MOD11A2.A2022313.h09v04.061.2022322065008_Clear_sky_days.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the days in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022313/MOD11A2.A2022313.h09v04.061.2022322065008_Night_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "View zenith angle of nighttime Land-surface Temperature ",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022313/MOD11A2.A2022313.h09v04.061.2022322065008_Night_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of nighttime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Clear_sky_nights": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022313/MOD11A2.A2022313.h09v04.061.2022322065008_Clear_sky_nights.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the nights in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-11A2-061&item=MOD11A2.A2022313.h09v04.061.2022322065008&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-11A2-061&item=MOD11A2.A2022313.h09v04.061.2022322065008&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.02161249,
+        40.00416667,
+        -104.45078006,
+        49.99583333
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-11A2-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-11A2-061&item=MOD11A2.A2022313.h09v04.061.2022322065008",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD11A2.A2022305.h09v04.061.2022315141100",
+      "properties": {
+        "created": "2022-11-11T14:11:00Z",
+        "updated": "2022-11-11T18:37:57.630000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          1200,
+          1200
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-11-08T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.158132,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                4447802.079066
+              ]
+            ]
+          ]
+        },
+        "eo:cloud_cover": 16,
+        "proj:transform": [
+          926.6254331391661,
+          0.0,
+          -10007554.677899,
+          0.0,
+          -926.625433139167,
+          5559752.598833
+        ],
+        "start_datetime": "2022-11-01T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -140.0216125,
+              49.9958333
+            ],
+            [
+              -124.4644002,
+              49.9958333
+            ],
+            [
+              -104.4507801,
+              40.0041667
+            ],
+            [
+              -117.5064244,
+              40.0041667
+            ],
+            [
+              -140.0216125,
+              49.9958333
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD11A2/09/04/2022305/MYD11A2.A2022305.h09v04.061.2022315141100.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Day": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022305/MYD11A2.A2022305.h09v04.061.2022315141100_QC_Day.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for daytime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_31": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022305/MYD11A2.A2022305.h09v04.061.2022315141100_Emis_31.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 31 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_32": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022305/MYD11A2.A2022305.h09v04.061.2022315141100_Emis_32.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 32 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Night": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022305/MYD11A2.A2022305.h09v04.061.2022315141100_QC_Night.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for nighttime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD11A2/09/04/2022305/MYD11A2.A2022305.h09v04.061.2022315141100.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "LST_Day_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022305/MYD11A2.A2022305.h09v04.061.2022315141100_LST_Day_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day daytime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Day_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022305/MYD11A2.A2022305.h09v04.061.2022315141100_Day_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of daytime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Day_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022305/MYD11A2.A2022305.h09v04.061.2022315141100_Day_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average time of daytime Landsurface Temperature observation",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "LST_Night_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022305/MYD11A2.A2022305.h09v04.061.2022315141100_LST_Night_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day nighttime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Clear_sky_days": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022305/MYD11A2.A2022305.h09v04.061.2022315141100_Clear_sky_days.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the days in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022305/MYD11A2.A2022305.h09v04.061.2022315141100_Night_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "View zenith angle of nighttime Land-surface Temperature ",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022305/MYD11A2.A2022305.h09v04.061.2022315141100_Night_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of nighttime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Clear_sky_nights": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022305/MYD11A2.A2022305.h09v04.061.2022315141100_Clear_sky_nights.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the nights in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-11A2-061&item=MYD11A2.A2022305.h09v04.061.2022315141100&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-11A2-061&item=MYD11A2.A2022305.h09v04.061.2022315141100&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.02161249,
+        40.00416667,
+        -104.45078006,
+        49.99583333
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-11A2-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-11A2-061&item=MYD11A2.A2022305.h09v04.061.2022315141100",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MOD11A2.A2022305.h09v04.061.2022315071413",
+      "properties": {
+        "created": "2022-11-11T07:14:13Z",
+        "updated": "2022-11-11T09:49:03.179000Z",
+        "datetime": null,
+        "platform": "terra",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          1200,
+          1200
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-11-08T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.158132,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                4447802.079066
+              ]
+            ]
+          ]
+        },
+        "eo:cloud_cover": 14,
+        "proj:transform": [
+          926.6254331391661,
+          0.0,
+          -10007554.677899,
+          0.0,
+          -926.625433139167,
+          5559752.598833
+        ],
+        "start_datetime": "2022-11-01T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -140.0216125,
+              49.9958333
+            ],
+            [
+              -124.4644002,
+              49.9958333
+            ],
+            [
+              -104.4507801,
+              40.0041667
+            ],
+            [
+              -117.5064244,
+              40.0041667
+            ],
+            [
+              -140.0216125,
+              49.9958333
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD11A2/09/04/2022305/MOD11A2.A2022305.h09v04.061.2022315071413.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Day": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022305/MOD11A2.A2022305.h09v04.061.2022315071413_QC_Day.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for daytime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_31": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022305/MOD11A2.A2022305.h09v04.061.2022315071413_Emis_31.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 31 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_32": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022305/MOD11A2.A2022305.h09v04.061.2022315071413_Emis_32.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 32 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Night": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022305/MOD11A2.A2022305.h09v04.061.2022315071413_QC_Night.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for nighttime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD11A2/09/04/2022305/MOD11A2.A2022305.h09v04.061.2022315071413.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "LST_Day_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022305/MOD11A2.A2022305.h09v04.061.2022315071413_LST_Day_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day daytime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Day_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022305/MOD11A2.A2022305.h09v04.061.2022315071413_Day_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of daytime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Day_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022305/MOD11A2.A2022305.h09v04.061.2022315071413_Day_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average time of daytime Landsurface Temperature observation",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "LST_Night_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022305/MOD11A2.A2022305.h09v04.061.2022315071413_LST_Night_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day nighttime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Clear_sky_days": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022305/MOD11A2.A2022305.h09v04.061.2022315071413_Clear_sky_days.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the days in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022305/MOD11A2.A2022305.h09v04.061.2022315071413_Night_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "View zenith angle of nighttime Land-surface Temperature ",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022305/MOD11A2.A2022305.h09v04.061.2022315071413_Night_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of nighttime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Clear_sky_nights": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022305/MOD11A2.A2022305.h09v04.061.2022315071413_Clear_sky_nights.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the nights in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-11A2-061&item=MOD11A2.A2022305.h09v04.061.2022315071413&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-11A2-061&item=MOD11A2.A2022305.h09v04.061.2022315071413&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.02161249,
+        40.00416667,
+        -104.45078006,
+        49.99583333
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-11A2-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-11A2-061&item=MOD11A2.A2022305.h09v04.061.2022315071413",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD11A2.A2022297.h09v04.061.2022306060018",
+      "properties": {
+        "created": "2022-11-02T06:00:18Z",
+        "updated": "2022-11-03T13:37:40.942000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          1200,
+          1200
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-10-31T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.158132,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                4447802.079066
+              ]
+            ]
+          ]
+        },
+        "eo:cloud_cover": 7,
+        "proj:transform": [
+          926.6254331391661,
+          0.0,
+          -10007554.677899,
+          0.0,
+          -926.625433139167,
+          5559752.598833
+        ],
+        "start_datetime": "2022-10-24T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -140.0216125,
+              49.9958333
+            ],
+            [
+              -124.4644002,
+              49.9958333
+            ],
+            [
+              -104.4507801,
+              40.0041667
+            ],
+            [
+              -117.5064244,
+              40.0041667
+            ],
+            [
+              -140.0216125,
+              49.9958333
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD11A2/09/04/2022297/MYD11A2.A2022297.h09v04.061.2022306060018.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Day": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022297/MYD11A2.A2022297.h09v04.061.2022306060018_QC_Day.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for daytime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_31": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022297/MYD11A2.A2022297.h09v04.061.2022306060018_Emis_31.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 31 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_32": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022297/MYD11A2.A2022297.h09v04.061.2022306060018_Emis_32.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 32 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Night": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022297/MYD11A2.A2022297.h09v04.061.2022306060018_QC_Night.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for nighttime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD11A2/09/04/2022297/MYD11A2.A2022297.h09v04.061.2022306060018.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "LST_Day_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022297/MYD11A2.A2022297.h09v04.061.2022306060018_LST_Day_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day daytime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Day_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022297/MYD11A2.A2022297.h09v04.061.2022306060018_Day_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of daytime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Day_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022297/MYD11A2.A2022297.h09v04.061.2022306060018_Day_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average time of daytime Landsurface Temperature observation",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "LST_Night_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022297/MYD11A2.A2022297.h09v04.061.2022306060018_LST_Night_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day nighttime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Clear_sky_days": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022297/MYD11A2.A2022297.h09v04.061.2022306060018_Clear_sky_days.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the days in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022297/MYD11A2.A2022297.h09v04.061.2022306060018_Night_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "View zenith angle of nighttime Land-surface Temperature ",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022297/MYD11A2.A2022297.h09v04.061.2022306060018_Night_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of nighttime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Clear_sky_nights": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022297/MYD11A2.A2022297.h09v04.061.2022306060018_Clear_sky_nights.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the nights in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-11A2-061&item=MYD11A2.A2022297.h09v04.061.2022306060018&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-11A2-061&item=MYD11A2.A2022297.h09v04.061.2022306060018&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.02161249,
+        40.00416667,
+        -104.45078006,
+        49.99583333
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-11A2-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-11A2-061&item=MYD11A2.A2022297.h09v04.061.2022306060018",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MYD11A2.A2022281.h09v04.061.2022290204230",
+      "properties": {
+        "created": "2022-10-17T20:42:30Z",
+        "updated": "2022-10-17T16:54:25.382000Z",
+        "datetime": null,
+        "platform": "aqua",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          1200,
+          1200
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-10-15T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.158132,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                4447802.079066
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          926.6254331391661,
+          0.0,
+          -10007554.677899,
+          0.0,
+          -926.625433139167,
+          5559752.598833
+        ],
+        "start_datetime": "2022-10-08T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -140.0216125,
+              49.9958333
+            ],
+            [
+              -124.4644002,
+              49.9958333
+            ],
+            [
+              -104.4507801,
+              40.0041667
+            ],
+            [
+              -117.5064244,
+              40.0041667
+            ],
+            [
+              -140.0216125,
+              49.9958333
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD11A2/09/04/2022281/MYD11A2.A2022281.h09v04.061.2022290204230.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Day": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022281/MYD11A2.A2022281.h09v04.061.2022290204230_QC_Day.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for daytime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_31": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022281/MYD11A2.A2022281.h09v04.061.2022290204230_Emis_31.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 31 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_32": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022281/MYD11A2.A2022281.h09v04.061.2022290204230_Emis_32.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 32 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Night": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022281/MYD11A2.A2022281.h09v04.061.2022290204230_QC_Night.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for nighttime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD11A2/09/04/2022281/MYD11A2.A2022281.h09v04.061.2022290204230.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "LST_Day_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022281/MYD11A2.A2022281.h09v04.061.2022290204230_LST_Day_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day daytime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Day_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022281/MYD11A2.A2022281.h09v04.061.2022290204230_Day_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of daytime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Day_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022281/MYD11A2.A2022281.h09v04.061.2022290204230_Day_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average time of daytime Landsurface Temperature observation",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "LST_Night_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022281/MYD11A2.A2022281.h09v04.061.2022290204230_LST_Night_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day nighttime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Clear_sky_days": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022281/MYD11A2.A2022281.h09v04.061.2022290204230_Clear_sky_days.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the days in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022281/MYD11A2.A2022281.h09v04.061.2022290204230_Night_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "View zenith angle of nighttime Land-surface Temperature ",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022281/MYD11A2.A2022281.h09v04.061.2022290204230_Night_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of nighttime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Clear_sky_nights": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD11A2/09/04/2022281/MYD11A2.A2022281.h09v04.061.2022290204230_Clear_sky_nights.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the nights in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-11A2-061&item=MYD11A2.A2022281.h09v04.061.2022290204230&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-11A2-061&item=MYD11A2.A2022281.h09v04.061.2022290204230&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.02161249,
+        40.00416667,
+        -104.45078006,
+        49.99583333
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-11A2-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-11A2-061&item=MYD11A2.A2022281.h09v04.061.2022290204230",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "MOD11A2.A2022273.h09v04.061.2022282041831",
+      "properties": {
+        "created": "2022-10-09T04:18:31Z",
+        "updated": "2022-10-09T20:56:54.797000Z",
+        "datetime": null,
+        "platform": "terra",
+        "proj:epsg": null,
+        "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          1200,
+          1200
+        ],
+        "instruments": [
+          "modis"
+        ],
+        "end_datetime": "2022-10-07T23:59:59Z",
+        "modis:tile-id": "51009004",
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -8895604.158132,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                5559752.598833
+              ],
+              [
+                -10007554.677899,
+                4447802.079066
+              ],
+              [
+                -8895604.158132,
+                4447802.079066
+              ]
+            ]
+          ]
+        },
+        "proj:transform": [
+          926.6254331391661,
+          0.0,
+          -10007554.677899,
+          0.0,
+          -926.625433139167,
+          5559752.598833
+        ],
+        "start_datetime": "2022-09-30T00:00:00Z",
+        "modis:vertical-tile": 4,
+        "modis:horizontal-tile": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -140.0216125,
+              49.9958333
+            ],
+            [
+              -124.4644002,
+              49.9958333
+            ],
+            [
+              -104.4507801,
+              40.0041667
+            ],
+            [
+              -117.5064244,
+              40.0041667
+            ],
+            [
+              -140.0216125,
+              49.9958333
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "hdf": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD11A2/09/04/2022273/MOD11A2.A2022273.h09v04.061.2022282041831.hdf",
+          "type": "application/x-hdf",
+          "title": "Source data containing all bands",
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Day": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022273/MOD11A2.A2022273.h09v04.061.2022282041831_QC_Day.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for daytime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_31": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022273/MOD11A2.A2022273.h09v04.061.2022282041831_Emis_31.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 31 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Emis_32": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022273/MOD11A2.A2022273.h09v04.061.2022282041831_Emis_32.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Band 32 emissivity",
+          "raster:bands": [
+            {
+              "scale": 0.002,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "QC_Night": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022273/MOD11A2.A2022273.h09v04.061.2022282041831_QC_Night.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Quality control for nighttime LST and emissivity",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD11A2/09/04/2022273/MOD11A2.A2022273.h09v04.061.2022282041831.hdf.xml",
+          "type": "application/xml",
+          "title": "Federal Geographic Data Committee (FGDC) Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "LST_Day_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022273/MOD11A2.A2022273.h09v04.061.2022282041831_LST_Day_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day daytime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Day_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022273/MOD11A2.A2022273.h09v04.061.2022282041831_Day_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of daytime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Day_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022273/MOD11A2.A2022273.h09v04.061.2022282041831_Day_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average time of daytime Landsurface Temperature observation",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "LST_Night_1km": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022273/MOD11A2.A2022273.h09v04.061.2022282041831_LST_Night_1km.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "8-day nighttime 1km grid Landsurface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Kelvin",
+              "scale": 0.02,
+              "data_type": "uint16",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data",
+            "temperature"
+          ]
+        },
+        "Clear_sky_days": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022273/MOD11A2.A2022273.h09v04.061.2022282041831_Clear_sky_days.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the days in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_angl": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022273/MOD11A2.A2022273.h09v04.061.2022282041831_Night_view_angl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "View zenith angle of nighttime Land-surface Temperature ",
+          "raster:bands": [
+            {
+              "unit": "Degree",
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Night_view_time": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022273/MOD11A2.A2022273.h09v04.061.2022282041831_Night_view_time.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Average view zenith angle of nighttime Land-surface Temperature",
+          "raster:bands": [
+            {
+              "unit": "Hours",
+              "scale": 0.1,
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "Clear_sky_nights": {
+          "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD11A2/09/04/2022273/MOD11A2.A2022273.h09v04.061.2022282041831_Clear_sky_nights.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "the nights in clear-sky conditions and with validate LSTs",
+          "raster:bands": [
+            {
+              "data_type": "uint8",
+              "spatial_resolution": 1000
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-11A2-061&item=MOD11A2.A2022273.h09v04.061.2022282041831&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-11A2-061&item=MOD11A2.A2022273.h09v04.061.2022282041831&assets=LST_Day_1km&tile_format=png&colormap_name=jet&rescale=255%2C310",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -140.02161249,
+        40.00416667,
+        -104.45078006,
+        49.99583333
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "collection": "modis-11A2-061",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-11A2-061&item=MOD11A2.A2022273.h09v04.061.2022282041831",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    }
+  ]
+}

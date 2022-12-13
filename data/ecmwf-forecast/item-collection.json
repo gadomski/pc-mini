@@ -1,0 +1,655 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "ecmwf-2022-12-12T12-waef-ep-360h",
+      "properties": {
+        "datetime": "2022-12-27T12:00:00Z",
+        "ecmwf:step": "360h",
+        "ecmwf:type": "ep",
+        "ecmwf:stream": "waef",
+        "ecmwf:forecast_datetime": "2022-12-27T12:00:00Z",
+        "ecmwf:reference_datetime": "2022-12-12T12:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/12z/0p4-beta/waef/20221212120000-360h-waef-ep.grib2",
+          "type": "application/wmo-GRIB2",
+          "roles": [
+            "data"
+          ]
+        },
+        "index": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/12z/0p4-beta/waef/20221212120000-360h-waef-ep.index",
+          "type": "application/x-ndjson",
+          "roles": [
+            "index"
+          ]
+        }
+      },
+      "bbox": [
+        -180.0,
+        -90.0,
+        180.0,
+        90.0
+      ],
+      "stac_extensions": [],
+      "collection": "ecmwf-forecast",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "ecmwf-2022-12-12T12-waef-ef-360h",
+      "properties": {
+        "datetime": "2022-12-27T12:00:00Z",
+        "ecmwf:step": "360h",
+        "ecmwf:type": "ef",
+        "ecmwf:stream": "waef",
+        "ecmwf:forecast_datetime": "2022-12-27T12:00:00Z",
+        "ecmwf:reference_datetime": "2022-12-12T12:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/12z/0p4-beta/waef/20221212120000-360h-waef-ef.grib2",
+          "type": "application/wmo-GRIB2",
+          "roles": [
+            "data"
+          ]
+        },
+        "index": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/12z/0p4-beta/waef/20221212120000-360h-waef-ef.index",
+          "type": "application/x-ndjson",
+          "roles": [
+            "index"
+          ]
+        }
+      },
+      "bbox": [
+        -180.0,
+        -90.0,
+        180.0,
+        90.0
+      ],
+      "stac_extensions": [],
+      "collection": "ecmwf-forecast",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "ecmwf-2022-12-12T12-enfo-ep-360h",
+      "properties": {
+        "datetime": "2022-12-27T12:00:00Z",
+        "ecmwf:step": "360h",
+        "ecmwf:type": "ep",
+        "ecmwf:stream": "enfo",
+        "ecmwf:forecast_datetime": "2022-12-27T12:00:00Z",
+        "ecmwf:reference_datetime": "2022-12-12T12:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/12z/0p4-beta/enfo/20221212120000-360h-enfo-ep.grib2",
+          "type": "application/wmo-GRIB2",
+          "roles": [
+            "data"
+          ]
+        },
+        "index": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/12z/0p4-beta/enfo/20221212120000-360h-enfo-ep.index",
+          "type": "application/x-ndjson",
+          "roles": [
+            "index"
+          ]
+        }
+      },
+      "bbox": [
+        -180.0,
+        -90.0,
+        180.0,
+        90.0
+      ],
+      "stac_extensions": [],
+      "collection": "ecmwf-forecast",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "ecmwf-2022-12-12T12-enfo-ef-360h",
+      "properties": {
+        "datetime": "2022-12-27T12:00:00Z",
+        "ecmwf:step": "360h",
+        "ecmwf:type": "ef",
+        "ecmwf:stream": "enfo",
+        "ecmwf:forecast_datetime": "2022-12-27T12:00:00Z",
+        "ecmwf:reference_datetime": "2022-12-12T12:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/12z/0p4-beta/enfo/20221212120000-360h-enfo-ef.grib2",
+          "type": "application/wmo-GRIB2",
+          "roles": [
+            "data"
+          ]
+        },
+        "index": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/12z/0p4-beta/enfo/20221212120000-360h-enfo-ef.index",
+          "type": "application/x-ndjson",
+          "roles": [
+            "index"
+          ]
+        }
+      },
+      "bbox": [
+        -180.0,
+        -90.0,
+        180.0,
+        90.0
+      ],
+      "stac_extensions": [],
+      "collection": "ecmwf-forecast",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "ecmwf-2022-12-12T12-waef-ef-354h",
+      "properties": {
+        "datetime": "2022-12-27T06:00:00Z",
+        "ecmwf:step": "354h",
+        "ecmwf:type": "ef",
+        "ecmwf:stream": "waef",
+        "ecmwf:forecast_datetime": "2022-12-27T06:00:00Z",
+        "ecmwf:reference_datetime": "2022-12-12T12:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/12z/0p4-beta/waef/20221212120000-354h-waef-ef.grib2",
+          "type": "application/wmo-GRIB2",
+          "roles": [
+            "data"
+          ]
+        },
+        "index": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/12z/0p4-beta/waef/20221212120000-354h-waef-ef.index",
+          "type": "application/x-ndjson",
+          "roles": [
+            "index"
+          ]
+        }
+      },
+      "bbox": [
+        -180.0,
+        -90.0,
+        180.0,
+        90.0
+      ],
+      "stac_extensions": [],
+      "collection": "ecmwf-forecast",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "ecmwf-2022-12-12T12-enfo-ef-354h",
+      "properties": {
+        "datetime": "2022-12-27T06:00:00Z",
+        "ecmwf:step": "354h",
+        "ecmwf:type": "ef",
+        "ecmwf:stream": "enfo",
+        "ecmwf:forecast_datetime": "2022-12-27T06:00:00Z",
+        "ecmwf:reference_datetime": "2022-12-12T12:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/12z/0p4-beta/enfo/20221212120000-354h-enfo-ef.grib2",
+          "type": "application/wmo-GRIB2",
+          "roles": [
+            "data"
+          ]
+        },
+        "index": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/12z/0p4-beta/enfo/20221212120000-354h-enfo-ef.index",
+          "type": "application/x-ndjson",
+          "roles": [
+            "index"
+          ]
+        }
+      },
+      "bbox": [
+        -180.0,
+        -90.0,
+        180.0,
+        90.0
+      ],
+      "stac_extensions": [],
+      "collection": "ecmwf-forecast",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "ecmwf-2022-12-12T12-waef-ef-348h",
+      "properties": {
+        "datetime": "2022-12-27T00:00:00Z",
+        "ecmwf:step": "348h",
+        "ecmwf:type": "ef",
+        "ecmwf:stream": "waef",
+        "ecmwf:forecast_datetime": "2022-12-27T00:00:00Z",
+        "ecmwf:reference_datetime": "2022-12-12T12:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/12z/0p4-beta/waef/20221212120000-348h-waef-ef.grib2",
+          "type": "application/wmo-GRIB2",
+          "roles": [
+            "data"
+          ]
+        },
+        "index": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/12z/0p4-beta/waef/20221212120000-348h-waef-ef.index",
+          "type": "application/x-ndjson",
+          "roles": [
+            "index"
+          ]
+        }
+      },
+      "bbox": [
+        -180.0,
+        -90.0,
+        180.0,
+        90.0
+      ],
+      "stac_extensions": [],
+      "collection": "ecmwf-forecast",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "ecmwf-2022-12-12T12-enfo-ef-348h",
+      "properties": {
+        "datetime": "2022-12-27T00:00:00Z",
+        "ecmwf:step": "348h",
+        "ecmwf:type": "ef",
+        "ecmwf:stream": "enfo",
+        "ecmwf:forecast_datetime": "2022-12-27T00:00:00Z",
+        "ecmwf:reference_datetime": "2022-12-12T12:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/12z/0p4-beta/enfo/20221212120000-348h-enfo-ef.grib2",
+          "type": "application/wmo-GRIB2",
+          "roles": [
+            "data"
+          ]
+        },
+        "index": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/12z/0p4-beta/enfo/20221212120000-348h-enfo-ef.index",
+          "type": "application/x-ndjson",
+          "roles": [
+            "index"
+          ]
+        }
+      },
+      "bbox": [
+        -180.0,
+        -90.0,
+        180.0,
+        90.0
+      ],
+      "stac_extensions": [],
+      "collection": "ecmwf-forecast",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "ecmwf-2022-12-12T00-waef-ep-360h",
+      "properties": {
+        "datetime": "2022-12-27T00:00:00Z",
+        "ecmwf:step": "360h",
+        "ecmwf:type": "ep",
+        "ecmwf:stream": "waef",
+        "ecmwf:forecast_datetime": "2022-12-27T00:00:00Z",
+        "ecmwf:reference_datetime": "2022-12-12T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/00z/0p4-beta/waef/20221212000000-360h-waef-ep.grib2",
+          "type": "application/wmo-GRIB2",
+          "roles": [
+            "data"
+          ]
+        },
+        "index": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/00z/0p4-beta/waef/20221212000000-360h-waef-ep.index",
+          "type": "application/x-ndjson",
+          "roles": [
+            "index"
+          ]
+        }
+      },
+      "bbox": [
+        -180.0,
+        -90.0,
+        180.0,
+        90.0
+      ],
+      "stac_extensions": [],
+      "collection": "ecmwf-forecast",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "ecmwf-2022-12-12T00-waef-ef-360h",
+      "properties": {
+        "datetime": "2022-12-27T00:00:00Z",
+        "ecmwf:step": "360h",
+        "ecmwf:type": "ef",
+        "ecmwf:stream": "waef",
+        "ecmwf:forecast_datetime": "2022-12-27T00:00:00Z",
+        "ecmwf:reference_datetime": "2022-12-12T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/00z/0p4-beta/waef/20221212000000-360h-waef-ef.grib2",
+          "type": "application/wmo-GRIB2",
+          "roles": [
+            "data"
+          ]
+        },
+        "index": {
+          "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20221212/00z/0p4-beta/waef/20221212000000-360h-waef-ef.index",
+          "type": "application/x-ndjson",
+          "roles": [
+            "index"
+          ]
+        }
+      },
+      "bbox": [
+        -180.0,
+        -90.0,
+        180.0,
+        90.0
+      ],
+      "stac_extensions": [],
+      "collection": "ecmwf-forecast",
+      "links": []
+    }
+  ]
+}

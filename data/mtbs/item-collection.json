@@ -1,0 +1,865 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "mtbs_severity_conus_2018_30m",
+      "properties": {
+        "datetime": "2018-12-31T00:00:00Z",
+        "proj:bbox": [
+          -2298465.0,
+          985335.0,
+          -210105.0,
+          3096045.0
+        ],
+        "proj:wkt2": "PROJCS[\"USA_Contiguous_Albers_Equal_Area_Conic_USGS_version\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101004,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          70357,
+          69612
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.23213521,
+              31.91998626
+            ],
+            [
+              -98.92126103,
+              50.87071761
+            ],
+            [
+              -126.83753701,
+              47.47145529
+            ],
+            [
+              -119.90576303,
+              29.32664787
+            ],
+            [
+              -98.23213521,
+              31.91998626
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "metadata": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2018.htm",
+          "type": "text/html",
+          "title": "Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "burn-severity": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2018.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Burn severity",
+          "proj:transform": [
+            30.0,
+            0.0,
+            -2298465.0,
+            0.0,
+            -30.0,
+            3096045.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "roles": [
+            "data"
+          ]
+        }
+      },
+      "bbox": [
+        -126.83753701014747,
+        29.32664786553607,
+        -98.23213521170842,
+        50.870717610255156
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+      ],
+      "collection": "mtbs",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "mtbs_severity_conus_2017_30m",
+      "properties": {
+        "datetime": "2017-12-31T00:00:00Z",
+        "proj:bbox": [
+          -2305635.0,
+          390165.0,
+          1818705.0,
+          3137235.0
+        ],
+        "proj:wkt2": "PROJCS[\"USA_Contiguous_Albers_Equal_Area_Conic_USGS_version\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101004,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          91569,
+          137478
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.09544137,
+              25.001933
+            ],
+            [
+              -71.13506364,
+              49.08850111
+            ],
+            [
+              -127.10158499,
+              47.80406509
+            ],
+            [
+              -118.53836311,
+              24.06052627
+            ],
+            [
+              -78.09544137,
+              25.001933
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "metadata": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2017.htm",
+          "type": "text/html",
+          "title": "Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "burn-severity": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2017.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Burn severity",
+          "proj:transform": [
+            30.0,
+            0.0,
+            -2305635.0,
+            0.0,
+            -30.0,
+            3137235.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "roles": [
+            "data"
+          ]
+        }
+      },
+      "bbox": [
+        -127.10158499446402,
+        24.06052627429032,
+        -71.13506363919075,
+        49.08850110981018
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+      ],
+      "collection": "mtbs",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "mtbs_severity_conus_2016_30m",
+      "properties": {
+        "datetime": "2016-12-31T00:00:00Z",
+        "proj:bbox": [
+          -2283345.0,
+          383385.0,
+          1810815.0,
+          3059055.0
+        ],
+        "proj:wkt2": "PROJCS[\"USA_Contiguous_Albers_Equal_Area_Conic_USGS_version\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101004,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          89189,
+          136472
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.18367091,
+              24.95453663
+            ],
+            [
+              -71.50752417,
+              48.41970439
+            ],
+            [
+              -126.49459612,
+              47.1974636
+            ],
+            [
+              -118.31315538,
+              24.04786788
+            ],
+            [
+              -78.18367091,
+              24.95453663
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "metadata": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2016.htm",
+          "type": "text/html",
+          "title": "Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "burn-severity": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2016.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Burn severity",
+          "proj:transform": [
+            30.0,
+            0.0,
+            -2283345.0,
+            0.0,
+            -30.0,
+            3059055.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "roles": [
+            "data"
+          ]
+        }
+      },
+      "bbox": [
+        -126.49459612498832,
+        24.0478678762251,
+        -71.50752417349113,
+        48.41970438537784
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+      ],
+      "collection": "mtbs",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "mtbs_severity_conus_2015_30m",
+      "properties": {
+        "datetime": "2015-12-31T00:00:00Z",
+        "proj:bbox": [
+          -2304375.0,
+          419625.00000000047,
+          1816814.9999999995,
+          3114165.0
+        ],
+        "proj:wkt2": "PROJCS[\"USA_Contiguous_Albers_Equal_Area_Conic_USGS_version\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101004,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          89818,
+          137373
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.05950421,
+              25.26947682
+            ],
+            [
+              -71.24007551,
+              48.89003053
+            ],
+            [
+              -126.98785426,
+              47.60979849
+            ],
+            [
+              -118.5936936,
+              24.32560407
+            ],
+            [
+              -78.05950421,
+              25.26947682
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "metadata": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2015.htm",
+          "type": "text/html",
+          "title": "Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "burn-severity": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2015.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Burn severity",
+          "proj:transform": [
+            29.999999999999996,
+            0.0,
+            -2304375.0,
+            0.0,
+            -29.999999999999996,
+            3114165.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "roles": [
+            "data"
+          ]
+        }
+      },
+      "bbox": [
+        -126.98785425794497,
+        24.325604065102468,
+        -71.24007550957012,
+        48.89003053169547
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+      ],
+      "collection": "mtbs",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "mtbs_severity_conus_2014_30m",
+      "properties": {
+        "datetime": "2014-12-31T00:00:00Z",
+        "proj:bbox": [
+          -2321235.0,
+          384345.0,
+          1818255.0,
+          3098865.0
+        ],
+        "proj:wkt2": "PROJCS[\"USA_Contiguous_Albers_Equal_Area_Conic_USGS_version\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101004,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          90484,
+          137983
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.11042633,
+              24.95045723
+            ],
+            [
+              -71.27436165,
+              48.75215529
+            ],
+            [
+              -127.13369759,
+              47.42962531
+            ],
+            [
+              -118.67183559,
+              23.97496723
+            ],
+            [
+              -78.11042633,
+              24.95045723
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "metadata": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2014.htm",
+          "type": "text/html",
+          "title": "Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "burn-severity": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2014.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Burn severity",
+          "proj:transform": [
+            30.0,
+            0.0,
+            -2321235.0,
+            0.0,
+            -30.0,
+            3098865.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "roles": [
+            "data"
+          ]
+        }
+      },
+      "bbox": [
+        -127.13369759333628,
+        23.974967234322463,
+        -71.27436164802425,
+        48.75215528783848
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+      ],
+      "collection": "mtbs",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "mtbs_severity_conus_2013_30m",
+      "properties": {
+        "datetime": "2013-12-31T00:00:00Z",
+        "proj:bbox": [
+          -2284035.0,
+          380085.00000000047,
+          1717514.9999999995,
+          3044685.0
+        ],
+        "proj:wkt2": "PROJCS[\"USA_Contiguous_Albers_Equal_Area_Conic_USGS_version\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101004,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          88820,
+          133385
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.08758182,
+              25.07979076
+            ],
+            [
+              -72.76500078,
+              48.50386226
+            ],
+            [
+              -126.44379136,
+              47.07220271
+            ],
+            [
+              -118.31221988,
+              24.0169721
+            ],
+            [
+              -79.08758182,
+              25.07979076
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "metadata": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2013.htm",
+          "type": "text/html",
+          "title": "Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "burn-severity": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2013.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Burn severity",
+          "proj:transform": [
+            29.999999999999996,
+            0.0,
+            -2284035.0,
+            0.0,
+            -29.999999999999996,
+            3044685.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "roles": [
+            "data"
+          ]
+        }
+      },
+      "bbox": [
+        -126.44379136298276,
+        24.016972100890577,
+        -72.76500078333623,
+        48.503862259244364
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+      ],
+      "collection": "mtbs",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "mtbs_severity_conus_2012_30m",
+      "properties": {
+        "datetime": "2012-12-31T00:00:00Z",
+        "proj:bbox": [
+          -2291115.0,
+          359085.00000000047,
+          1923374.999999999,
+          3038985.0
+        ],
+        "proj:wkt2": "PROJCS[\"USA_Contiguous_Albers_Equal_Area_Conic_USGS_version\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101004,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          89330,
+          140483
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.1510851,
+              24.53906391
+            ],
+            [
+              -70.12945466,
+              47.97640283
+            ],
+            [
+              -126.50825008,
+              47.0031431
+            ],
+            [
+              -118.33153963,
+              23.8145425
+            ],
+            [
+              -77.1510851,
+              24.53906391
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "metadata": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2012.htm",
+          "type": "text/html",
+          "title": "Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "burn-severity": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2012.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Burn severity",
+          "proj:transform": [
+            29.999999999999996,
+            0.0,
+            -2291115.0,
+            0.0,
+            -29.999999999999996,
+            3038985.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "roles": [
+            "data"
+          ]
+        }
+      },
+      "bbox": [
+        -126.50825008391715,
+        23.814542502769573,
+        -70.1294546580331,
+        47.97640282934678
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+      ],
+      "collection": "mtbs",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "mtbs_severity_conus_2011_30m",
+      "properties": {
+        "datetime": "2011-12-31T00:00:00Z",
+        "proj:bbox": [
+          -2275755.0,
+          355635.00000000047,
+          1832024.9999999995,
+          3051045.0
+        ],
+        "proj:wkt2": "PROJCS[\"USA_Contiguous_Albers_Equal_Area_Conic_USGS_version\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101004,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          89847,
+          136926
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.03092431,
+              24.66899009
+            ],
+            [
+              -71.26094597,
+              48.30006119
+            ],
+            [
+              -126.36697357,
+              47.15032139
+            ],
+            [
+              -118.17951538,
+              23.81645543
+            ],
+            [
+              -78.03092431,
+              24.66899009
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "metadata": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2011.htm",
+          "type": "text/html",
+          "title": "Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "burn-severity": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2011.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Burn severity",
+          "proj:transform": [
+            29.999999999999996,
+            0.0,
+            -2275755.0,
+            0.0,
+            -29.999999999999996,
+            3051045.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "roles": [
+            "data"
+          ]
+        }
+      },
+      "bbox": [
+        -126.36697357213095,
+        23.816455426902188,
+        -71.26094597094503,
+        48.300061185362665
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+      ],
+      "collection": "mtbs",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "mtbs_severity_conus_2010_30m",
+      "properties": {
+        "datetime": "2010-12-31T00:00:00Z",
+        "proj:bbox": [
+          -2292675.0,
+          392474.99999999953,
+          1829925.0000000005,
+          3060375.0
+        ],
+        "proj:wkt2": "PROJCS[\"Albers Conical Equal Area\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101004,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          88930,
+          137420
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.98334353,
+              25.00340387
+            ],
+            [
+              -71.25597096,
+              48.38683224
+            ],
+            [
+              -126.61625833,
+              47.18212737
+            ],
+            [
+              -118.42156489,
+              24.10895011
+            ],
+            [
+              -77.98334353,
+              25.00340387
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "metadata": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2010.htm",
+          "type": "text/html",
+          "title": "Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "burn-severity": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2010.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Burn severity",
+          "proj:transform": [
+            30.000000000000004,
+            0.0,
+            -2292675.0,
+            0.0,
+            -30.000000000000004,
+            3060375.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "roles": [
+            "data"
+          ]
+        }
+      },
+      "bbox": [
+        -126.6162583259617,
+        24.10895011112099,
+        -71.25597095668458,
+        48.38683223893185
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+      ],
+      "collection": "mtbs",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "mtbs_severity_conus_2009_30m",
+      "properties": {
+        "datetime": "2009-12-31T00:00:00Z",
+        "proj:bbox": [
+          -2285235.0,
+          359084.99999999953,
+          1806705.0000000005,
+          3044145.0
+        ],
+        "proj:wkt2": "PROJCS[\"Albers Conical Equal Area\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101004,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "proj:shape": [
+          89502,
+          136398
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.2672684,
+              24.74323856
+            ],
+            [
+              -71.6113259,
+              48.29825804
+            ],
+            [
+              -126.45648455,
+              47.06415399
+            ],
+            [
+              -118.27630612,
+              23.8270879
+            ],
+            [
+              -78.2672684,
+              24.74323856
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "metadata": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2009.htm",
+          "type": "text/html",
+          "title": "Metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "burn-severity": {
+          "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2009.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Burn severity",
+          "proj:transform": [
+            30.000000000000004,
+            0.0,
+            -2285235.0,
+            0.0,
+            -30.000000000000004,
+            3044145.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "roles": [
+            "data"
+          ]
+        }
+      },
+      "bbox": [
+        -126.45648454591733,
+        23.827087904595388,
+        -71.611325900786,
+        48.29825803551849
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+      ],
+      "collection": "mtbs",
+      "links": []
+    }
+  ]
+}

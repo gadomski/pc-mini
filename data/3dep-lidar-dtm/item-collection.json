@@ -1,0 +1,787 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_LAS_2015-dtm-2m-4-1",
+      "properties": {
+        "datetime": null,
+        "proj:epsg": null,
+        "proj:shape": [
+          4097,
+          4097
+        ],
+        "3dep:usgs_id": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_LAS_2015",
+        "end_datetime": "2014-05-31T00:00:00Z",
+        "raster:bands": {
+          "unit": "metre",
+          "nodata": "nan",
+          "sampling": "point",
+          "data_type": "Float32",
+          "histogram": {
+            "max": 1572.251566808389,
+            "min": 1501.824360926011,
+            "count": 256,
+            "buckets": [
+              25,
+              51,
+              85,
+              374,
+              4419,
+              2494,
+              1452,
+              1813,
+              2666,
+              2252,
+              5437,
+              6872,
+              6382,
+              8984,
+              8948,
+              11834,
+              18564,
+              22949,
+              30423,
+              26260,
+              24819,
+              22734,
+              20440,
+              25794,
+              31914,
+              35967,
+              37577,
+              39535,
+              36910,
+              36592,
+              37090,
+              40094,
+              40919,
+              45472,
+              46731,
+              48312,
+              55642,
+              50868,
+              52804,
+              55129,
+              48541,
+              55562,
+              58429,
+              55354,
+              59571,
+              49378,
+              57234,
+              57687,
+              62646,
+              58164,
+              56642,
+              62578,
+              68875,
+              71922,
+              66670,
+              60604,
+              60759,
+              61420,
+              58445,
+              59965,
+              62999,
+              66388,
+              78498,
+              73519,
+              82625,
+              83948,
+              86602,
+              86462,
+              81396,
+              100241,
+              96902,
+              107617,
+              114841,
+              158479,
+              118761,
+              123081,
+              127468,
+              116908,
+              113308,
+              126081,
+              118587,
+              124360,
+              120670,
+              134809,
+              125693,
+              119775,
+              123749,
+              122455,
+              126652,
+              126841,
+              122413,
+              127388,
+              129001,
+              134825,
+              134941,
+              131850,
+              133104,
+              133955,
+              132874,
+              123004,
+              128105,
+              131147,
+              132791,
+              132964,
+              126860,
+              120323,
+              113702,
+              109745,
+              112031,
+              107825,
+              107075,
+              113146,
+              118884,
+              123217,
+              123782,
+              119079,
+              123380,
+              118597,
+              117168,
+              110860,
+              111505,
+              111171,
+              122677,
+              118041,
+              110727,
+              112480,
+              118170,
+              120549,
+              113370,
+              113069,
+              119600,
+              110801,
+              112738,
+              112682,
+              112327,
+              110740,
+              110588,
+              110370,
+              107373,
+              105009,
+              102776,
+              113865,
+              97769,
+              89945,
+              97583,
+              99013,
+              103029,
+              100666,
+              103245,
+              104125,
+              97384,
+              92600,
+              90399,
+              93262,
+              89560,
+              82204,
+              79654,
+              87758,
+              95243,
+              89770,
+              89530,
+              90970,
+              84840,
+              89637,
+              88356,
+              88841,
+              87225,
+              94266,
+              89531,
+              84040,
+              96548,
+              79537,
+              78552,
+              79165,
+              81405,
+              81637,
+              79425,
+              75219,
+              74216,
+              85204,
+              81212,
+              82852,
+              70707,
+              71769,
+              69648,
+              66530,
+              65396,
+              68727,
+              119679,
+              64620,
+              61257,
+              58339,
+              55225,
+              50922,
+              45796,
+              43506,
+              41712,
+              34682,
+              30549,
+              36307,
+              29855,
+              23846,
+              22564,
+              22154,
+              21948,
+              20533,
+              18835,
+              17941,
+              16803,
+              16190,
+              15063,
+              13872,
+              11819,
+              10297,
+              10006,
+              11523,
+              11497,
+              10658,
+              9048,
+              9286,
+              7823,
+              8019,
+              8020,
+              8560,
+              7434,
+              6153,
+              6368,
+              6604,
+              5522,
+              5865,
+              5380,
+              5513,
+              5168,
+              4868,
+              4164,
+              4011,
+              4008,
+              4450,
+              4223,
+              3163,
+              2820,
+              2872,
+              2878,
+              2974,
+              2586,
+              2113,
+              1990,
+              1651,
+              961,
+              527,
+              473,
+              358,
+              89,
+              13,
+              2,
+              1
+            ]
+          },
+          "statistics": {
+            "mean": "1533.565115263",
+            "stddev": "13.015089566948",
+            "maximum": "1572.1140136719",
+            "minimum": "1501.9619140625",
+            "valid_percent": "99.1"
+          },
+          "pdal_pipeline": [
+            {
+              "tag": "noise_remover",
+              "type": "filters.range",
+              "limits": "Classification![7:7]"
+            },
+            {
+              "tag": "prepare_ground_classifier",
+              "type": "filters.assign",
+              "value": [
+                "Classification = 0",
+                "ReturnNumber = 1 WHERE ReturnNumber < 1",
+                "NumberOfReturns = 1 WHERE NumberOfReturns < 1"
+              ]
+            },
+            {
+              "tag": "merge_filter",
+              "type": "filters.merge"
+            },
+            {
+              "tag": "ground_classifier",
+              "type": "filters.smrf"
+            },
+            {
+              "tag": "nonground_remover",
+              "type": "filters.range",
+              "limits": "Classification[2:2]"
+            },
+            {
+              "tag": "gdal_writer",
+              "type": "writers.gdal",
+              "filename": null,
+              "resolution": null,
+              "output_type": "idw",
+              "window_size": 3,
+              "pdal_metadata": true
+            }
+          ],
+          "spatial_resolution": 16785409
+        },
+        "proj:geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -105.1911921,
+                40.190215
+              ],
+              [
+                -105.1909864,
+                40.1163905
+              ],
+              [
+                -105.0948298,
+                40.1165091
+              ],
+              [
+                -105.0949319,
+                40.1903338
+              ],
+              [
+                -105.1911921,
+                40.190215
+              ]
+            ]
+          ]
+        },
+        "proj:projjson": {
+          "name": "NAD83 / UTM zone 13N + NAVD88 height",
+          "type": "CompoundCRS",
+          "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+          "components": [
+            {
+              "id": {
+                "code": 26913,
+                "authority": "EPSG"
+              },
+              "name": "NAD83 / UTM zone 13N",
+              "type": "ProjectedCRS",
+              "base_crs": {
+                "id": {
+                  "code": 4269,
+                  "authority": "EPSG"
+                },
+                "name": "NAD83",
+                "datum": {
+                  "name": "North American Datum 1983",
+                  "type": "GeodeticReferenceFrame",
+                  "ellipsoid": {
+                    "name": "GRS 1980",
+                    "semi_major_axis": 6378137,
+                    "inverse_flattening": 298.257222101
+                  }
+                },
+                "coordinate_system": {
+                  "axis": [
+                    {
+                      "name": "Geodetic latitude",
+                      "unit": "degree",
+                      "direction": "north",
+                      "abbreviation": "Lat"
+                    },
+                    {
+                      "name": "Geodetic longitude",
+                      "unit": "degree",
+                      "direction": "east",
+                      "abbreviation": "Lon"
+                    }
+                  ],
+                  "subtype": "ellipsoidal"
+                }
+              },
+              "conversion": {
+                "name": "UTM zone 13N",
+                "method": {
+                  "id": {
+                    "code": 9807,
+                    "authority": "EPSG"
+                  },
+                  "name": "Transverse Mercator"
+                },
+                "parameters": [
+                  {
+                    "id": {
+                      "code": 8801,
+                      "authority": "EPSG"
+                    },
+                    "name": "Latitude of natural origin",
+                    "unit": "degree",
+                    "value": 0
+                  },
+                  {
+                    "id": {
+                      "code": 8802,
+                      "authority": "EPSG"
+                    },
+                    "name": "Longitude of natural origin",
+                    "unit": "degree",
+                    "value": -105
+                  },
+                  {
+                    "id": {
+                      "code": 8805,
+                      "authority": "EPSG"
+                    },
+                    "name": "Scale factor at natural origin",
+                    "unit": "unity",
+                    "value": 0.9996
+                  },
+                  {
+                    "id": {
+                      "code": 8806,
+                      "authority": "EPSG"
+                    },
+                    "name": "False easting",
+                    "unit": "metre",
+                    "value": 500000
+                  },
+                  {
+                    "id": {
+                      "code": 8807,
+                      "authority": "EPSG"
+                    },
+                    "name": "False northing",
+                    "unit": "metre",
+                    "value": 0
+                  }
+                ]
+              },
+              "coordinate_system": {
+                "axis": [
+                  {
+                    "name": "Easting",
+                    "unit": "metre",
+                    "direction": "east",
+                    "abbreviation": ""
+                  },
+                  {
+                    "name": "Northing",
+                    "unit": "metre",
+                    "direction": "north",
+                    "abbreviation": ""
+                  }
+                ],
+                "subtype": "Cartesian"
+              }
+            },
+            {
+              "id": {
+                "code": 5703,
+                "authority": "EPSG"
+              },
+              "name": "NAVD88 height",
+              "type": "VerticalCRS",
+              "datum": {
+                "name": "North American Vertical Datum 1988",
+                "type": "VerticalReferenceFrame"
+              },
+              "coordinate_system": {
+                "axis": [
+                  {
+                    "name": "Gravity-related height",
+                    "unit": "metre",
+                    "direction": "up",
+                    "abbreviation": ""
+                  }
+                ],
+                "subtype": "vertical"
+              }
+            }
+          ]
+        },
+        "proj:transform": [
+          2.0,
+          0.0,
+          483726.0,
+          0.0,
+          -2.0,
+          4448886.0,
+          0,
+          0,
+          1
+        ],
+        "start_datetime": "2013-10-25T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -105.1911921,
+              40.190215
+            ],
+            [
+              -105.1909864,
+              40.1163905
+            ],
+            [
+              -105.0948298,
+              40.1165091
+            ],
+            [
+              -105.0949319,
+              40.1903338
+            ],
+            [
+              -105.1911921,
+              40.190215
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://usgslidareuwest.blob.core.windows.net/usgs-3dep-cogs/usgs-cogs/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_LAS_2015/dtm/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_LAS_2015-dtm-2m-4-1.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "COG data",
+          "roles": [
+            "data"
+          ]
+        },
+        "thumbnail": {
+          "href": "https://usgslidareuwest.blob.core.windows.net/usgs-3dep-cogs/usgs-cogs/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_LAS_2015/dtm/thumbnails/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_LAS_2015-dtm-2m-4-1-thumbnail.png",
+          "type": "image/png",
+          "title": "3DEP Lidar COG",
+          "roles": [
+            "thumbnail"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=3dep-lidar-dtm&item=USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_LAS_2015-dtm-2m-4-1&assets=data&nodata=-9999",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=3dep-lidar-dtm&item=USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_LAS_2015-dtm-2m-4-1&assets=data&nodata=-9999",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -105.1911921,
+        40.1163905,
+        -105.0948298,
+        40.1903338
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+      ],
+      "collection": "3dep-lidar-dtm",
+      "links": [
+        {
+          "rel": "alternate",
+          "href": "https://thor-f5.er.usgs.gov/ngtoc/metadata/waf/elevation/lidar_point_cloud/las/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_LAS_2015/",
+          "type": "application/xml",
+          "title": "USGS Metadata"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE483440_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE483440_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE483441_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE483441_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE483443_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE483443_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE483444_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE483444_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE483446_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE483446_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE483447_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE483447_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE484440_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE484440_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE484441_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE484441_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE484443_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE484443_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE484444_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE484444_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE484446_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE484446_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE484447_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE484447_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE486440_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE486440_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE486441_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE486441_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE486443_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE486443_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE486444_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE486444_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE486446_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE486446_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE486447_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE486447_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE487440_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE487440_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE487441_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE487441_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE487443_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE487443_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE487444_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE487444_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE487446_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE487446_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE487447_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE487447_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE489440_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE489440_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE489441_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE489441_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE489443_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE489443_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE489444_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE489444_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE489446_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE489446_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE489447_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE489447_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE490440_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE490440_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE490441_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE490441_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE490443_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE490443_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE490444_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE490444_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE490446_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE490446_LAS_2015"
+        },
+        {
+          "rel": "derived_from",
+          "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE490447_LAS_2015",
+          "title": "USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_13TDE490447_LAS_2015"
+        },
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=3dep-lidar-dtm&item=USGS_LPC_CO_SoPlatteRiver_Lot2a_2013_LAS_2015-dtm-2m-4-1",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    }
+  ]
+}

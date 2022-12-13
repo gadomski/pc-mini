@@ -1,0 +1,107 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "Copernicus_DSM_COG_10_N40_00_W106_00_DEM",
+      "properties": {
+        "gsd": 30,
+        "datetime": "2021-04-22T00:00:00Z",
+        "platform": "TanDEM-X",
+        "proj:epsg": 4326,
+        "proj:shape": [
+          3600,
+          3600
+        ],
+        "proj:transform": [
+          0.0002777777777777778,
+          0.0,
+          -106.00013888888888,
+          0.0,
+          -0.0002777777777777778,
+          41.00013888888889
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -105.00013889,
+              40.00013889
+            ],
+            [
+              -105.00013889,
+              41.00013889
+            ],
+            [
+              -106.00013889,
+              41.00013889
+            ],
+            [
+              -106.00013889,
+              40.00013889
+            ],
+            [
+              -105.00013889,
+              40.00013889
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "data": {
+          "href": "https://elevationeuwest.blob.core.windows.net/copernicus-dem/COP30_hh/Copernicus_DSM_COG_10_N40_00_W106_00_DEM.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "N40_00_W106_00",
+          "roles": [
+            "data"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=cop-dem-glo-30&item=Copernicus_DSM_COG_10_N40_00_W106_00_DEM&assets=data&colormap_name=terrain&rescale=-1000%2C4000",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=cop-dem-glo-30&item=Copernicus_DSM_COG_10_N40_00_W106_00_DEM&assets=data&colormap_name=terrain&rescale=-1000%2C4000",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -106.00013888888888,
+        40.00013888888889,
+        -105.00013888888888,
+        41.00013888888889
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+      ],
+      "collection": "cop-dem-glo-30",
+      "links": [
+        {
+          "rel": "handbook",
+          "href": "https://object.cloud.sdsc.edu/v1/AUTH_opentopography/www/metadata/Copernicus_metadata.pdf",
+          "type": "application/pdf",
+          "title": "Copernicus DEM User handbook",
+          "description": "Also includes data usage information"
+        },
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=cop-dem-glo-30&item=Copernicus_DSM_COG_10_N40_00_W106_00_DEM",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    }
+  ]
+}

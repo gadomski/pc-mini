@@ -1,0 +1,1566 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "N41W106_21_F02DAR_MOS",
+      "properties": {
+        "cf": "83.0 dB",
+        "gsd": 25,
+        "title": "N41W106_21_F02DAR_MOS",
+        "datetime": "2021-01-01T00:00:00Z",
+        "platform": "ALOS-2",
+        "proj:bbox": [
+          -106.0,
+          40.0,
+          -105.0,
+          41.0
+        ],
+        "proj:epsg": 4326,
+        "proj:shape": [
+          4500,
+          4500
+        ],
+        "description": "Annual PALSAR Mosaic",
+        "instruments": [
+          "PALSAR-2"
+        ],
+        "end_datetime": "2021-12-31T23:59:59Z",
+        "proj:transform": [
+          0.0002222222222222222,
+          0.0,
+          -106.0,
+          0.0,
+          -0.0002222222222222222,
+          41.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "start_datetime": "2021-01-01T00:00:00Z",
+        "sat:orbit_state": "ascending",
+        "sar:product_type": "GTC",
+        "sar:polarizations": [
+          "HH",
+          "HV"
+        ],
+        "palsar:beam_number": "02",
+        "sar:frequency_band": "L",
+        "sar:instrument_mode": "F",
+        "sar:observation_direction": "right",
+        "palsar:number_of_polarizations": "D"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -105,
+              40
+            ],
+            [
+              -105,
+              41
+            ],
+            [
+              -106,
+              41
+            ],
+            [
+              -106,
+              40
+            ],
+            [
+              -105,
+              40
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "HH": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2021/N45W110/N41W106_21_sl_HH_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "HH",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "HV": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2021/N45W110/N41W106_21_sl_HV_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "HV",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "date": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2021/N45W110/N41W106_21_date_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "date",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "mask": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2021/N45W110/N41W106_21_mask_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "mask",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint8"
+            }
+          ],
+          "classification:classes": [
+            {
+              "name": "no_data",
+              "value": 0,
+              "description": "No data"
+            },
+            {
+              "name": "water",
+              "value": 50,
+              "description": "Water"
+            },
+            {
+              "name": "lay_over",
+              "value": 100,
+              "description": "Lay over"
+            },
+            {
+              "name": "shadowing",
+              "value": 150,
+              "description": "Shadowing"
+            },
+            {
+              "name": "land",
+              "value": 255,
+              "description": "Land"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "linci": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2021/N45W110/N41W106_21_linci_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "linci",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint8"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2021/N45W110/N41W106_21_F02DAR.xml",
+          "type": "application/xml",
+          "title": "metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=alos-palsar-mosaic&item=N41W106_21_F02DAR_MOS&expression=HH%2CHV%2CHH%2FHV&rescale=0%2C9000&rescale=0%2C4000&rescale=0%2C2",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=alos-palsar-mosaic&item=N41W106_21_F02DAR_MOS&expression=HH%2CHV%2CHH%2FHV&rescale=0%2C9000&rescale=0%2C4000&rescale=0%2C2",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -106.0,
+        40.0,
+        -105.0,
+        41.0
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
+      ],
+      "collection": "alos-palsar-mosaic",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=alos-palsar-mosaic&item=N41W106_21_F02DAR_MOS",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "N41W106_20_F02DAR_MOS",
+      "properties": {
+        "cf": "83.0 dB",
+        "gsd": 25,
+        "title": "N41W106_20_F02DAR_MOS",
+        "datetime": "2020-01-01T00:00:00Z",
+        "platform": "ALOS-2",
+        "proj:bbox": [
+          -106.0,
+          40.0,
+          -105.0,
+          41.0
+        ],
+        "proj:epsg": 4326,
+        "proj:shape": [
+          4500,
+          4500
+        ],
+        "description": "Annual PALSAR Mosaic",
+        "instruments": [
+          "PALSAR-2"
+        ],
+        "end_datetime": "2020-12-31T23:59:59Z",
+        "proj:transform": [
+          0.00022222222222222223,
+          0.0,
+          -106.0,
+          0.0,
+          -0.00022222222222222223,
+          41.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "start_datetime": "2020-01-01T00:00:00Z",
+        "sat:orbit_state": "ascending",
+        "sar:product_type": "GTC",
+        "sar:polarizations": [
+          "HH",
+          "HV"
+        ],
+        "palsar:beam_number": "02",
+        "sar:frequency_band": "L",
+        "sar:instrument_mode": "F",
+        "sar:observation_direction": "right",
+        "palsar:number_of_polarizations": "D"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -105,
+              40
+            ],
+            [
+              -105,
+              41
+            ],
+            [
+              -106,
+              41
+            ],
+            [
+              -106,
+              40
+            ],
+            [
+              -105,
+              40
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "HH": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2020/N45W110/N41W106_20_sl_HH_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "HH",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "HV": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2020/N45W110/N41W106_20_sl_HV_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "HV",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "date": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2020/N45W110/N41W106_20_date_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "date",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "mask": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2020/N45W110/N41W106_20_mask_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "mask",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint8"
+            }
+          ],
+          "classification:classes": [
+            {
+              "name": "no_data",
+              "value": 0,
+              "description": "No data"
+            },
+            {
+              "name": "water",
+              "value": 50,
+              "description": "Water"
+            },
+            {
+              "name": "lay_over",
+              "value": 100,
+              "description": "Lay over"
+            },
+            {
+              "name": "shadowing",
+              "value": 150,
+              "description": "Shadowing"
+            },
+            {
+              "name": "land",
+              "value": 255,
+              "description": "Land"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "linci": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2020/N45W110/N41W106_20_linci_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "linci",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint8"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2020/N45W110/N41W106_20_F02DAR.xml",
+          "type": "application/xml",
+          "title": "metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=alos-palsar-mosaic&item=N41W106_20_F02DAR_MOS&expression=HH%2CHV%2CHH%2FHV&rescale=0%2C9000&rescale=0%2C4000&rescale=0%2C2",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=alos-palsar-mosaic&item=N41W106_20_F02DAR_MOS&expression=HH%2CHV%2CHH%2FHV&rescale=0%2C9000&rescale=0%2C4000&rescale=0%2C2",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -106.0,
+        40.0,
+        -105.0,
+        41.0
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
+      ],
+      "collection": "alos-palsar-mosaic",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=alos-palsar-mosaic&item=N41W106_20_F02DAR_MOS",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "N41W106_19_F02DAR_MOS",
+      "properties": {
+        "cf": "83.0 dB",
+        "gsd": 25,
+        "title": "N41W106_19_F02DAR_MOS",
+        "datetime": "2019-01-01T00:00:00Z",
+        "platform": "ALOS-2",
+        "proj:bbox": [
+          -106.0,
+          40.0,
+          -105.0,
+          41.0
+        ],
+        "proj:epsg": 4326,
+        "proj:shape": [
+          4500,
+          4500
+        ],
+        "description": "Annual PALSAR Mosaic",
+        "instruments": [
+          "PALSAR-2"
+        ],
+        "end_datetime": "2019-12-31T23:59:59Z",
+        "proj:transform": [
+          0.0002222222222222222,
+          0.0,
+          -106.0,
+          0.0,
+          -0.0002222222222222222,
+          41.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "start_datetime": "2019-01-01T00:00:00Z",
+        "sat:orbit_state": "ascending",
+        "sar:product_type": "GTC",
+        "sar:polarizations": [
+          "HH",
+          "HV"
+        ],
+        "palsar:beam_number": "02",
+        "sar:frequency_band": "L",
+        "sar:instrument_mode": "F",
+        "sar:observation_direction": "right",
+        "palsar:number_of_polarizations": "D"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -105,
+              40
+            ],
+            [
+              -105,
+              41
+            ],
+            [
+              -106,
+              41
+            ],
+            [
+              -106,
+              40
+            ],
+            [
+              -105,
+              40
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "HH": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2019/N45W110/N41W106_19_sl_HH_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "HH",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "HV": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2019/N45W110/N41W106_19_sl_HV_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "HV",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "date": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2019/N45W110/N41W106_19_date_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "date",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "mask": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2019/N45W110/N41W106_19_mask_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "mask",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint8"
+            }
+          ],
+          "classification:classes": [
+            {
+              "name": "no_data",
+              "value": 0,
+              "description": "No data"
+            },
+            {
+              "name": "water",
+              "value": 50,
+              "description": "Water"
+            },
+            {
+              "name": "lay_over",
+              "value": 100,
+              "description": "Lay over"
+            },
+            {
+              "name": "shadowing",
+              "value": 150,
+              "description": "Shadowing"
+            },
+            {
+              "name": "land",
+              "value": 255,
+              "description": "Land"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "linci": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2019/N45W110/N41W106_19_linci_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "linci",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint8"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2019/N45W110/N41W106_19_F02DAR.xml",
+          "type": "application/xml",
+          "title": "metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=alos-palsar-mosaic&item=N41W106_19_F02DAR_MOS&expression=HH%2CHV%2CHH%2FHV&rescale=0%2C9000&rescale=0%2C4000&rescale=0%2C2",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=alos-palsar-mosaic&item=N41W106_19_F02DAR_MOS&expression=HH%2CHV%2CHH%2FHV&rescale=0%2C9000&rescale=0%2C4000&rescale=0%2C2",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -106.0,
+        40.0,
+        -105.0,
+        41.0
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
+      ],
+      "collection": "alos-palsar-mosaic",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=alos-palsar-mosaic&item=N41W106_19_F02DAR_MOS",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "N41W106_18_F02DAR_MOS",
+      "properties": {
+        "cf": "83.0 dB",
+        "gsd": 25,
+        "title": "N41W106_18_F02DAR_MOS",
+        "datetime": "2018-01-01T00:00:00Z",
+        "platform": "ALOS-2",
+        "proj:bbox": [
+          -106.0,
+          40.0,
+          -105.0,
+          41.0
+        ],
+        "proj:epsg": 4326,
+        "proj:shape": [
+          4500,
+          4500
+        ],
+        "description": "Annual PALSAR Mosaic",
+        "instruments": [
+          "PALSAR-2"
+        ],
+        "end_datetime": "2018-12-31T23:59:59Z",
+        "proj:transform": [
+          0.0002222222222222222,
+          0.0,
+          -106.0,
+          0.0,
+          -0.0002222222222222222,
+          41.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "start_datetime": "2018-01-01T00:00:00Z",
+        "sat:orbit_state": "ascending",
+        "sar:product_type": "GTC",
+        "sar:polarizations": [
+          "HH",
+          "HV"
+        ],
+        "palsar:beam_number": "02",
+        "sar:frequency_band": "L",
+        "sar:instrument_mode": "F",
+        "sar:observation_direction": "right",
+        "palsar:number_of_polarizations": "D"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -105,
+              40
+            ],
+            [
+              -105,
+              41
+            ],
+            [
+              -106,
+              41
+            ],
+            [
+              -106,
+              40
+            ],
+            [
+              -105,
+              40
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "HH": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2018/N45W110/N41W106_18_sl_HH_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "HH",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "HV": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2018/N45W110/N41W106_18_sl_HV_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "HV",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "date": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2018/N45W110/N41W106_18_date_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "date",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "mask": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2018/N45W110/N41W106_18_mask_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "mask",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint8"
+            }
+          ],
+          "classification:classes": [
+            {
+              "name": "no_data",
+              "value": 0,
+              "description": "No data"
+            },
+            {
+              "name": "water",
+              "value": 50,
+              "description": "Water"
+            },
+            {
+              "name": "lay_over",
+              "value": 100,
+              "description": "Lay over"
+            },
+            {
+              "name": "shadowing",
+              "value": 150,
+              "description": "Shadowing"
+            },
+            {
+              "name": "land",
+              "value": 255,
+              "description": "Land"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "linci": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2018/N45W110/N41W106_18_linci_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "linci",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint8"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2018/N45W110/N41W106_18_F02DAR.xml",
+          "type": "application/xml",
+          "title": "metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=alos-palsar-mosaic&item=N41W106_18_F02DAR_MOS&expression=HH%2CHV%2CHH%2FHV&rescale=0%2C9000&rescale=0%2C4000&rescale=0%2C2",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=alos-palsar-mosaic&item=N41W106_18_F02DAR_MOS&expression=HH%2CHV%2CHH%2FHV&rescale=0%2C9000&rescale=0%2C4000&rescale=0%2C2",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -106.0,
+        40.0,
+        -105.0,
+        41.0
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
+      ],
+      "collection": "alos-palsar-mosaic",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=alos-palsar-mosaic&item=N41W106_18_F02DAR_MOS",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "N41W106_17_F02DAR_MOS",
+      "properties": {
+        "cf": "83.0 dB",
+        "gsd": 25,
+        "title": "N41W106_17_F02DAR_MOS",
+        "datetime": "2017-01-01T00:00:00Z",
+        "platform": "ALOS-2",
+        "proj:bbox": [
+          -106.0,
+          40.0,
+          -105.0,
+          41.0
+        ],
+        "proj:epsg": 4326,
+        "proj:shape": [
+          4500,
+          4500
+        ],
+        "description": "Annual PALSAR Mosaic",
+        "instruments": [
+          "PALSAR-2"
+        ],
+        "end_datetime": "2017-12-31T23:59:59Z",
+        "proj:transform": [
+          0.0002222222222222222,
+          0.0,
+          -106.0,
+          0.0,
+          -0.0002222222222222222,
+          41.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "start_datetime": "2017-01-01T00:00:00Z",
+        "sat:orbit_state": "ascending",
+        "sar:product_type": "GTC",
+        "sar:polarizations": [
+          "HH",
+          "HV"
+        ],
+        "palsar:beam_number": "02",
+        "sar:frequency_band": "L",
+        "sar:instrument_mode": "F",
+        "sar:observation_direction": "right",
+        "palsar:number_of_polarizations": "D"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -105,
+              40
+            ],
+            [
+              -105,
+              41
+            ],
+            [
+              -106,
+              41
+            ],
+            [
+              -106,
+              40
+            ],
+            [
+              -105,
+              40
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "HH": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2017/N45W110/N41W106_17_sl_HH_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "HH",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "HV": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2017/N45W110/N41W106_17_sl_HV_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "HV",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "date": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2017/N45W110/N41W106_17_date_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "date",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "mask": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2017/N45W110/N41W106_17_mask_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "mask",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint8"
+            }
+          ],
+          "classification:classes": [
+            {
+              "name": "no_data",
+              "value": 0,
+              "description": "No data"
+            },
+            {
+              "name": "water",
+              "value": 50,
+              "description": "Water"
+            },
+            {
+              "name": "lay_over",
+              "value": 100,
+              "description": "Lay over"
+            },
+            {
+              "name": "shadowing",
+              "value": 150,
+              "description": "Shadowing"
+            },
+            {
+              "name": "land",
+              "value": 255,
+              "description": "Land"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "linci": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2017/N45W110/N41W106_17_linci_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "linci",
+          "raster:bands": [
+            {
+              "nodata": 1,
+              "data_type": "uint8"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2017/N45W110/N41W106_17_F02DAR.xml",
+          "type": "application/xml",
+          "title": "metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=alos-palsar-mosaic&item=N41W106_17_F02DAR_MOS&expression=HH%2CHV%2CHH%2FHV&rescale=0%2C9000&rescale=0%2C4000&rescale=0%2C2",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=alos-palsar-mosaic&item=N41W106_17_F02DAR_MOS&expression=HH%2CHV%2CHH%2FHV&rescale=0%2C9000&rescale=0%2C4000&rescale=0%2C2",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -106.0,
+        40.0,
+        -105.0,
+        41.0
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
+      ],
+      "collection": "alos-palsar-mosaic",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=alos-palsar-mosaic&item=N41W106_17_F02DAR_MOS",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "N41W106_16_F02DAR_MOS",
+      "properties": {
+        "cf": "83.0 dB",
+        "gsd": 25,
+        "title": "N41W106_16_F02DAR_MOS",
+        "datetime": "2016-01-01T00:00:00Z",
+        "platform": "ALOS-2",
+        "proj:bbox": [
+          -106.0,
+          40.0,
+          -105.0,
+          41.0
+        ],
+        "proj:epsg": 4326,
+        "proj:shape": [
+          4500,
+          4500
+        ],
+        "description": "Annual PALSAR Mosaic",
+        "instruments": [
+          "PALSAR-2"
+        ],
+        "end_datetime": "2016-12-31T23:59:59Z",
+        "proj:transform": [
+          0.0002222222222222222,
+          0.0,
+          -106.0,
+          0.0,
+          -0.0002222222222222222,
+          41.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "start_datetime": "2016-01-01T00:00:00Z",
+        "sat:orbit_state": "ascending",
+        "sar:product_type": "GTC",
+        "sar:polarizations": [
+          "HH",
+          "HV"
+        ],
+        "palsar:beam_number": "02",
+        "sar:frequency_band": "L",
+        "sar:instrument_mode": "F",
+        "sar:observation_direction": "right",
+        "palsar:number_of_polarizations": "D"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -105,
+              40
+            ],
+            [
+              -105,
+              41
+            ],
+            [
+              -106,
+              41
+            ],
+            [
+              -106,
+              40
+            ],
+            [
+              -105,
+              40
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "HH": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2016/N45W110/N41W106_16_sl_HH_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "HH",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "HV": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2016/N45W110/N41W106_16_sl_HV_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "HV",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "date": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2016/N45W110/N41W106_16_date_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "date",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "mask": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2016/N45W110/N41W106_16_mask_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "mask",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint8"
+            }
+          ],
+          "classification:classes": [
+            {
+              "name": "no_data",
+              "value": 0,
+              "description": "No data"
+            },
+            {
+              "name": "water",
+              "value": 50,
+              "description": "Water"
+            },
+            {
+              "name": "lay_over",
+              "value": 100,
+              "description": "Lay over"
+            },
+            {
+              "name": "shadowing",
+              "value": 150,
+              "description": "Shadowing"
+            },
+            {
+              "name": "land",
+              "value": 255,
+              "description": "Land"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "linci": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2016/N45W110/N41W106_16_linci_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "linci",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint8"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2016/N45W110/N41W106_16_F02DAR.xml",
+          "type": "application/xml",
+          "title": "metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=alos-palsar-mosaic&item=N41W106_16_F02DAR_MOS&expression=HH%2CHV%2CHH%2FHV&rescale=0%2C9000&rescale=0%2C4000&rescale=0%2C2",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=alos-palsar-mosaic&item=N41W106_16_F02DAR_MOS&expression=HH%2CHV%2CHH%2FHV&rescale=0%2C9000&rescale=0%2C4000&rescale=0%2C2",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -106.0,
+        40.0,
+        -105.0,
+        41.0
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
+      ],
+      "collection": "alos-palsar-mosaic",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=alos-palsar-mosaic&item=N41W106_16_F02DAR_MOS",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "N41W106_15_F02DAR_MOS",
+      "properties": {
+        "cf": "83.0 dB",
+        "gsd": 25,
+        "title": "N41W106_15_F02DAR_MOS",
+        "datetime": "2015-01-01T00:00:00Z",
+        "platform": "ALOS-2",
+        "proj:bbox": [
+          -106.0,
+          40.0,
+          -105.0,
+          41.0
+        ],
+        "proj:epsg": 4326,
+        "proj:shape": [
+          4500,
+          4500
+        ],
+        "description": "Annual PALSAR Mosaic",
+        "instruments": [
+          "PALSAR-2"
+        ],
+        "end_datetime": "2015-12-31T23:59:59Z",
+        "proj:transform": [
+          0.0002222222222222222,
+          0.0,
+          -106.0,
+          0.0,
+          -0.0002222222222222222,
+          41.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "start_datetime": "2015-01-01T00:00:00Z",
+        "sat:orbit_state": "ascending",
+        "sar:product_type": "GTC",
+        "sar:polarizations": [
+          "HH",
+          "HV"
+        ],
+        "palsar:beam_number": "02",
+        "sar:frequency_band": "L",
+        "sar:instrument_mode": "F",
+        "sar:observation_direction": "right",
+        "palsar:number_of_polarizations": "D"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -105,
+              40
+            ],
+            [
+              -105,
+              41
+            ],
+            [
+              -106,
+              41
+            ],
+            [
+              -106,
+              40
+            ],
+            [
+              -105,
+              40
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "HH": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2015/N45W110/N41W106_15_sl_HH_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "HH",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "HV": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2015/N45W110/N41W106_15_sl_HV_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "HV",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "date": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2015/N45W110/N41W106_15_date_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "date",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint16"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "mask": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2015/N45W110/N41W106_15_mask_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "mask",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint8"
+            }
+          ],
+          "classification:classes": [
+            {
+              "name": "no_data",
+              "value": 0,
+              "description": "No data"
+            },
+            {
+              "name": "water",
+              "value": 50,
+              "description": "Water"
+            },
+            {
+              "name": "lay_over",
+              "value": 100,
+              "description": "Lay over"
+            },
+            {
+              "name": "shadowing",
+              "value": 150,
+              "description": "Shadowing"
+            },
+            {
+              "name": "land",
+              "value": 255,
+              "description": "Land"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "linci": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2015/N45W110/N41W106_15_linci_F02DAR.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "linci",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint8"
+            }
+          ],
+          "roles": [
+            "data"
+          ]
+        },
+        "metadata": {
+          "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_palsar_mosaic/2015/N45W110/N41W106_15_F02DAR.xml",
+          "type": "application/xml",
+          "title": "metadata",
+          "roles": [
+            "metadata"
+          ]
+        },
+        "tilejson": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=alos-palsar-mosaic&item=N41W106_15_F02DAR_MOS&expression=HH%2CHV%2CHH%2FHV&rescale=0%2C9000&rescale=0%2C4000&rescale=0%2C2",
+          "type": "application/json",
+          "title": "TileJSON with default rendering",
+          "roles": [
+            "tiles"
+          ]
+        },
+        "rendered_preview": {
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=alos-palsar-mosaic&item=N41W106_15_F02DAR_MOS&expression=HH%2CHV%2CHH%2FHV&rescale=0%2C9000&rescale=0%2C4000&rescale=0%2C2",
+          "type": "image/png",
+          "title": "Rendered preview",
+          "rel": "preview",
+          "roles": [
+            "overview"
+          ]
+        }
+      },
+      "bbox": [
+        -106.0,
+        40.0,
+        -105.0,
+        41.0
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
+      ],
+      "collection": "alos-palsar-mosaic",
+      "links": [
+        {
+          "rel": "preview",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=alos-palsar-mosaic&item=N41W106_15_F02DAR_MOS",
+          "type": "text/html",
+          "title": "Map of item"
+        }
+      ]
+    }
+  ]
+}

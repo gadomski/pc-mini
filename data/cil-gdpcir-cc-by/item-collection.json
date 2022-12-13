@@ -1,0 +1,2291 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "cil-gdpcir-NUIST-NESM3-ssp585-r1i1p1f1-day",
+      "properties": {
+        "datetime": null,
+        "cmip6:realm": "atmos",
+        "cmip6:source": "NESM v3 (2016): \\\\naerosol: none\\\\natmos: ECHAM v6.3 (T63; 192 x 96 longitude/latitude; 47 levels; top level 1 Pa)\\\\natmosChem: none\\\\nland: JSBACH v3.1\\\\nlandIce: none\\\\nocean: NEMO v3.4 (NEMO v3.4, tripolar primarily 1deg; 384 x 362 longitude/latitude; 46 levels; top grid cell 0-6 m)\\\\nocnBgchem: none\\\\nseaIce: CICE4.1",
+        "end_datetime": "2100-12-31T12:00:00Z",
+        "cmip6:license": "https://github.com/ClimateImpactLab/downscaleCMIP6/tree/master/data_licenses/NESM3.txt",
+        "cmip6:mip_era": "CMIP6",
+        "cmip6:product": "model-output",
+        "cmip6:table_id": "day",
+        "cube:variables": {
+          "pr": {
+            "type": "data",
+            "unit": "mm day-1",
+            "attrs": {
+              "units": "mm day-1"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ]
+          },
+          "tasmax": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "comment": "maximum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: max')",
+              "history": "2019-08-11T09:50:24Z altered by CMOR: Treated scalar dimension: 'height'. 2019-08-11T09:50:24Z altered by CMOR: Inverted axis: lat.",
+              "long_name": "Daily Maximum Near-Surface Air Temperature",
+              "cell_methods": "area: mean time: maximum",
+              "cell_measures": "area: areacella",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Maximum Near-Surface Air Temperature"
+          },
+          "tasmin": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "comment": "minimum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: min')",
+              "history": "2019-08-11T09:48:45Z altered by CMOR: Treated scalar dimension: 'height'. 2019-08-11T09:48:45Z altered by CMOR: Inverted axis: lat.",
+              "long_name": "Daily Minimum Near-Surface Air Temperature",
+              "cell_methods": "area: mean time: minimum",
+              "cell_measures": "area: areacella",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Minimum Near-Surface Air Temperature"
+          }
+        },
+        "start_datetime": "2015-01-01T12:00:00Z",
+        "cmip6:frequency": "day",
+        "cmip6:source_id": "NESM3",
+        "cube:dimensions": {
+          "lat": {
+            "axis": "y",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -89.875,
+              89.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "lon": {
+            "axis": "x",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -179.875,
+              179.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "time": {
+            "step": "P1DT0H0M0S",
+            "type": "temporal",
+            "extent": [
+              "2015-01-01T12:00:00Z",
+              "2100-12-31T12:00:00Z"
+            ],
+            "description": "time"
+          }
+        },
+        "cmip6:experiment": "update of RCP8.5 based on SSP5",
+        "cmip6:Conventions": "CF-1.7 CMIP-6.2",
+        "cmip6:activity_id": "ScenarioMIP",
+        "cmip6:institution": "Nanjing University of Information Science and Technology, Nanjing, 210044, China",
+        "cmip6:source_type": "AOGCM",
+        "cmip6:experiment_id": "ssp585",
+        "cmip6:forcing_index": 1,
+        "cmip6:physics_index": 1,
+        "cmip6:variant_label": "r1i1p1f1",
+        "cmip6:institution_id": "NUIST",
+        "cmip6:sub_experiment": "none",
+        "cmip6:further_info_url": "https://furtherinfo.es-doc.org/CMIP6.NUIST.NESM3.ssp585.none.r1i1p1f1",
+        "cmip6:realization_index": 1,
+        "cmip6:sub_experiment_id": "none",
+        "cmip6:data_specs_version": "01.00.30",
+        "cmip6:nominal_resolution": "250 km",
+        "cmip6:initialization_index": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "pr": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp585/r1i1p1f1/day/pr/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "T63",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp585/r1i1p1f1/day/pr/v1.1.zarr",
+          "cmip6:grid_label": "gn",
+          "cmip6:tracking_id": "hdl:21.14100/ed432434-922e-4cea-8400-c321598fd7cf\\\\nhdl:21.14100/abea2bb8-09d0-4114-9051-fe232efe108e\\\\nhdl:21.14100/205a607f-75f4-4919-b495-45fa8fdb77b8",
+          "cmip6:variable_id": "pr",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-08-11T09:53:50Z"
+        },
+        "tasmax": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp585/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "T63",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp585/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "cmip6:grid_label": "gn",
+          "cmip6:tracking_id": "hdl:21.14100/01f58d9c-1317-467e-813d-a2358cdf7954\\\\nhdl:21.14100/e027cda7-ac28-4e00-b03f-53ad2e6d30b4\\\\nhdl:21.14100/3898bc79-5174-4fcc-9637-4573914ad548",
+          "cmip6:variable_id": "tasmax",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-08-11T09:50:24Z"
+        },
+        "tasmin": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp585/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "T63",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp585/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "cmip6:grid_label": "gn",
+          "cmip6:tracking_id": "hdl:21.14100/1998e7f0-ad6a-4720-8150-9085db6f96b8\\\\nhdl:21.14100/ca181871-4103-481d-8764-b74c2448427f\\\\nhdl:21.14100/fceb22c4-0454-4d68-bb48-1d903df19e63",
+          "cmip6:variable_id": "tasmin",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-08-11T09:48:45Z"
+        }
+      },
+      "bbox": [
+        -180,
+        -90,
+        180,
+        90
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+      ],
+      "collection": "cil-gdpcir-cc-by",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "cil-gdpcir-NUIST-NESM3-ssp245-r1i1p1f1-day",
+      "properties": {
+        "datetime": null,
+        "cmip6:realm": "atmos",
+        "cmip6:source": "NESM v3 (2016): \\\\naerosol: none\\\\natmos: ECHAM v6.3 (T63; 192 x 96 longitude/latitude; 47 levels; top level 1 Pa)\\\\natmosChem: none\\\\nland: JSBACH v3.1\\\\nlandIce: none\\\\nocean: NEMO v3.4 (NEMO v3.4, tripolar primarily 1deg; 384 x 362 longitude/latitude; 46 levels; top grid cell 0-6 m)\\\\nocnBgchem: none\\\\nseaIce: CICE4.1",
+        "end_datetime": "2100-12-31T12:00:00Z",
+        "cmip6:license": "https://github.com/ClimateImpactLab/downscaleCMIP6/tree/master/data_licenses/NESM3.txt",
+        "cmip6:mip_era": "CMIP6",
+        "cmip6:product": "model-output",
+        "cmip6:table_id": "day",
+        "cube:variables": {
+          "pr": {
+            "type": "data",
+            "unit": "mm day-1",
+            "attrs": {
+              "units": "mm day-1"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ]
+          },
+          "tasmax": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "comment": "maximum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: max')",
+              "history": "2019-08-05T10:33:28Z altered by CMOR: Treated scalar dimension: 'height'. 2019-08-05T10:33:28Z altered by CMOR: Inverted axis: lat.",
+              "long_name": "Daily Maximum Near-Surface Air Temperature",
+              "cell_methods": "area: mean time: maximum",
+              "cell_measures": "area: areacella",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Maximum Near-Surface Air Temperature"
+          },
+          "tasmin": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "comment": "minimum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: min')",
+              "history": "2019-08-05T10:31:06Z altered by CMOR: Treated scalar dimension: 'height'. 2019-08-05T10:31:06Z altered by CMOR: Inverted axis: lat.",
+              "long_name": "Daily Minimum Near-Surface Air Temperature",
+              "cell_methods": "area: mean time: minimum",
+              "cell_measures": "area: areacella",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Minimum Near-Surface Air Temperature"
+          }
+        },
+        "start_datetime": "2015-01-01T12:00:00Z",
+        "cmip6:frequency": "day",
+        "cmip6:source_id": "NESM3",
+        "cube:dimensions": {
+          "lat": {
+            "axis": "y",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -89.875,
+              89.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "lon": {
+            "axis": "x",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -179.875,
+              179.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "time": {
+            "step": "P1DT0H0M0S",
+            "type": "temporal",
+            "extent": [
+              "2015-01-01T12:00:00Z",
+              "2100-12-31T12:00:00Z"
+            ],
+            "description": "time"
+          }
+        },
+        "cmip6:experiment": "update of RCP4.5 based on SSP2",
+        "cmip6:Conventions": "CF-1.7 CMIP-6.2",
+        "cmip6:activity_id": "ScenarioMIP",
+        "cmip6:institution": "Nanjing University of Information Science and Technology, Nanjing, 210044, China",
+        "cmip6:source_type": "AOGCM",
+        "cmip6:experiment_id": "ssp245",
+        "cmip6:forcing_index": 1,
+        "cmip6:physics_index": 1,
+        "cmip6:variant_label": "r1i1p1f1",
+        "cmip6:institution_id": "NUIST",
+        "cmip6:sub_experiment": "none",
+        "cmip6:further_info_url": "https://furtherinfo.es-doc.org/CMIP6.NUIST.NESM3.ssp245.none.r1i1p1f1",
+        "cmip6:realization_index": 1,
+        "cmip6:sub_experiment_id": "none",
+        "cmip6:data_specs_version": "01.00.30",
+        "cmip6:nominal_resolution": "250 km",
+        "cmip6:initialization_index": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "pr": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp245/r1i1p1f1/day/pr/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "T63",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp245/r1i1p1f1/day/pr/v1.1.zarr",
+          "cmip6:grid_label": "gn",
+          "cmip6:tracking_id": "hdl:21.14100/57c1e652-330c-495e-87bf-5e6d88adb2d4\\\\nhdl:21.14100/7ccfcecf-f88f-42d1-9c4d-1137f8e456e4\\\\nhdl:21.14100/1e633a61-6fd0-424b-aed5-d6641b433b93",
+          "cmip6:variable_id": "pr",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-08-05T10:38:15Z"
+        },
+        "tasmax": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp245/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "T63",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp245/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "cmip6:grid_label": "gn",
+          "cmip6:tracking_id": "hdl:21.14100/e21ab4fd-0763-45bf-affa-4cc1e03c3352\\\\nhdl:21.14100/157499c2-2fa9-4b7a-ab64-4b6f55c2230c\\\\nhdl:21.14100/50220877-4963-4f48-b995-86a47edd53f4",
+          "cmip6:variable_id": "tasmax",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-08-05T10:33:28Z"
+        },
+        "tasmin": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp245/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "T63",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp245/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "cmip6:grid_label": "gn",
+          "cmip6:tracking_id": "hdl:21.14100/dfd63cea-b8b7-45f5-ae9a-ffe30d7dc6ca\\\\nhdl:21.14100/d85692ff-81e6-4141-b8c8-11bb0c63f0e8\\\\nhdl:21.14100/6c55ae82-5849-47d0-83ac-da3eeeca2655",
+          "cmip6:variable_id": "tasmin",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-08-05T10:31:06Z"
+        }
+      },
+      "bbox": [
+        -180,
+        -90,
+        180,
+        90
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+      ],
+      "collection": "cil-gdpcir-cc-by",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "cil-gdpcir-NUIST-NESM3-ssp126-r1i1p1f1-day",
+      "properties": {
+        "datetime": null,
+        "cmip6:realm": "atmos",
+        "cmip6:source": "NESM v3 (2016): \\\\naerosol: none\\\\natmos: ECHAM v6.3 (T63; 192 x 96 longitude/latitude; 47 levels; top level 1 Pa)\\\\natmosChem: none\\\\nland: JSBACH v3.1\\\\nlandIce: none\\\\nocean: NEMO v3.4 (NEMO v3.4, tripolar primarily 1deg; 384 x 362 longitude/latitude; 46 levels; top grid cell 0-6 m)\\\\nocnBgchem: none\\\\nseaIce: CICE4.1",
+        "end_datetime": "2100-12-31T12:00:00Z",
+        "cmip6:license": "https://github.com/ClimateImpactLab/downscaleCMIP6/tree/master/data_licenses/NESM3.txt",
+        "cmip6:mip_era": "CMIP6",
+        "cmip6:product": "model-output",
+        "cmip6:table_id": "day",
+        "cube:variables": {
+          "pr": {
+            "type": "data",
+            "unit": "mm day-1",
+            "attrs": {
+              "units": "mm day-1"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ]
+          },
+          "tasmax": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "comment": "maximum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: max')",
+              "history": "2019-08-05T15:19:18Z altered by CMOR: Treated scalar dimension: 'height'. 2019-08-05T15:19:18Z altered by CMOR: Inverted axis: lat.",
+              "long_name": "Daily Maximum Near-Surface Air Temperature",
+              "cell_methods": "area: mean time: maximum",
+              "cell_measures": "area: areacella",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Maximum Near-Surface Air Temperature"
+          },
+          "tasmin": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "comment": "minimum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: min')",
+              "history": "2019-08-05T15:16:55Z altered by CMOR: Treated scalar dimension: 'height'. 2019-08-05T15:16:55Z altered by CMOR: Inverted axis: lat.",
+              "long_name": "Daily Minimum Near-Surface Air Temperature",
+              "cell_methods": "area: mean time: minimum",
+              "cell_measures": "area: areacella",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Minimum Near-Surface Air Temperature"
+          }
+        },
+        "start_datetime": "2015-01-01T12:00:00Z",
+        "cmip6:frequency": "day",
+        "cmip6:source_id": "NESM3",
+        "cube:dimensions": {
+          "lat": {
+            "axis": "y",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -89.875,
+              89.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "lon": {
+            "axis": "x",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -179.875,
+              179.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "time": {
+            "step": "P1DT0H0M0S",
+            "type": "temporal",
+            "extent": [
+              "2015-01-01T12:00:00Z",
+              "2100-12-31T12:00:00Z"
+            ],
+            "description": "time"
+          }
+        },
+        "cmip6:experiment": "update of RCP2.6 based on SSP1",
+        "cmip6:Conventions": "CF-1.7 CMIP-6.2",
+        "cmip6:activity_id": "ScenarioMIP",
+        "cmip6:institution": "Nanjing University of Information Science and Technology, Nanjing, 210044, China",
+        "cmip6:source_type": "AOGCM",
+        "cmip6:experiment_id": "ssp126",
+        "cmip6:forcing_index": 1,
+        "cmip6:physics_index": 1,
+        "cmip6:variant_label": "r1i1p1f1",
+        "cmip6:institution_id": "NUIST",
+        "cmip6:sub_experiment": "none",
+        "cmip6:further_info_url": "https://furtherinfo.es-doc.org/CMIP6.NUIST.NESM3.ssp126.none.r1i1p1f1",
+        "cmip6:realization_index": 1,
+        "cmip6:sub_experiment_id": "none",
+        "cmip6:data_specs_version": "01.00.30",
+        "cmip6:nominal_resolution": "250 km",
+        "cmip6:initialization_index": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "pr": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp126/r1i1p1f1/day/pr/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "T63",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp126/r1i1p1f1/day/pr/v1.1.zarr",
+          "cmip6:grid_label": "gn",
+          "cmip6:tracking_id": "hdl:21.14100/0ef80cdf-eabf-480e-b634-7d3f76c9f9d7\\\\nhdl:21.14100/30c0c062-fe0a-436d-8028-2aa9f8791714\\\\nhdl:21.14100/3b86bb85-4cae-415a-8f36-24b1af93e705",
+          "cmip6:variable_id": "pr",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-08-05T15:24:06Z"
+        },
+        "tasmax": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp126/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "T63",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp126/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "cmip6:grid_label": "gn",
+          "cmip6:tracking_id": "hdl:21.14100/af0a8710-02e9-4286-aff5-23d1512474fa\\\\nhdl:21.14100/30ad6ba0-5d1d-4763-bba3-ad4bed2734bf\\\\nhdl:21.14100/d3fdc4b9-bef0-4651-8761-b5a374d2c495",
+          "cmip6:variable_id": "tasmax",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-08-05T15:19:18Z"
+        },
+        "tasmin": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp126/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "T63",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp126/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "cmip6:grid_label": "gn",
+          "cmip6:tracking_id": "hdl:21.14100/7ec53bfa-7c3c-458e-bd36-b70e47e6f72e\\\\nhdl:21.14100/703f4d7f-b365-4b33-90a3-7d69d80f683a\\\\nhdl:21.14100/c5b0e5eb-55e9-4e53-ad59-4eebeaf15271",
+          "cmip6:variable_id": "tasmin",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-08-05T15:16:55Z"
+        }
+      },
+      "bbox": [
+        -180,
+        -90,
+        180,
+        90
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+      ],
+      "collection": "cil-gdpcir-cc-by",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "cil-gdpcir-NOAA-GFDL-GFDL-ESM4-ssp585-r1i1p1f1-day",
+      "properties": {
+        "datetime": null,
+        "cmip6:realm": "atmos",
+        "cmip6:source": "GFDL-ESM4 (2018):\\\\natmos: GFDL-AM4.1 (Cubed-sphere (c96) - 1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 49 levels; top level 1 Pa)\\\\nocean: GFDL-OM4p5 (GFDL-MOM6, tripolar - nominal 0.5 deg; 720 x 576 longitude/latitude; 75 levels; top grid cell 0-2 m)\\\\nseaIce: GFDL-SIM4p5 (GFDL-SIS2.0, tripolar - nominal 0.5 deg; 720 x 576 longitude/latitude; 5 layers; 5 thickness categories)\\\\nland: GFDL-LM4.1\\\\naerosol: interactive\\\\natmosChem: GFDL-ATMCHEM4.1 (full atmospheric chemistry)\\\\nocnBgchem: GFDL-COBALTv2\\\\nlandIce: GFDL-LM4.1\\\\n(GFDL ID: 2019_0301)",
+        "end_datetime": "2100-12-31T12:00:00Z",
+        "cmip6:license": "https://github.com/ClimateImpactLab/downscaleCMIP6/tree/master/data_licenses/GFDL-ESM4.txt",
+        "cmip6:mip_era": "CMIP6",
+        "cmip6:product": "model-output",
+        "cmip6:table_id": "day",
+        "cube:variables": {
+          "pr": {
+            "type": "data",
+            "unit": "mm day-1",
+            "attrs": {
+              "units": "mm day-1"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ]
+          },
+          "tasmax": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "long_name": "Daily Maximum Near-Surface Air Temperature",
+              "coordinates": "height",
+              "cell_methods": "area: mean time: maximum",
+              "cell_measures": "area: areacella",
+              "interp_method": "conserve_order2",
+              "original_name": "tasmax",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Maximum Near-Surface Air Temperature"
+          },
+          "tasmin": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "long_name": "Daily Minimum Near-Surface Air Temperature",
+              "coordinates": "height",
+              "cell_methods": "area: mean time: minimum",
+              "cell_measures": "area: areacella",
+              "interp_method": "conserve_order2",
+              "original_name": "tasmin",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Minimum Near-Surface Air Temperature"
+          }
+        },
+        "start_datetime": "2015-01-01T12:00:00Z",
+        "cmip6:frequency": "day",
+        "cmip6:source_id": "GFDL-ESM4",
+        "cube:dimensions": {
+          "lat": {
+            "axis": "y",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -89.875,
+              89.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "lon": {
+            "axis": "x",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -179.875,
+              179.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "time": {
+            "step": "P1DT0H0M0S",
+            "type": "temporal",
+            "extent": [
+              "2015-01-01T12:00:00Z",
+              "2100-12-31T12:00:00Z"
+            ],
+            "description": "time"
+          }
+        },
+        "cmip6:experiment": "update of RCP8.5 based on SSP5",
+        "cmip6:Conventions": "CF-1.7 CMIP-6.0 UGRID-1.0",
+        "cmip6:activity_id": "ScenarioMIP",
+        "cmip6:institution": "National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA",
+        "cmip6:source_type": "AOGCM AER CHEM BGC",
+        "cmip6:experiment_id": "ssp585",
+        "cmip6:forcing_index": 1,
+        "cmip6:physics_index": 1,
+        "cmip6:variant_label": "r1i1p1f1",
+        "cmip6:institution_id": "NOAA-GFDL",
+        "cmip6:sub_experiment": "none",
+        "cmip6:further_info_url": "https://furtherinfo.es-doc.org/CMIP6.NOAA-GFDL.GFDL-ESM4.ssp585.none.r1i1p1f1",
+        "cmip6:realization_index": 1,
+        "cmip6:sub_experiment_id": "none",
+        "cmip6:data_specs_version": "01.00.27",
+        "cmip6:nominal_resolution": "100 km",
+        "cmip6:initialization_index": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "pr": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp585/r1i1p1f1/day/pr/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order1",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp585/r1i1p1f1/day/pr/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/e5a52b09-5ca8-421d-a446-f0874c07f4c6\\\\nhdl:21.14100/b0b3c0e5-c43a-4cb2-9198-7d16c711329f\\\\nhdl:21.14100/098838f0-9fa5-45f9-8409-0a287dd5d541\\\\nhdl:21.14100/052f154d-c99d-4c2b-94ef-6ba07b5ba0df\\\\nhdl:21.14100/01810b71-8a4e-4e10-96f5-a2c0c0d35397",
+          "cmip6:variable_id": "pr",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-06-18T23:05:43Z"
+        },
+        "tasmax": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp585/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order2",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp585/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/67242666-b902-45dd-96fa-64875db6a5bb\\\\nhdl:21.14100/ec0a9e52-01dc-4d1f-b2a6-3126f3e203f5\\\\nhdl:21.14100/09d62aae-8bee-45c1-b27c-e41a1ce04c96\\\\nhdl:21.14100/a118f27c-7c0b-4482-a268-dfd4efaa1a1b\\\\nhdl:21.14100/1ccc376f-da01-45b1-9f60-1a49ac99e409",
+          "cmip6:variable_id": "tasmax",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-06-19T01:17:16Z"
+        },
+        "tasmin": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp585/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order2",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp585/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/ba9c64d6-d5e3-43a9-92d1-f044ed1e58da\\\\nhdl:21.14100/cd15f783-1762-450c-97e9-837bda923cd4\\\\nhdl:21.14100/0341f207-cb57-439d-b10f-bb3ee4a78d49\\\\nhdl:21.14100/640dfc6c-14b2-47e4-b08f-2e0db7e5a58e\\\\nhdl:21.14100/f18df995-c4dd-49c0-a698-bea2940566f2",
+          "cmip6:variable_id": "tasmin",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-06-19T01:13:21Z"
+        }
+      },
+      "bbox": [
+        -180,
+        -90,
+        180,
+        90
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+      ],
+      "collection": "cil-gdpcir-cc-by",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "cil-gdpcir-NOAA-GFDL-GFDL-ESM4-ssp370-r1i1p1f1-day",
+      "properties": {
+        "datetime": null,
+        "cmip6:realm": "atmos",
+        "cmip6:source": "GFDL-ESM4 (2018):\\\\natmos: GFDL-AM4.1 (Cubed-sphere (c96) - 1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 49 levels; top level 1 Pa)\\\\nocean: GFDL-OM4p5 (GFDL-MOM6, tripolar - nominal 0.5 deg; 720 x 576 longitude/latitude; 75 levels; top grid cell 0-2 m)\\\\nseaIce: GFDL-SIM4p5 (GFDL-SIS2.0, tripolar - nominal 0.5 deg; 720 x 576 longitude/latitude; 5 layers; 5 thickness categories)\\\\nland: GFDL-LM4.1\\\\naerosol: interactive\\\\natmosChem: GFDL-ATMCHEM4.1 (full atmospheric chemistry)\\\\nocnBgchem: GFDL-COBALTv2\\\\nlandIce: GFDL-LM4.1\\\\n(GFDL ID: 2019_0302)",
+        "end_datetime": "2100-12-31T12:00:00Z",
+        "cmip6:license": "https://github.com/ClimateImpactLab/downscaleCMIP6/tree/master/data_licenses/GFDL-ESM4.txt",
+        "cmip6:mip_era": "CMIP6",
+        "cmip6:product": "model-output",
+        "cmip6:table_id": "day",
+        "cube:variables": {
+          "pr": {
+            "type": "data",
+            "unit": "mm day-1",
+            "attrs": {
+              "units": "mm day-1"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ]
+          },
+          "tasmax": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "long_name": "Daily Maximum Near-Surface Air Temperature",
+              "coordinates": "height",
+              "cell_methods": "area: mean time: maximum",
+              "cell_measures": "area: areacella",
+              "interp_method": "conserve_order2",
+              "original_name": "tasmax",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Maximum Near-Surface Air Temperature"
+          },
+          "tasmin": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "long_name": "Daily Minimum Near-Surface Air Temperature",
+              "coordinates": "height",
+              "cell_methods": "area: mean time: minimum",
+              "cell_measures": "area: areacella",
+              "interp_method": "conserve_order2",
+              "original_name": "tasmin",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Minimum Near-Surface Air Temperature"
+          }
+        },
+        "start_datetime": "2015-01-01T12:00:00Z",
+        "cmip6:frequency": "day",
+        "cmip6:source_id": "GFDL-ESM4",
+        "cube:dimensions": {
+          "lat": {
+            "axis": "y",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -89.875,
+              89.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "lon": {
+            "axis": "x",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -179.875,
+              179.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "time": {
+            "step": "P1DT0H0M0S",
+            "type": "temporal",
+            "extent": [
+              "2015-01-01T12:00:00Z",
+              "2100-12-31T12:00:00Z"
+            ],
+            "description": "time"
+          }
+        },
+        "cmip6:experiment": "gap-filling scenario reaching 7.0 based on SSP3",
+        "cmip6:Conventions": "CF-1.7 CMIP-6.0 UGRID-1.0",
+        "cmip6:activity_id": "ScenarioMIP",
+        "cmip6:institution": "National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA",
+        "cmip6:source_type": "AOGCM AER CHEM BGC",
+        "cmip6:experiment_id": "ssp370",
+        "cmip6:forcing_index": 1,
+        "cmip6:physics_index": 1,
+        "cmip6:variant_label": "r1i1p1f1",
+        "cmip6:institution_id": "NOAA-GFDL",
+        "cmip6:sub_experiment": "none",
+        "cmip6:further_info_url": "https://furtherinfo.es-doc.org/CMIP6.NOAA-GFDL.GFDL-ESM4.ssp370.none.r1i1p1f1",
+        "cmip6:realization_index": 1,
+        "cmip6:sub_experiment_id": "none",
+        "cmip6:data_specs_version": "01.00.27",
+        "cmip6:nominal_resolution": "100 km",
+        "cmip6:initialization_index": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "pr": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp370/r1i1p1f1/day/pr/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order1",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp370/r1i1p1f1/day/pr/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/81ff60c3-8b20-4cc0-91a8-e903e7f71f08\\\\nhdl:21.14100/14f538eb-863f-4d67-b138-c16f87dae6af\\\\nhdl:21.14100/de9b4435-ab84-4728-9477-994c7d07572d\\\\nhdl:21.14100/9deb92ae-9222-4f34-b076-69a21b05e54d\\\\nhdl:21.14100/020f9d7e-3e55-482a-bd99-7a1508c44dfe",
+          "cmip6:variable_id": "pr",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-06-19T11:27:57Z"
+        },
+        "tasmax": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp370/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order2",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp370/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/968a1f24-b80f-41bc-99e4-6e22d2fccc42\\\\nhdl:21.14100/17393b1a-15be-4b27-bb4c-38c2efabd347\\\\nhdl:21.14100/4e52fa56-3858-43e8-890c-cf2f80f2beaa\\\\nhdl:21.14100/8a594a92-15ab-454a-b4ed-8e1f995d42b6\\\\nhdl:21.14100/3a4ba421-1a97-4659-83f9-36f16dfec285",
+          "cmip6:variable_id": "tasmax",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-06-19T14:36:33Z"
+        },
+        "tasmin": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp370/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order2",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp370/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/8cbe2a71-4dbc-4f0e-b993-4d947be151b4\\\\nhdl:21.14100/20cb38cb-affd-4f2e-939b-ecbd73a86869\\\\nhdl:21.14100/d2debac0-630f-43d7-b1f5-904f5e5b9bb6\\\\nhdl:21.14100/4b8b1a8b-7ca5-4562-992a-a2da9b1a3cea\\\\nhdl:21.14100/26ac3301-3a20-4a4c-8c91-60283ee57cfd",
+          "cmip6:variable_id": "tasmin",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-06-19T14:22:38Z"
+        }
+      },
+      "bbox": [
+        -180,
+        -90,
+        180,
+        90
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+      ],
+      "collection": "cil-gdpcir-cc-by",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "cil-gdpcir-NOAA-GFDL-GFDL-ESM4-ssp245-r1i1p1f1-day",
+      "properties": {
+        "datetime": null,
+        "cmip6:realm": "atmos",
+        "cmip6:source": "GFDL-ESM4 (2018):\\\\natmos: GFDL-AM4.1 (Cubed-sphere (c96) - 1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 49 levels; top level 1 Pa)\\\\nocean: GFDL-OM4p5 (GFDL-MOM6, tripolar - nominal 0.5 deg; 720 x 576 longitude/latitude; 75 levels; top grid cell 0-2 m)\\\\nseaIce: GFDL-SIM4p5 (GFDL-SIS2.0, tripolar - nominal 0.5 deg; 720 x 576 longitude/latitude; 5 layers; 5 thickness categories)\\\\nland: GFDL-LM4.1\\\\naerosol: interactive\\\\natmosChem: GFDL-ATMCHEM4.1 (full atmospheric chemistry)\\\\nocnBgchem: GFDL-COBALTv2\\\\nlandIce: GFDL-LM4.1\\\\n(GFDL ID: 2019_0300)",
+        "end_datetime": "2100-12-31T12:00:00Z",
+        "cmip6:license": "https://github.com/ClimateImpactLab/downscaleCMIP6/tree/master/data_licenses/GFDL-ESM4.txt",
+        "cmip6:mip_era": "CMIP6",
+        "cmip6:product": "model-output",
+        "cmip6:table_id": "day",
+        "cube:variables": {
+          "pr": {
+            "type": "data",
+            "unit": "mm day-1",
+            "attrs": {
+              "units": "mm day-1"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ]
+          },
+          "tasmax": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "long_name": "Daily Maximum Near-Surface Air Temperature",
+              "coordinates": "height",
+              "cell_methods": "area: mean time: maximum",
+              "cell_measures": "area: areacella",
+              "interp_method": "conserve_order2",
+              "original_name": "tasmax",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Maximum Near-Surface Air Temperature"
+          },
+          "tasmin": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "long_name": "Daily Minimum Near-Surface Air Temperature",
+              "coordinates": "height",
+              "cell_methods": "area: mean time: minimum",
+              "cell_measures": "area: areacella",
+              "interp_method": "conserve_order2",
+              "original_name": "tasmin",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Minimum Near-Surface Air Temperature"
+          }
+        },
+        "start_datetime": "2015-01-01T12:00:00Z",
+        "cmip6:frequency": "day",
+        "cmip6:source_id": "GFDL-ESM4",
+        "cube:dimensions": {
+          "lat": {
+            "axis": "y",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -89.875,
+              89.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "lon": {
+            "axis": "x",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -179.875,
+              179.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "time": {
+            "step": "P1DT0H0M0S",
+            "type": "temporal",
+            "extent": [
+              "2015-01-01T12:00:00Z",
+              "2100-12-31T12:00:00Z"
+            ],
+            "description": "time"
+          }
+        },
+        "cmip6:experiment": "update of RCP4.5 based on SSP2",
+        "cmip6:Conventions": "CF-1.7 CMIP-6.0 UGRID-1.0",
+        "cmip6:activity_id": "ScenarioMIP",
+        "cmip6:institution": "National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA",
+        "cmip6:source_type": "AOGCM AER CHEM BGC",
+        "cmip6:experiment_id": "ssp245",
+        "cmip6:forcing_index": 1,
+        "cmip6:physics_index": 1,
+        "cmip6:variant_label": "r1i1p1f1",
+        "cmip6:institution_id": "NOAA-GFDL",
+        "cmip6:sub_experiment": "none",
+        "cmip6:further_info_url": "https://furtherinfo.es-doc.org/CMIP6.NOAA-GFDL.GFDL-ESM4.ssp245.none.r1i1p1f1",
+        "cmip6:realization_index": 1,
+        "cmip6:sub_experiment_id": "none",
+        "cmip6:data_specs_version": "01.00.27",
+        "cmip6:nominal_resolution": "100 km",
+        "cmip6:initialization_index": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "pr": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp245/r1i1p1f1/day/pr/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order1",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp245/r1i1p1f1/day/pr/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/48767401-8960-4864-8738-e64640bef71d\\\\nhdl:21.14100/4b4d1368-e8a3-4f0b-a8c8-3f343eec2d2f\\\\nhdl:21.14100/f85b690a-fdf4-45ff-86cb-aea06a011dd9\\\\nhdl:21.14100/ff17f822-01ae-4dc4-ad94-274224a203f0\\\\nhdl:21.14100/22753825-4e35-46f1-9c33-a6e3d1fec19a",
+          "cmip6:variable_id": "pr",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-06-18T05:29:00Z"
+        },
+        "tasmax": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp245/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order2",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp245/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/92fea15f-95eb-4e1d-903b-46c029aace28\\\\nhdl:21.14100/dc1b781d-b2f4-4ce4-9eae-c65f6e17aed9\\\\nhdl:21.14100/73acc7ec-83f4-4854-8a10-e3af99e669b8\\\\nhdl:21.14100/14e09980-2f79-4992-beaf-e0c289862c08\\\\nhdl:21.14100/44df875d-a85e-4b67-a38d-6d6ddeb9033e",
+          "cmip6:variable_id": "tasmax",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-06-18T06:31:29Z"
+        },
+        "tasmin": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp245/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order2",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp245/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/15982b1d-1080-41af-84f4-021873cec4ca\\\\nhdl:21.14100/2aa8ea3e-f314-418f-9d72-dc8ef74e02d9\\\\nhdl:21.14100/3015245c-3006-4038-913f-f2c0c54c8f84\\\\nhdl:21.14100/7d76df12-ca8b-4ebd-bfa6-0d88f63ecf28\\\\nhdl:21.14100/9c047d22-ae6d-4792-9bc7-bb5ebc6cd74d",
+          "cmip6:variable_id": "tasmin",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-06-18T06:28:55Z"
+        }
+      },
+      "bbox": [
+        -180,
+        -90,
+        180,
+        90
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+      ],
+      "collection": "cil-gdpcir-cc-by",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "cil-gdpcir-NOAA-GFDL-GFDL-ESM4-ssp126-r1i1p1f1-day",
+      "properties": {
+        "datetime": null,
+        "cmip6:realm": "atmos",
+        "cmip6:source": "GFDL-ESM4 (2018):\\\\natmos: GFDL-AM4.1 (Cubed-sphere (c96) - 1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 49 levels; top level 1 Pa)\\\\nocean: GFDL-OM4p5 (GFDL-MOM6, tripolar - nominal 0.5 deg; 720 x 576 longitude/latitude; 75 levels; top grid cell 0-2 m)\\\\nseaIce: GFDL-SIM4p5 (GFDL-SIS2.0, tripolar - nominal 0.5 deg; 720 x 576 longitude/latitude; 5 layers; 5 thickness categories)\\\\nland: GFDL-LM4.1\\\\naerosol: interactive\\\\natmosChem: GFDL-ATMCHEM4.1 (full atmospheric chemistry)\\\\nocnBgchem: GFDL-COBALTv2\\\\nlandIce: GFDL-LM4.1\\\\n(GFDL ID: 2019_0303)",
+        "end_datetime": "2100-12-31T12:00:00Z",
+        "cmip6:license": "https://github.com/ClimateImpactLab/downscaleCMIP6/tree/master/data_licenses/GFDL-ESM4.txt",
+        "cmip6:mip_era": "CMIP6",
+        "cmip6:product": "model-output",
+        "cmip6:table_id": "day",
+        "cube:variables": {
+          "pr": {
+            "type": "data",
+            "unit": "mm day-1",
+            "attrs": {
+              "units": "mm day-1"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ]
+          },
+          "tasmax": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "long_name": "Daily Maximum Near-Surface Air Temperature",
+              "coordinates": "height",
+              "cell_methods": "area: mean time: maximum",
+              "cell_measures": "area: areacella",
+              "interp_method": "conserve_order2",
+              "original_name": "tasmax",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Maximum Near-Surface Air Temperature"
+          },
+          "tasmin": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "long_name": "Daily Minimum Near-Surface Air Temperature",
+              "coordinates": "height",
+              "cell_methods": "area: mean time: minimum",
+              "cell_measures": "area: areacella",
+              "interp_method": "conserve_order2",
+              "original_name": "tasmin",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Minimum Near-Surface Air Temperature"
+          }
+        },
+        "start_datetime": "2015-01-01T12:00:00Z",
+        "cmip6:frequency": "day",
+        "cmip6:source_id": "GFDL-ESM4",
+        "cube:dimensions": {
+          "lat": {
+            "axis": "y",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -89.875,
+              89.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "lon": {
+            "axis": "x",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -179.875,
+              179.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "time": {
+            "step": "P1DT0H0M0S",
+            "type": "temporal",
+            "extent": [
+              "2015-01-01T12:00:00Z",
+              "2100-12-31T12:00:00Z"
+            ],
+            "description": "time"
+          }
+        },
+        "cmip6:experiment": "update of RCP2.6 based on SSP1",
+        "cmip6:Conventions": "CF-1.7 CMIP-6.0 UGRID-1.0",
+        "cmip6:activity_id": "ScenarioMIP",
+        "cmip6:institution": "National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA",
+        "cmip6:source_type": "AOGCM AER CHEM BGC",
+        "cmip6:experiment_id": "ssp126",
+        "cmip6:forcing_index": 1,
+        "cmip6:physics_index": 1,
+        "cmip6:variant_label": "r1i1p1f1",
+        "cmip6:institution_id": "NOAA-GFDL",
+        "cmip6:sub_experiment": "none",
+        "cmip6:further_info_url": "https://furtherinfo.es-doc.org/CMIP6.NOAA-GFDL.GFDL-ESM4.ssp126.none.r1i1p1f1",
+        "cmip6:realization_index": 1,
+        "cmip6:sub_experiment_id": "none",
+        "cmip6:data_specs_version": "01.00.27",
+        "cmip6:nominal_resolution": "100 km",
+        "cmip6:initialization_index": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "pr": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp126/r1i1p1f1/day/pr/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order1",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp126/r1i1p1f1/day/pr/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/d649bd3b-d6bc-4ce1-a7ba-438564d71b55\\\\nhdl:21.14100/eb979972-f708-4e83-b4f8-14e86bbd6a90\\\\nhdl:21.14100/bd787df5-6e16-4aea-ad1f-da91966d7607\\\\nhdl:21.14100/45e9364b-2d9f-40b0-9b95-80ebd167a04b\\\\nhdl:21.14100/26538795-f392-40c0-82fb-2aa882d4f2fd",
+          "cmip6:variable_id": "pr",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-06-18T22:41:56Z"
+        },
+        "tasmax": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp126/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order2",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp126/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/385ce029-bcb3-4342-8999-dc76a9b39aa9\\\\nhdl:21.14100/f474dbb3-59a4-4350-b6e1-081cf751bbc7\\\\nhdl:21.14100/64f127ac-be37-4465-895e-a36641fefd2d\\\\nhdl:21.14100/de1d7a34-a4c7-4ed2-b2c0-dc0ad79a9db5\\\\nhdl:21.14100/7ff150aa-0dd0-48c5-8a62-ac8980a12e5b",
+          "cmip6:variable_id": "tasmax",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-06-18T23:28:22Z"
+        },
+        "tasmin": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp126/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order2",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-ESM4/ssp126/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/9664ae79-e88d-46ea-83ef-e337d2e8780d\\\\nhdl:21.14100/c5dbeb2c-727b-4385-8816-caed6ca5817c\\\\nhdl:21.14100/ce41f945-793e-4199-8ffa-505090e85a0b\\\\nhdl:21.14100/e23d0ef9-24fc-45d5-8cb8-36fd1540d72e\\\\nhdl:21.14100/be9c0c6b-caac-48f8-ae2c-8eba4a1e19c8",
+          "cmip6:variable_id": "tasmin",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-06-18T23:26:08Z"
+        }
+      },
+      "bbox": [
+        -180,
+        -90,
+        180,
+        90
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+      ],
+      "collection": "cil-gdpcir-cc-by",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "cil-gdpcir-NOAA-GFDL-GFDL-CM4-ssp585-r1i1p1f1-day",
+      "properties": {
+        "datetime": null,
+        "cmip6:realm": "atmos",
+        "cmip6:source": "GFDL-CM4 (2018): \\\\naerosol: interactive\\\\natmos: GFDL-AM4.0.1 (Cubed-sphere (c96) - 1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 33 levels; top level 1 hPa)\\\\natmosChem: fast chemistry, aerosol only\\\\nland: GFDL-LM4.0.1 (1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 20 levels; bot level 10m); land:Veg:unnamed (dynamic vegetation, dynamic land use); land:Hydro:unnamed (soil water and ice, multi-layer snow, rivers and lakes)\\\\nlandIce: GFDL-LM4.0.1\\\\nocean: GFDL-OM4p25 (GFDL-MOM6, tripolar - nominal 0.25 deg; 1440 x 1080 longitude/latitude; 75 levels; top grid cell 0-2 m)\\\\nocnBgchem: GFDL-BLINGv2\\\\nseaIce: GFDL-SIM4p25 (GFDL-SIS2.0, tripolar - nominal 0.25 deg; 1440 x 1080 longitude/latitude; 5 layers; 5 thickness categories)\\\\n(GFDL ID: 2019_0186)",
+        "end_datetime": "2100-12-31T12:00:00Z",
+        "cmip6:license": "https://github.com/ClimateImpactLab/downscaleCMIP6/tree/master/data_licenses/GFDL-CM4.txt",
+        "cmip6:mip_era": "CMIP6",
+        "cmip6:product": "model-output",
+        "cmip6:table_id": "day",
+        "cube:variables": {
+          "pr": {
+            "type": "data",
+            "unit": "mm day-1",
+            "attrs": {
+              "units": "mm day-1"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ]
+          },
+          "tasmax": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "long_name": "Daily Maximum Near-Surface Air Temperature",
+              "coordinates": "height",
+              "cell_methods": "area: mean time: maximum",
+              "cell_measures": "area: areacella",
+              "interp_method": "conserve_order2",
+              "original_name": "tasmax",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Maximum Near-Surface Air Temperature"
+          },
+          "tasmin": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "long_name": "Daily Minimum Near-Surface Air Temperature",
+              "coordinates": "height",
+              "cell_methods": "area: mean time: minimum",
+              "cell_measures": "area: areacella",
+              "interp_method": "conserve_order2",
+              "original_name": "tasmin",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Minimum Near-Surface Air Temperature"
+          }
+        },
+        "start_datetime": "2015-01-01T12:00:00Z",
+        "cmip6:frequency": "day",
+        "cmip6:source_id": "GFDL-CM4",
+        "cube:dimensions": {
+          "lat": {
+            "axis": "y",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -89.875,
+              89.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "lon": {
+            "axis": "x",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -179.875,
+              179.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "time": {
+            "step": "P1DT0H0M0S",
+            "type": "temporal",
+            "extent": [
+              "2015-01-01T12:00:00Z",
+              "2100-12-31T12:00:00Z"
+            ],
+            "description": "time"
+          }
+        },
+        "cmip6:experiment": "update of RCP8.5 based on SSP5",
+        "cmip6:Conventions": "CF-1.7 CMIP-6.0 UGRID-1.0",
+        "cmip6:activity_id": "ScenarioMIP",
+        "cmip6:institution": "National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA",
+        "cmip6:source_type": "AOGCM",
+        "cmip6:experiment_id": "ssp585",
+        "cmip6:forcing_index": 1,
+        "cmip6:physics_index": 1,
+        "cmip6:variant_label": "r1i1p1f1",
+        "cmip6:institution_id": "NOAA-GFDL",
+        "cmip6:sub_experiment": "none",
+        "cmip6:further_info_url": "https://furtherinfo.es-doc.org/CMIP6.NOAA-GFDL.GFDL-CM4.ssp585.none.r1i1p1f1",
+        "cmip6:realization_index": 1,
+        "cmip6:sub_experiment_id": "none",
+        "cmip6:data_specs_version": "01.00.27",
+        "cmip6:nominal_resolution": "100 km",
+        "cmip6:initialization_index": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "pr": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-CM4/ssp585/r1i1p1f1/day/pr/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order1",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-CM4/ssp585/r1i1p1f1/day/pr/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/ad8c930c-124f-4b82-98b2-98cc4236ba25\\\\nhdl:21.14100/74ed95a2-6192-44b2-8cd4-b298494ef3de\\\\nhdl:21.14100/75a0c87c-8c30-40a6-927f-3ec333d44691\\\\nhdl:21.14100/306a0aa3-d6d7-45c9-8b5f-fa66f43989d0\\\\nhdl:21.14100/2d35b6a7-23b2-4a60-b591-096a968ae49f",
+          "cmip6:variable_id": "pr",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-03-18T15:13:56Z"
+        },
+        "tasmax": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-CM4/ssp585/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order2",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-CM4/ssp585/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/e66ac799-dc31-4f2d-9304-cf67f090c499\\\\nhdl:21.14100/2a88752e-d63c-4b0f-8385-7137808346c0\\\\nhdl:21.14100/db47de87-8503-4afd-ab5b-423dce99cbd3\\\\nhdl:21.14100/b23e5e38-7ed3-4aca-bfad-afe4dddb1b62\\\\nhdl:21.14100/26a86134-0687-47a8-ab5d-95e071d564e4",
+          "cmip6:variable_id": "tasmax",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-03-18T15:53:06Z"
+        },
+        "tasmin": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-CM4/ssp585/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order2",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-CM4/ssp585/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/1270fae4-0609-46a5-b2ea-176da178554c\\\\nhdl:21.14100/c199d673-7a12-42d8-9558-871901f85ec3\\\\nhdl:21.14100/f9a53d6c-8c5f-4681-9568-322652edcb9c\\\\nhdl:21.14100/e033c864-bb02-43e7-a34a-67b150f18f02\\\\nhdl:21.14100/0c9b5584-62a6-485a-a300-0cd3251b2159",
+          "cmip6:variable_id": "tasmin",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-03-18T15:50:57Z"
+        }
+      },
+      "bbox": [
+        -180,
+        -90,
+        180,
+        90
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+      ],
+      "collection": "cil-gdpcir-cc-by",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "cil-gdpcir-NOAA-GFDL-GFDL-CM4-ssp245-r1i1p1f1-day",
+      "properties": {
+        "datetime": null,
+        "cmip6:realm": "atmos",
+        "cmip6:source": "GFDL-CM4 (2018): \\\\naerosol: interactive\\\\natmos: GFDL-AM4.0.1 (Cubed-sphere (c96) - 1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 33 levels; top level 1 hPa)\\\\natmosChem: fast chemistry, aerosol only\\\\nland: GFDL-LM4.0.1 (1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 20 levels; bot level 10m); land:Veg:unnamed (dynamic vegetation, dynamic land use); land:Hydro:unnamed (soil water and ice, multi-layer snow, rivers and lakes)\\\\nlandIce: GFDL-LM4.0.1\\\\nocean: GFDL-OM4p25 (GFDL-MOM6, tripolar - nominal 0.25 deg; 1440 x 1080 longitude/latitude; 75 levels; top grid cell 0-2 m)\\\\nocnBgchem: GFDL-BLINGv2\\\\nseaIce: GFDL-SIM4p25 (GFDL-SIS2.0, tripolar - nominal 0.25 deg; 1440 x 1080 longitude/latitude; 5 layers; 5 thickness categories)\\\\n(GFDL ID: 2019_0195)",
+        "end_datetime": "2100-12-31T12:00:00Z",
+        "cmip6:license": "https://github.com/ClimateImpactLab/downscaleCMIP6/tree/master/data_licenses/GFDL-CM4.txt",
+        "cmip6:mip_era": "CMIP6",
+        "cmip6:product": "model-output",
+        "cmip6:table_id": "day",
+        "cube:variables": {
+          "pr": {
+            "type": "data",
+            "unit": "mm day-1",
+            "attrs": {
+              "units": "mm day-1"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ]
+          },
+          "tasmax": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "long_name": "Daily Maximum Near-Surface Air Temperature",
+              "coordinates": "height",
+              "cell_methods": "area: mean time: maximum",
+              "cell_measures": "area: areacella",
+              "interp_method": "conserve_order2",
+              "original_name": "tasmax",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Maximum Near-Surface Air Temperature"
+          },
+          "tasmin": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "long_name": "Daily Minimum Near-Surface Air Temperature",
+              "coordinates": "height",
+              "cell_methods": "area: mean time: minimum",
+              "cell_measures": "area: areacella",
+              "interp_method": "conserve_order2",
+              "original_name": "tasmin",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Minimum Near-Surface Air Temperature"
+          }
+        },
+        "start_datetime": "2015-01-01T12:00:00Z",
+        "cmip6:frequency": "day",
+        "cmip6:source_id": "GFDL-CM4",
+        "cube:dimensions": {
+          "lat": {
+            "axis": "y",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -89.875,
+              89.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "lon": {
+            "axis": "x",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -179.875,
+              179.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "time": {
+            "step": "P1DT0H0M0S",
+            "type": "temporal",
+            "extent": [
+              "2015-01-01T12:00:00Z",
+              "2100-12-31T12:00:00Z"
+            ],
+            "description": "time"
+          }
+        },
+        "cmip6:experiment": "update of RCP4.5 based on SSP2",
+        "cmip6:Conventions": "CF-1.7 CMIP-6.0 UGRID-1.0",
+        "cmip6:activity_id": "ScenarioMIP",
+        "cmip6:institution": "National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA",
+        "cmip6:source_type": "AOGCM",
+        "cmip6:experiment_id": "ssp245",
+        "cmip6:forcing_index": 1,
+        "cmip6:physics_index": 1,
+        "cmip6:variant_label": "r1i1p1f1",
+        "cmip6:institution_id": "NOAA-GFDL",
+        "cmip6:sub_experiment": "none",
+        "cmip6:further_info_url": "https://furtherinfo.es-doc.org/CMIP6.NOAA-GFDL.GFDL-CM4.ssp245.none.r1i1p1f1",
+        "cmip6:realization_index": 1,
+        "cmip6:sub_experiment_id": "none",
+        "cmip6:data_specs_version": "01.00.27",
+        "cmip6:nominal_resolution": "100 km",
+        "cmip6:initialization_index": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "pr": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-CM4/ssp245/r1i1p1f1/day/pr/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order1",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-CM4/ssp245/r1i1p1f1/day/pr/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/9e2f5da6-4230-4198-b118-3c6770bb8415\\\\nhdl:21.14100/4029323f-cceb-4272-a2fd-684bbc6fc56b\\\\nhdl:21.14100/ae4dd5af-8b9d-4487-adb0-8975589b588d\\\\nhdl:21.14100/1abc5f19-a6d1-42f7-a517-61c8aabed31e\\\\nhdl:21.14100/e0630a92-305b-4eae-a2fb-34e698984a45",
+          "cmip6:variable_id": "pr",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-03-17T20:46:57Z"
+        },
+        "tasmax": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-CM4/ssp245/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order2",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-CM4/ssp245/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/8ba7eed9-91b4-4933-a0d5-d230190ea72c\\\\nhdl:21.14100/e96e2639-b829-4db3-a1fd-560c39046dd1\\\\nhdl:21.14100/0b5e7923-3066-40fb-b7bf-dcccc7f95f17\\\\nhdl:21.14100/3f04b0f0-a6d5-4e07-9069-b1efedc9b647\\\\nhdl:21.14100/28fae186-a46e-40f0-9984-21d3684b1cb8",
+          "cmip6:variable_id": "tasmax",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-03-17T21:39:15Z"
+        },
+        "tasmin": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-CM4/ssp245/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "atmos data regridded from Cubed-sphere (c96) to 180,288; interpolation method: conserve_order2",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NOAA-GFDL/GFDL-CM4/ssp245/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "cmip6:grid_label": "gr1",
+          "cmip6:tracking_id": "hdl:21.14100/e4adaf6b-af79-425d-bd14-b693e7f74432\\\\nhdl:21.14100/ce35fad1-6ef7-4bb2-a9a3-143d94b47b64\\\\nhdl:21.14100/360767c4-5263-489f-969d-61dbd089323b\\\\nhdl:21.14100/7fb37b59-9093-42db-ae87-e5e1ef813b8e\\\\nhdl:21.14100/eed73af5-cbc7-4dfc-8105-ab916ec65f55",
+          "cmip6:variable_id": "tasmin",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2019-03-17T21:36:29Z"
+        }
+      },
+      "bbox": [
+        -180,
+        -90,
+        180,
+        90
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+      ],
+      "collection": "cil-gdpcir-cc-by",
+      "links": []
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "id": "cil-gdpcir-NCC-NorESM2-MM-ssp585-r1i1p1f1-day",
+      "properties": {
+        "datetime": null,
+        "cmip6:realm": "atmos",
+        "cmip6:source": "NorESM2-MM (2017): \\\\naerosol: OsloAero\\\\natmos: CAM-OSLO (1 degree resolution; 288 x 192; 32 levels; top level 3 mb)\\\\natmosChem: OsloChemSimp\\\\nland: CLM\\\\nlandIce: CISM\\\\nocean: MICOM (1 degree resolution; 360 x 384; 70 levels; top grid cell minimum 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])\\\\nocnBgchem: HAMOCC\\\\nseaIce: CICE",
+        "end_datetime": "2100-12-31T12:00:00Z",
+        "cmip6:license": "https://github.com/ClimateImpactLab/downscaleCMIP6/tree/master/data_licenses/NorESM2-MM.txt",
+        "cmip6:mip_era": "CMIP6",
+        "cmip6:product": "model-output",
+        "cmip6:table_id": "day",
+        "cube:variables": {
+          "pr": {
+            "type": "data",
+            "unit": "mm day-1",
+            "attrs": {
+              "units": "mm day-1"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ]
+          },
+          "tasmax": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "comment": "maximum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: max')",
+              "history": "2020-01-26T21:28:47Z altered by CMOR: Treated scalar dimension: 'height'. 2020-01-26T21:28:47Z altered by CMOR: Converted type from 'd' to 'f'.",
+              "long_name": "Daily Maximum Near-Surface Air Temperature",
+              "coordinates": "height",
+              "cell_methods": "area: mean time: maximum",
+              "cell_measures": "area: areacella",
+              "original_name": "TREFHTMX",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Maximum Near-Surface Air Temperature"
+          },
+          "tasmin": {
+            "type": "data",
+            "unit": "K",
+            "attrs": {
+              "units": "K",
+              "comment": "minimum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: min')",
+              "history": "2020-01-26T21:27:10Z altered by CMOR: Treated scalar dimension: 'height'. 2020-01-26T21:27:10Z altered by CMOR: Converted type from 'd' to 'f'.",
+              "long_name": "Daily Minimum Near-Surface Air Temperature",
+              "coordinates": "height",
+              "cell_methods": "area: mean time: minimum",
+              "cell_measures": "area: areacella",
+              "original_name": "TREFHTMN",
+              "standard_name": "air_temperature"
+            },
+            "shape": [
+              31390,
+              720,
+              1440
+            ],
+            "dimensions": [
+              "time",
+              "lat",
+              "lon"
+            ],
+            "description": "Daily Minimum Near-Surface Air Temperature"
+          }
+        },
+        "start_datetime": "2015-01-01T12:00:00Z",
+        "cmip6:frequency": "day",
+        "cmip6:source_id": "NorESM2-MM",
+        "cube:dimensions": {
+          "lat": {
+            "axis": "y",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -89.875,
+              89.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "lon": {
+            "axis": "x",
+            "step": 0.25,
+            "type": "spatial",
+            "extent": [
+              -179.875,
+              179.875
+            ],
+            "reference_system": "epsg:4326"
+          },
+          "time": {
+            "step": "P1DT0H0M0S",
+            "type": "temporal",
+            "extent": [
+              "2015-01-01T12:00:00Z",
+              "2100-12-31T12:00:00Z"
+            ],
+            "description": "time"
+          }
+        },
+        "cmip6:experiment": "update of RCP8.5 based on SSP5",
+        "cmip6:Conventions": "CF-1.7 CMIP-6.2",
+        "cmip6:activity_id": "ScenarioMIP",
+        "cmip6:institution": "NorESM Climate modeling Consortium consisting of CICERO (Center for International Climate and Environmental Research, Oslo 0349), MET-Norway (Norwegian Meteorological Institute, Oslo 0313), NERSC (Nansen Environmental and Remote Sensing Center, Bergen 5006), NILU (Norwegian Institute for Air Research, Kjeller 2027), UiB (University of Bergen, Bergen 5007), UiO (University of Oslo, Oslo 0313) and UNI (Uni Research, Bergen 5008), Norway. Mailing address: NCC, c/o MET-Norway, Henrik Mohns plass 1, Oslo 0313, Norway",
+        "cmip6:source_type": "AOGCM AER BGC",
+        "cmip6:experiment_id": "ssp585",
+        "cmip6:forcing_index": 1,
+        "cmip6:physics_index": 1,
+        "cmip6:variant_label": "r1i1p1f1",
+        "cmip6:institution_id": "NCC",
+        "cmip6:sub_experiment": "none",
+        "cmip6:further_info_url": "https://furtherinfo.es-doc.org/CMIP6.NCC.NorESM2-MM.ssp585.none.r1i1p1f1",
+        "cmip6:realization_index": 1,
+        "cmip6:sub_experiment_id": "none",
+        "cmip6:data_specs_version": "01.00.31",
+        "cmip6:nominal_resolution": "100 km",
+        "cmip6:initialization_index": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              180,
+              -90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              180,
+              -90
+            ]
+          ]
+        ]
+      },
+      "assets": {
+        "pr": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NCC/NorESM2-MM/ssp585/r1i1p1f1/day/pr/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "finite-volume grid with 0.9x1.25 degree lat/lon resolution",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NCC/NorESM2-MM/ssp585/r1i1p1f1/day/pr/v1.1.zarr",
+          "cmip6:grid_label": "gn",
+          "cmip6:tracking_id": "hdl:21.14100/dc73bff3-d38c-49fe-aea7-b84c11f2a88c\\\\nhdl:21.14100/c607025e-00ba-40c6-bd42-7121684d0a4c\\\\nhdl:21.14100/1d653d5f-ab8c-4300-b2f9-1207603b07a7\\\\nhdl:21.14100/31252c1c-078c-4f49-bbc0-19d8eaafc736\\\\nhdl:21.14100/966eb10a-d138-447f-ab68-c142bc1fc8cb\\\\nhdl:21.14100/01d46ad4-cca2-4308-8b55-bd1f3e4adb8d\\\\nhdl:21.14100/5afec433-99df-4507-a736-ee2212aefeb8\\\\nhdl:21.14100/83604e85-17cb-4339-848a-8c44534bf247\\\\nhdl:21.14100/f86531e9-2b04-4c7d-a1fa-b2c1ec37cb28",
+          "cmip6:variable_id": "pr",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2020-01-26T21:25:14Z"
+        },
+        "tasmax": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NCC/NorESM2-MM/ssp585/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "finite-volume grid with 0.9x1.25 degree lat/lon resolution",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NCC/NorESM2-MM/ssp585/r1i1p1f1/day/tasmax/v1.1.zarr",
+          "cmip6:grid_label": "gn",
+          "cmip6:tracking_id": "hdl:21.14100/a8622f49-6843-4f50-8302-0a9dd14cc68b\\\\nhdl:21.14100/d0b27f14-2c4f-4f2f-a2dd-8540c3163657\\\\nhdl:21.14100/4ceb012e-2f94-47fb-9ccc-599b1738e30a\\\\nhdl:21.14100/19227a32-3011-4f0c-b57c-80977063a9c2\\\\nhdl:21.14100/bf52727b-7f4d-4211-b413-18e30001a4cd\\\\nhdl:21.14100/170d5e38-72b2-4972-96dc-8af7e946cf0b\\\\nhdl:21.14100/20248e7c-fa03-45d4-b395-fa01556b5fd4\\\\nhdl:21.14100/bdd05f5a-af6a-4306-898d-e119c76a98da\\\\nhdl:21.14100/7fc3dc4f-c17a-4bea-ad97-f7813a057992",
+          "cmip6:variable_id": "tasmax",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2020-01-26T21:28:47Z"
+        },
+        "tasmin": {
+          "href": "abfs://cil-gdpcir/ScenarioMIP/NCC/NorESM2-MM/ssp585/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "type": "application/vnd+zarr",
+          "cmip6:grid": "finite-volume grid with 0.9x1.25 degree lat/lon resolution",
+          "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NCC/NorESM2-MM/ssp585/r1i1p1f1/day/tasmin/v1.1.zarr",
+          "cmip6:grid_label": "gn",
+          "cmip6:tracking_id": "hdl:21.14100/7a651333-57f1-48e4-a13b-f6241657811b\\\\nhdl:21.14100/e8cf8b70-c9f3-47d0-a88f-426afb81a98d\\\\nhdl:21.14100/da9c90f1-ee18-4793-86d0-ce99e01f5490\\\\nhdl:21.14100/464835b3-002b-4e8d-8625-3e85981b0b5e\\\\nhdl:21.14100/565c180b-0672-490a-8f8a-e77d14a4baa6\\\\nhdl:21.14100/b843b05a-1802-4f74-be58-14199ccd67fb\\\\nhdl:21.14100/4baebc71-af26-472f-864c-59ed391a419f\\\\nhdl:21.14100/9fdb1689-c60c-4fdd-ae57-e4b2c3d8a3cb\\\\nhdl:21.14100/ec9f239f-78ba-4fba-9b31-20347f9e41cd",
+          "cmip6:variable_id": "tasmin",
+          "xarray:open_kwargs": {
+            "chunks": {},
+            "engine": "zarr",
+            "consolidated": true,
+            "storage_options": {
+              "account_name": "rhgeuwest"
+            }
+          },
+          "cmip6:creation_date": "2020-01-26T21:27:10Z"
+        }
+      },
+      "bbox": [
+        -180,
+        -90,
+        180,
+        90
+      ],
+      "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+      ],
+      "collection": "cil-gdpcir-cc-by",
+      "links": []
+    }
+  ]
+}
