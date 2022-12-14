@@ -1,0 +1,150 @@
+{
+  "type": "Collection",
+  "id": "hrea",
+  "stac_version": "1.0.0",
+  "description": "The [HREA](http://www-personal.umich.edu/~brianmin/HREA/index.html) project aims to provide open access to new indicators of electricity access and reliability across the world. Leveraging satellite imagery with computational methods, these high-resolution data provide new tools to track progress toward reliable and sustainable energy access across the world.\n\nThis dataset includes settlement-level measures of electricity access, reliability, and usage for 89 nations, derived from nightly VIIRS satellite imagery. Specifically, this dataset provides the following annual values at country-level granularity:\n\n1. **Access**: Predicted likelihood that a settlement is electrified, based on night-by-night comparisons of each settlement against matched uninhabited areas over a calendar year.\n\n2. **Reliability**: Proportion of nights a settlement is statistically brighter than matched uninhabited areas. Areas with more frequent power outages or service interruptions have lower rates.\n\n3. **Usage**: Higher levels of brightness indicate more robust usage of outdoor lighting, which is highly correlated with overall energy consumption.\n\n4. **Nighttime Lights**: Annual composites of VIIRS nighttime light output.\n\nFor more information and methodology, please visit the [HREA website](http://www-personal.umich.edu/~brianmin/HREA/index.html).\n",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "title": "HREA: High Resolution Electricity Access",
+  "assets": {
+    "thumbnail": {
+      "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/pc_thumbnails/hrea.png",
+      "type": "image/png",
+      "title": "HREA",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "geoparquet-items": {
+      "href": "abfs://items/hrea.parquet",
+      "type": "application/x-parquet",
+      "title": "GeoParquet STAC items",
+      "description": "Snapshot of the collection's STAC items exported to GeoParquet format.",
+      "msft:partition_info": {
+        "is_partitioned": false
+      },
+      "table:storage_options": {
+        "account_name": "pcstacitems"
+      },
+      "roles": [
+        "stac-items"
+      ]
+    }
+  },
+  "keywords": [
+    "HREA",
+    "Electricity",
+    "VIIRS"
+  ],
+  "providers": [
+    {
+      "name": "University of Michigan",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "http://www-personal.umich.edu/~brianmin/HREA/index.html/"
+    },
+    {
+      "name": "Microsoft",
+      "roles": [
+        "host",
+        "processor"
+      ],
+      "url": "https://planetarycomputer.microsoft.com"
+    }
+  ],
+  "summaries": {
+    "gsd": [
+      30,
+      460
+    ]
+  },
+  "item_assets": {
+    "lightscore": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Probability of electrification"
+    },
+    "light-composite": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Nighttime light annual composite"
+    },
+    "night-proportion": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Proportion of nights a settlement is brighter than uninhabited areas"
+    },
+    "estimated-brightness": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Estimated brightness levels"
+    }
+  },
+  "msft:container": "hrea",
+  "msft:storage_account": "hreadatasa",
+  "msft:short_description": "Settlement-level measures of electricity access, reliability, and usage derived from VIIRS satellite imagery",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -117.413972,
+          -55.54235,
+          -53.092722,
+          32.718434
+        ],
+        [
+          -25.361528,
+          -34.838027,
+          50.759908,
+          37.552639
+        ],
+        [
+          34.957638,
+          -11.655904,
+          157.037723,
+          38.612083
+        ],
+        [
+          155.392502,
+          -20.251178,
+          172.171458,
+          14.721388
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2012-12-31T00:00:00Z",
+          "2019-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "links": [
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "CC BY 4.0"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://planetarycomputer.microsoft.com/dataset/hrea",
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
+    }
+  ]
+}

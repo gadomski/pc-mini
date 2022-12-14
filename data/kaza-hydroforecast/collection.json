@@ -1,0 +1,221 @@
+{
+  "type": "Collection",
+  "id": "kaza-hydroforecast",
+  "stac_version": "1.0.0",
+  "description": "This dataset is a daily updated set of HydroForecast seasonal river flow forecasts at six locations in the Kwando and Upper Zambezi river basins. More details about the locations, project context, and to interactively view current and previous forecasts, visit our [public website](https://dashboard.hydroforecast.com/public/wwf-kaza).\n\n## Flow forecast dataset and model description\n\n[HydroForecast](https://www.upstream.tech/hydroforecast) is a theory-guided machine learning hydrologic model that predicts streamflow in basins across the world. For the Kwando and Upper Zambezi, HydroForecast makes daily predictions of streamflow rates using a [seasonal analog approach](https://support.upstream.tech/article/125-seasonal-analog-model-a-technical-overview). The model's output is probabilistic and the mean, median and a range of quantiles are available at each forecast step.\n\nThe underlying model has the following attributes: \n\n* Timestep: 10 days\n* Horizon: 10 to 180 days \n* Update frequency: daily\n* Units: cubic meters per second (m³/s)\n    \n## Site details\n\nThe model produces output for six locations in the Kwando and Upper Zambezi river basins.\n\n* Upper Zambezi sites\n    * Zambezi at Chavuma\n    * Luanginga at Kalabo\n* Kwando basin sites\n    * Kwando at Kongola -- total basin flows\n    * Kwando Sub-basin 1\n    * Kwando Sub-basin 2 \n    * Kwando Sub-basin 3\n    * Kwando Sub-basin 4\n    * Kwando Kongola Sub-basin\n\n## STAC metadata\n\nThere is one STAC item per location. Each STAC item has a single asset linking to a Parquet file in Azure Blob Storage.",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "title": "HydroForecast - Kwando & Upper Zambezi Rivers",
+  "assets": {
+    "thumbnail": {
+      "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/pc_thumbnails/kaza-hydroforecast-thumbnail.png",
+      "type": "image/png",
+      "title": "Thumbnail"
+    }
+  },
+  "version": "1.0.0",
+  "keywords": [
+    "Water",
+    "HydroForecast",
+    "Streamflow",
+    "Hydrology",
+    "Upstream Tech"
+  ],
+  "providers": [
+    {
+      "name": "Upstream Tech",
+      "roles": [
+        "producer",
+        "processor",
+        "licensor"
+      ],
+      "url": "https://www.upstream.tech"
+    },
+    {
+      "name": "Microsoft",
+      "roles": [
+        "host"
+      ],
+      "url": "https://planetarycomputer.microsoft.com"
+    }
+  ],
+  "item_assets": {
+    "data": {
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ],
+      "title": "Forecast Data",
+      "description": "All seasonal river flow forecasts for a specific forecast site, produced by Upstream Tech's HydroForecast model"
+    }
+  },
+  "table:columns": [
+    {
+      "name": "initialization_time",
+      "type": "timestamp",
+      "description": "The initial timestamp in the forecast model which created this forecast step. All rows with the same initialization time are part of the same \"forecast\" and are produced at the same time."
+    },
+    {
+      "name": "valid_time",
+      "type": "timestamp",
+      "description": "The point in time this forecast step is predicting. valid_time = initialization_time + lead_time_hours. The discharge values in this row are the average rate from this time (inclusive) until the next valid time (exclusive)."
+    },
+    {
+      "name": "lead_time_hours",
+      "type": "int64",
+      "description": "The number of hours ahead of the initialization time this forecast step is predicting."
+    },
+    {
+      "name": "discharge_mean",
+      "type": "double",
+      "description": "The mean of the probabilistic streamflow prediction, as an average rate across the forecast step in m³/s."
+    },
+    {
+      "name": "discharge_median",
+      "type": "double",
+      "description": "The median of the probabilistic streamflow prediction, as an average rate across the forecast step in m³/s."
+    },
+    {
+      "name": "discharge_q0.01",
+      "type": "double",
+      "description": "The quantile 0.01 of the probabilistic streamflow prediction, as an average rate across the forecast step in m³/s."
+    },
+    {
+      "name": "discharge_q0.025",
+      "type": "double",
+      "description": "The quantile 0.025 of the probabilistic streamflow prediction, as an average rate across the forecast step in m³/s."
+    },
+    {
+      "name": "discharge_q0.05",
+      "type": "double",
+      "description": "The quantile 0.05 of the probabilistic streamflow prediction, as an average rate across the forecast step in m³/s."
+    },
+    {
+      "name": "discharge_q0.1",
+      "type": "double",
+      "description": "The quantile 0.1 of the probabilistic streamflow prediction, as an average rate across the forecast step in m³/s."
+    },
+    {
+      "name": "discharge_q0.25",
+      "type": "double",
+      "description": "The quantile 0.25 of the probabilistic streamflow prediction, as an average rate across the forecast step in m³/s."
+    },
+    {
+      "name": "discharge_q0.5",
+      "type": "double",
+      "description": "The quantile 0.5 of the probabilistic streamflow prediction, as an average rate across the forecast step in m³/s."
+    },
+    {
+      "name": "discharge_q0.75",
+      "type": "double",
+      "description": "The quantile 0.75 of the probabilistic streamflow prediction, as an average rate across the forecast step in m³/s."
+    },
+    {
+      "name": "discharge_q0.9",
+      "type": "double",
+      "description": "The quantile 0.9 of the probabilistic streamflow prediction, as an average rate across the forecast step in m³/s."
+    },
+    {
+      "name": "discharge_q0.95",
+      "type": "double",
+      "description": "The quantile 0.95 of the probabilistic streamflow prediction, as an average rate across the forecast step in m³/s."
+    },
+    {
+      "name": "discharge_q0.975",
+      "type": "double",
+      "description": "The quantile 0.975 of the probabilistic streamflow prediction, as an average rate across the forecast step in m³/s."
+    },
+    {
+      "name": "discharge_q0.99",
+      "type": "double",
+      "description": "The quantile 0.99 of the probabilistic streamflow prediction, as an average rate across the forecast step in m³/s."
+    }
+  ],
+  "msft:container": "hydroforecast",
+  "msft:storage_account": "ai4edataeuwest",
+  "msft:short_description": "Seasonal river flow forecasts for the Kwando and Upper Zambezi rivers in the KAZA region of Africa, produced by Upstream Tech's HydroForecast model.",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          21.04494,
+          -17.792517,
+          23.343421,
+          -13.08062
+        ],
+        [
+          23.343421,
+          -17.792517,
+          23.343421,
+          -17.792517
+        ],
+        [
+          23.343421,
+          -17.792517,
+          23.343421,
+          -17.792517
+        ],
+        [
+          21.04494,
+          -15.13158,
+          21.04494,
+          -15.13158
+        ],
+        [
+          21.80157,
+          -16.01209,
+          21.80157,
+          -16.01209
+        ],
+        [
+          22.91715,
+          -17.38856,
+          22.91715,
+          -17.38856
+        ],
+        [
+          23.00610530305009,
+          -17.347398048598034,
+          23.00610530305009,
+          -17.347398048598034
+        ],
+        [
+          22.669092,
+          -14.971843,
+          22.669092,
+          -14.971843
+        ],
+        [
+          22.675487,
+          -13.08062,
+          22.675487,
+          -13.08062
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CDLA-Sharing-1.0",
+  "links": [
+    {
+      "rel": "license",
+      "href": "https://cdla.dev/sharing-1-0/",
+      "type": "text/html",
+      "title": "Community Data License Agreement – Sharing, Version 1.0"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://planetarycomputer.microsoft.com/dataset/kaza-hydroforecast",
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
+    }
+  ]
+}

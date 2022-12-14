@@ -1,0 +1,211 @@
+{
+  "type": "Collection",
+  "id": "eclipse",
+  "stac_version": "1.0.0",
+  "description": "The [Project Eclipse](https://www.microsoft.com/en-us/research/project/project-eclipse/) Network is a low-cost air quality sensing network for cities and a research project led by the [Urban Innovation Group]( https://www.microsoft.com/en-us/research/urban-innovation-research/) at Microsoft Research.\n\nProject Eclipse currently includes over 100 locations in Chicago, Illinois, USA.\n\nThis network was deployed starting in July, 2021, through a collaboration with the City of Chicago, the Array of Things Project, JCDecaux Chicago, and the Environmental Law and Policy Center as well as local environmental justice organizations in the city. [This talk]( https://www.microsoft.com/en-us/research/video/technology-demo-project-eclipse-hyperlocal-air-quality-monitoring-for-cities/) documents the network design and data calibration strategy.\n\n## Storage resources\n\nData are stored in [Parquet](https://parquet.apache.org/) files in Azure Blob Storage in the West Europe Azure region, in the following blob container:\n\n`https://ai4edataeuwest.blob.core.windows.net/eclipse`\n\nWithin that container, the periodic occurrence snapshots are stored in `Chicago/YYYY-MM-DD`, where `YYYY-MM-DD` corresponds to the date of the snapshot.\nEach snapshot contains a sensor readings from the next 7-days in Parquet format starting with date on the folder name YYYY-MM-DD.\nTherefore, the data files for the first snapshot are at\n\n`https://ai4edataeuwest.blob.core.windows.net/eclipse/chicago/2022-01-01/data_*.parquet\n\nThe Parquet file schema is as described below. \n\n## Additional Documentation\n\nFor details on Calibration of Pm2.5, O3 and NO2, please see [this PDF](https://ai4edatasetspublicassets.blob.core.windows.net/assets/aod_docs/Calibration_Doc_v1.1.pdf).\n\n## License and attribution\nPlease cite: Daepp, Cabral, Ranganathan et al. (2022) [Eclipse: An End-to-End Platform for Low-Cost, Hyperlocal Environmental Sensing in Cities. ACM/IEEE Information Processing in Sensor Networks. Milan, Italy.](https://www.microsoft.com/en-us/research/uploads/prod/2022/05/ACM_2022-IPSN_FINAL_Eclipse.pdf)\n\n## Contact\n\nFor questions about this dataset, contact [`msrurbanops@microsoft.com`](mailto:msrurbanops@microsoft.com?subject=eclipse%20question) \n\n\n## Learn more\n\nThe [Eclipse Project](https://www.microsoft.com/en-us/research/urban-innovation-research/) contains an overview of the Project Eclipse at Microsoft Research.\n\n",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "title": "Urban Innovation Eclipse Sensor Data",
+  "assets": {
+    "data": {
+      "href": "abfs://eclipse/Chicago/",
+      "type": "application/x-parquet",
+      "title": "Full dataset",
+      "description": "Full parquet dataset",
+      "table:storage_options": {
+        "account_name": "ai4edataeuwest"
+      },
+      "roles": [
+        "data"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/pc_thumbnails/eclipse-thumbnail.png",
+      "type": "image/png",
+      "title": "Urban Innovation Chicago Sensors",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "geoparquet-items": {
+      "href": "abfs://items/eclipse.parquet",
+      "type": "application/x-parquet",
+      "title": "GeoParquet STAC items",
+      "description": "Snapshot of the collection's STAC items exported to GeoParquet format.",
+      "msft:partition_info": {
+        "is_partitioned": false
+      },
+      "table:storage_options": {
+        "account_name": "pcstacitems"
+      },
+      "roles": [
+        "stac-items"
+      ]
+    }
+  },
+  "keywords": [
+    "Eclipse",
+    "PM25",
+    "air pollution"
+  ],
+  "providers": [
+    {
+      "name": "Urban Innovation",
+      "roles": [
+        "producer",
+        "licensor",
+        "processor"
+      ],
+      "url": "https://www.microsoft.com/en-us/research/urban-innovation-research/"
+    },
+    {
+      "name": "Microsoft",
+      "roles": [
+        "host"
+      ],
+      "url": "https://planetarycomputer.microsoft.com"
+    }
+  ],
+  "item_assets": {
+    "data": {
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ],
+      "title": "Weekly dataset",
+      "table:storage_options": {
+        "account_name": "ai4edataeuwest"
+      }
+    }
+  },
+  "sci:citation": "Daepp, Cabral, Ranganathan et al. (2022) Eclipse: An End-to-End Platform for Low-Cost, Hyperlocal Environmental Sensing in Cities. ACM/IEEE Information Processing in Sensor Networks. Milan, Italy. Eclipse: An End-to-End Platform for Low-Cost, Hyperlocal Environmental Sensing in Cities",
+  "table:columns": [
+    {
+      "name": "City",
+      "type": "byte_array",
+      "description": "City where the Microsoft Eclipse device is deployed"
+    },
+    {
+      "name": "DeviceId",
+      "type": "int32",
+      "description": "Id for a given device"
+    },
+    {
+      "name": "LocationName",
+      "type": "byte_array",
+      "description": "Unique string describing the device location"
+    },
+    {
+      "name": "Latitude",
+      "type": "double",
+      "description": "Latitude of the device location"
+    },
+    {
+      "name": "Longitude",
+      "type": "double",
+      "description": "Longitude of the device location"
+    },
+    {
+      "name": "ReadingDateTimeUTC",
+      "type": "int96",
+      "description": "The UTC date time string (like 2022-03-04 20:27:25.000) when the reading from the Eclipse sensor was recorded"
+    },
+    {
+      "name": "PM25",
+      "type": "double",
+      "description": "Uncalibrated Fine particulate matter (PM 2.5) in µg/m³"
+    },
+    {
+      "name": "CalibratedPM25",
+      "type": "double",
+      "description": "Calibrated PM 2.5 in µg/m³"
+    },
+    {
+      "name": "CalibratedO3",
+      "type": "double",
+      "description": "Calibrated Ozone in PPB"
+    },
+    {
+      "name": "CalibratedNO2",
+      "type": "double",
+      "description": "Calibrated Nitrogen Dioxide in PPB"
+    },
+    {
+      "name": "CO",
+      "type": "double",
+      "description": "Uncalibrated Carbon monoxide (CO) in PPM"
+    },
+    {
+      "name": "Temperature",
+      "type": "double",
+      "description": "Degree Celsius"
+    },
+    {
+      "name": "Humidity",
+      "type": "double",
+      "description": "Relative humidity"
+    },
+    {
+      "name": "BatteryLevel",
+      "type": "double",
+      "description": "Device battery level in Volts"
+    },
+    {
+      "name": "PercentBattery",
+      "type": "double",
+      "description": "Percent of device battery"
+    },
+    {
+      "name": "CellSignal",
+      "type": "double",
+      "description": "Cellular signal strength in dB"
+    }
+  ],
+  "msft:container": "eclipse",
+  "msft:storage_account": "ai4edataeuwest",
+  "msft:short_description": "A network of low-cost air quality sensing network for cities and led by the Urban Innovation Group at Microsoft Research",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -87.94011408252348,
+          41.64454312178303,
+          -87.5241371038952,
+          42.023038586147585
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2021-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "links": [
+    {
+      "rel": "license",
+      "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/aod_docs/Microsoft%20Project%20Eclipse%20API%20Terms%20of%20Use_Mar%202022.pdf",
+      "type": "application/pdf",
+      "title": "Terms of use"
+    },
+    {
+      "rel": "cite-as",
+      "href": "https://www.microsoft.com/en-us/research/uploads/prod/2022/05/ACM_2022-IPSN_FINAL_Eclipse.pdf",
+      "type": "application/pdf",
+      "title": "Eclipse: An End-to-End Platform for Low-Cost, Hyperlocal Environment Sensing in Cities"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://planetarycomputer.microsoft.com/dataset/eclipse",
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "type": "Collection",
+  "id": "chesapeake-lc-7",
+  "stac_version": "1.0.0",
+  "description": "A high-resolution 1-meter [land cover data product](https://www.chesapeakeconservancy.org/conservation-innovation-center/high-resolution-data/land-cover-data-project/) in raster format for the entire Chesapeake Bay watershed based on 2013-2014 imagery from the National Agriculture Imagery Program (NAIP). The product area encompasses over 250,000 square kilometers in New York, Pennsylvania, Maryland, Delaware, West Virginia, Virginia, and the District of Columbia. The dataset was created by the [Chesapeake Conservancy](https://www.chesapeakeconservancy.org/) [Conservation Innovation Center](https://www.chesapeakeconservancy.org/conservation-innovation-center/) for the [Chesapeake Bay Program](https://www.chesapeakebay.net/), which is a regional partnership of EPA, other federal, state, and local agencies and governments, nonprofits, and academic institutions, that leads and directs Chesapeake Bay restoration efforts. \n\nThe dataset is composed of a uniform set of 7 land cover classes. Additional information is available in a [User Guide](https://www.chesapeakeconservancy.org/wp-content/uploads/2020/06/Chesapeake_Conservancy_LandCover101Guide_June2020.pdf). Images are stored in [cloud-optimized GeoTIFF](https://www.cogeo.org/) format.",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+  ],
+  "title": "Chesapeake Land Cover (7-class)",
+  "assets": {
+    "thumbnail": {
+      "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/pc_thumbnails/chesapeake-lc-7-thumb.png",
+      "type": "image/png",
+      "title": "Chesapeake Land Cover (7-class) Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "keywords": [
+    "Land Cover",
+    "Chesapeake Bay Watershed",
+    "Chesapeake Conservancy"
+  ],
+  "providers": [
+    {
+      "name": "Chesapeake Conservancy Conservation Innovation Center",
+      "roles": [
+        "producer",
+        "processor",
+        "licensor"
+      ],
+      "url": "https://www.chesapeakeconservancy.org/conservation-innovation-center/high-resolution-data/land-cover-data-project/"
+    },
+    {
+      "name": "Microsoft",
+      "roles": [
+        "host"
+      ],
+      "url": "https://planetarycomputer.microsoft.com"
+    }
+  ],
+  "item_assets": {
+    "data": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Land Cover Classes",
+      "raster:bands": [
+        {
+          "nodata": 15,
+          "sampling": "area",
+          "data_type": "uint8",
+          "spatial_resolution": 1
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 1,
+          "color-hint": "00C5FF",
+          "description": "Water"
+        },
+        {
+          "value": 2,
+          "color-hint": "267300",
+          "description": "Tree Canopy and Shrubs"
+        },
+        {
+          "value": 3,
+          "color-hint": "A3FF73",
+          "description": "Low Vegetation"
+        },
+        {
+          "value": 4,
+          "color-hint": "FFAA00",
+          "description": "Barren"
+        },
+        {
+          "value": 5,
+          "color-hint": "9C9C9C",
+          "description": "Impervious Surfaces"
+        },
+        {
+          "value": 6,
+          "color-hint": "000000",
+          "description": "Impervious Roads"
+        },
+        {
+          "value": 7,
+          "color-hint": "C500FF",
+          "description": "Aberdeen Proving Ground"
+        }
+      ]
+    }
+  },
+  "msft:group_id": "chesapeake-lulc",
+  "msft:container": "chesapeake",
+  "msft:storage_account": "landcoverdata",
+  "msft:short_description": "Chesapeake Bay Watershed land cover product with 7 classes at 1m resolution.",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -81.14658496196135,
+          36.21291717905733,
+          -73.27357561029186,
+          44.77821441524524
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2013-01-01T00:00:00Z",
+          "2014-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://www.chesapeakeconservancy.org/wp-content/uploads/2020/06/Chesapeake_Conservancy_LandCover101Guide_June2020.pdf",
+      "type": "application/pdf",
+      "title": "User Guide"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.chesapeakeconservancy.org/conservation-innovation-center/precision-conservation/chesapeake-bay-program/",
+      "type": "text/html",
+      "title": "Data Availability Description"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://planetarycomputer.microsoft.com/dataset/chesapeake-lc-7",
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
+    }
+  ]
+}

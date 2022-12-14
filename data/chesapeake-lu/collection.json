@@ -1,0 +1,194 @@
+{
+  "type": "Collection",
+  "id": "chesapeake-lu",
+  "stac_version": "1.0.0",
+  "description": "A high-resolution 1-meter [land use data product](https://www.chesapeakeconservancy.org/conservation-innovation-center/high-resolution-data/land-use-data-project/) in raster format for the entire Chesapeake Bay watershed. The dataset was created by modifying the 2013-2014 high-resolution [land cover dataset](https://www.chesapeakeconservancy.org/conservation-innovation-center/high-resolution-data/land-cover-data-project/) using 13 ancillary datasets including data on zoning, land use, parcel boundaries, landfills, floodplains, and wetlands. The product area encompasses over 250,000 square kilometers in New York, Pennsylvania, Maryland, Delaware, West Virginia, Virginia, and the District of Columbia. The dataset was created by the [Chesapeake Conservancy](https://www.chesapeakeconservancy.org/) [Conservation Innovation Center](https://www.chesapeakeconservancy.org/conservation-innovation-center/) for the [Chesapeake Bay Program](https://www.chesapeakebay.net/), which is a regional partnership of EPA, other federal, state, and local agencies and governments, nonprofits, and academic institutions that leads and directs Chesapeake Bay restoration efforts.\n\nThe dataset is composed of 17 land use classes in Virginia and 16 classes in all other jurisdictions. Additional information is available in a land use [Class Description](https://www.chesapeakeconservancy.org/wp-content/uploads/2018/11/2013-Phase-6-Mapped-Land-Use-Definitions-Updated-PC-11302018.pdf) document. Images are stored in [cloud-optimized GeoTIFF](https://www.cogeo.org/) format.",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+  ],
+  "title": "Chesapeake Land Use",
+  "assets": {
+    "thumbnail": {
+      "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/pc_thumbnails/chesapeake-lu-thumb.png",
+      "type": "image/png",
+      "title": "Chesapeake Land Use Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "keywords": [
+    "Land Use",
+    "Chesapeake Bay Watershed",
+    "Chesapeake Conservancy"
+  ],
+  "providers": [
+    {
+      "name": "Chesapeake Conservancy Conservation Innovation Center",
+      "roles": [
+        "producer",
+        "processor",
+        "licensor"
+      ],
+      "url": "https://www.chesapeakeconservancy.org/conservation-innovation-center/high-resolution-data/land-use-data-project/"
+    },
+    {
+      "name": "Microsoft",
+      "roles": [
+        "host"
+      ],
+      "url": "https://planetarycomputer.microsoft.com"
+    }
+  ],
+  "item_assets": {
+    "data": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Land Use Classes",
+      "raster:bands": [
+        {
+          "nodata": 0,
+          "sampling": "area",
+          "data_type": "uint8",
+          "spatial_resolution": 1
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 1,
+          "color-hint": "000000",
+          "description": "Impervious Roads"
+        },
+        {
+          "value": 2,
+          "color-hint": "730000",
+          "description": "Impervious Non-Roads"
+        },
+        {
+          "value": 3,
+          "color-hint": "55FF00",
+          "description": "Tree Canopy over Impervious Surfaces"
+        },
+        {
+          "value": 4,
+          "color-hint": "0070FF",
+          "description": "Water"
+        },
+        {
+          "value": 5,
+          "color-hint": "00FFC5",
+          "description": "Tidal Wetlands"
+        },
+        {
+          "value": 6,
+          "color-hint": "00E6A9",
+          "description": "Floodplain Wetlands"
+        },
+        {
+          "value": 7,
+          "color-hint": "00E6A9",
+          "description": "Other Wetlands"
+        },
+        {
+          "value": 8,
+          "color-hint": "267300",
+          "description": "Forest"
+        },
+        {
+          "value": 9,
+          "color-hint": "AAFF00",
+          "description": "Tree Canopy over Turf Grass"
+        },
+        {
+          "value": 10,
+          "color-hint": "A87000",
+          "description": "Mixed Open"
+        },
+        {
+          "value": 11,
+          "color-hint": "FFBEE8",
+          "description": "Fractional Turf (small)"
+        },
+        {
+          "value": 12,
+          "color-hint": "FFBEE8",
+          "description": "Fractional Turf (medium)"
+        },
+        {
+          "value": 13,
+          "color-hint": "FFBEE8",
+          "description": "Fractional Turf (large)"
+        },
+        {
+          "value": 14,
+          "color-hint": "C500FF",
+          "description": "Fractional Impervious"
+        },
+        {
+          "value": 15,
+          "color-hint": "FFFF73",
+          "description": "Turf Grass"
+        },
+        {
+          "value": 16,
+          "color-hint": "E69800",
+          "description": "Cropland"
+        },
+        {
+          "value": 17,
+          "color-hint": "E69800",
+          "description": "Pasture/Hay"
+        }
+      ]
+    }
+  },
+  "msft:group_id": "chesapeake-lulc",
+  "msft:container": "chesapeake",
+  "msft:storage_account": "landcoverdata",
+  "msft:short_description": "Chesapeake Bay Watershed land use product with 17 classes at 1m resolution.",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -81.14648244566828,
+          36.18730972451623,
+          -73.11082086653798,
+          44.7781991560751
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2013-01-01T00:00:00Z",
+          "2014-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://www.chesapeakeconservancy.org/wp-content/uploads/2018/11/2013-Phase-6-Mapped-Land-Use-Definitions-Updated-PC-11302018.pdf",
+      "type": "application/pdf",
+      "title": "Class Descriptions"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.chesapeakeconservancy.org/conservation-innovation-center/precision-conservation/chesapeake-bay-program/",
+      "type": "text/html",
+      "title": "Data Availability Description"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://planetarycomputer.microsoft.com/dataset/chesapeake-lu",
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
+    }
+  ]
+}

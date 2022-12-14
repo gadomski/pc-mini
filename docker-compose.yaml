@@ -1,0 +1,61 @@
+version: '3'
+services:
+  server:
+    container_name: stac-fastapi
+    image: pc-mini/stac-fastapi
+    build:
+      context: stac-fastapi
+      dockerfile: Dockerfile
+      args:
+        STAC_FASTAPI_TAG: 2.4.3
+    environment:
+      - APP_HOST=0.0.0.0
+      - APP_PORT=7822
+      - ENVIRONMENT=local
+      - POSTGRES_USER=username
+      - POSTGRES_PASS=password
+      - POSTGRES_DBNAME=postgis
+      - POSTGRES_HOST_READER=database
+      - POSTGRES_HOST_WRITER=database
+      - POSTGRES_PORT=5432
+      - WEB_CONCURRENCY=10
+    ports:
+      - "7822:7822"
+    depends_on:
+      - database
+    command: bash -c "/scripts/wait-for-it.sh database:5432 -t 0 && python -m stac_fastapi.pgstac.app"
+    volumes:
+      - ./scripts/wait-for-it.sh:/scripts/wait-for-it.sh
+
+  browser:
+    container_name: stac-browser
+    image: pc-mini/stac-browser
+    build:
+      context: stac-browser
+      dockerfile: Dockerfile
+      args:
+        CATALOG_URL: http://localhost:7822
+        STAC_BROWSER_PORT: 7823
+        STAC_BROWSER_TAG: v3.0.0-beta.5
+    ports:
+      - "7823:7823"
+    depends_on:
+      - server
+
+  database:
+    container_name: pgstac
+    image: ghcr.io/stac-utils/pgstac:v0.6.11
+    environment:
+      - POSTGRES_USER=username
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=postgis
+      - PGUSER=username
+      - PGPASSWORD=password
+      - PGHOST=localhost
+      - PGDATABASE=postgis
+    ports:
+      - "7824:5432"
+    command: postgres -N 500
+    volumes:
+      - ./data:/data
+      - ./scripts/ingest.sh:/docker-entrypoint-initdb.d/z_ingest.sh # we append the z to make sure it runs after pgstac's setup
