@@ -1,0 +1,34 @@
+name: Create and publish Docker images
+on:
+  push:
+    branches:
+      - main
+env:
+  REGISTRY: ghcr.io
+jobs:
+  build-and-publish-pgstac:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Login
+        uses: docker/login-action@v2.1.0
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Metadata
+        id: meta
+        uses: docker/metadata-action@v4.1.1
+        with:
+          images: ${{ env.REGISTRY }}/gadomski/pc-mini-pgstac
+      - name: Build and push
+        uses: docker/build-push-action@v3.2.0
+        with:
+          context: pgstac
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
