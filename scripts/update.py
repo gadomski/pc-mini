@@ -12,7 +12,7 @@ from pystac_client import Client
 
 URL = "https://planetarycomputer.microsoft.com/api/stac/v1"
 ROOT = Path(__file__).parents[1]
-DATA = ROOT / "data"
+DATA = ROOT / "pgstac" / "data"
 LIMIT = 10
 MAX_ITEMS = 10
 BBOX = [-105.101, 40.167, -105.100, 40.168]  # Longmont, Colorado

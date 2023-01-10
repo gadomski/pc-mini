@@ -44,18 +44,10 @@ services:
 
   database:
     container_name: pgstac
-    image: ghcr.io/stac-utils/pgstac:v0.6.11
-    environment:
-      - POSTGRES_USER=username
-      - POSTGRES_PASSWORD=password
-      - POSTGRES_DB=postgis
-      - PGUSER=username
-      - PGPASSWORD=password
-      - PGHOST=localhost
-      - PGDATABASE=postgis
+    image: pc-mini/pgstac
+    build:
+      context: pgstac
+      dockerfile: Dockerfile
     ports:
       - "7824:5432"
     command: postgres -N 500
-    volumes:
-      - ./data:/data
-      - ./scripts/ingest.sh:/docker-entrypoint-initdb.d/z_ingest.sh # we append the z to make sure it runs after pgstac's setup
